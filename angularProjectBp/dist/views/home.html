@@ -1,9 +1,10 @@
-<div class="myDiv" ng-controller="testController as tCtrl">
-	{{test}}
-	<div class="card">Je suis une carte !</div>
-	<input type="text" ng-model="test" class="searchbar">
-	<a href="#/contact">BETISES</a>
-	<a href="#/ressources">COUCOU</a>
-	
-
-</div>
+<main class="container">
+	<nav>
+		<h1>BPLink</h1>
+		<i class="fa fa-bell-o fa-3x icon-menu"></i>
+	</nav>
+	<div>
+		<label> ENTREZ UNE ACTIVITÉ </label>
+		<input type="text" class="searchbar" id="search" ng-class="class" ng-click="changeClass()">
+	</div>
+</main>

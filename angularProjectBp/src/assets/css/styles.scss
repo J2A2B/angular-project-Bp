@@ -1,10 +1,20 @@
-@import url(card/card.css);
-@import url(searchbar/searchbar.css);
+/* IMPORTS */
+/* Fin des IMPORTS */
 
-$grey : #e7e7e7;
-$size: 30px;
+/**
+* COLORS
+**/
+$cyan : #50D1E2;
+$red: red;
+$white: white;
 
-.myDiv {
-	color: $grey;
-	font-size: 30px;
+body {
+	background-color: $cyan;
+	color: $white;
+	
+	.container {
+		width: 70%;
+		margin: 30px auto;
+		border: $red;
+	}
 }

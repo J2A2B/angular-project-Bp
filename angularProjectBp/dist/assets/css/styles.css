@@ -1,1 +1,1 @@
-@import url(card/card.css);@import url(searchbar/searchbar.css);.myDiv{color:#e7e7e7;font-size:30px}
+body{background-color:#50D1E2;color:#fff}body .container{width:70%;margin:30px auto;border:red}.card{background:red}.icon-menu{color:white}.searchbar{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;width:200px}.move-up{-webkit-transform:translate(0, 350px);transform:translate(0, 350px)}body{background-color:#50D1E2;color:#fff}body .container{width:70%;margin:30px auto;border:red}
