@@ -11,10 +11,15 @@ $white: white;
 body {
 	background-color: $cyan;
 	color: $white;
-	
+
 	.container {
 		width: 70%;
 		margin: 30px auto;
 		border: $red;
+	}
+
+	.list-unstyled {
+		list-style-type: none;
+		padding-left: 0;
 	}
 }

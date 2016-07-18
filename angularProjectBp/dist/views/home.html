@@ -1,10 +1,20 @@
-<main class="container">
+<main class="container" ng-controller="testController">
 	<nav>
 		<h1>BPLink</h1>
-		<i class="fa fa-bell-o fa-3x icon-menu"></i>
+		<i class="fa fa-bell-o fa-2x icon-menu"></i>
 	</nav>
-	<div>
-		<label> ENTREZ UNE ACTIVITÉ </label>
-		<input type="text" class="searchbar" id="search" ng-class="class" ng-click="changeClass()">
+	<div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">
+		<label ng-class="{textSearchDelete: !searchbarClicked, textSearchDelete: searchbarClicked}"> ENTREZ<br/> UNE<br/> ACTIVITÉ </label>
+		<div class="container-input">
+			<button></button>
+			<input type="text" id="search" ng-model="userEntry" ng-change="autocomplete()">
+		</div>
+		<div class="autocomplete-panel" ng-show="userEntry.length > 0">
+			<ul class="list-unstyled">
+				<li ng-repeat="suggestion in data">
+					{{suggestion}}
+				</li>
+			</ul>
+		</div>
 	</div>
 </main>
