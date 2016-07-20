@@ -5,17 +5,18 @@
 * COLORS
 **/
 $cyan : #50D1E2;
-$red: red;
 $white: white;
 
 body {
 	background-color: $cyan;
 	color: $white;
+	box-sizing:border-box;
 
 	.container {
 		width: 70%;
 		margin: 30px auto;
-		border: $red;
+		margin-top: 0;
+		padding-top: 30px;
 	}
 
 	.list-unstyled {

@@ -14,6 +14,5 @@ myApp.controller('testController',['$scope', '$http', function($scope, $http){
 			function (err) {
 				console.log('Unable to retrieve data from the API :/');
 		});
-	}
-
+	};
 }]);

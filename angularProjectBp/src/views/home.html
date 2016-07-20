@@ -1,10 +1,12 @@
-<main class="container" ng-controller="testController">
-	<nav>
-		<h1>BPLink</h1>
-		<i class="fa fa-bell-o fa-2x icon-menu"></i>
-	</nav>
-	<custom-searchbar suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" />
-</main>
+<section ng-controller="testController" ng-class="{'transparent': searchbarClicked}">
+	<main class="container">
+		<nav>
+			<h1>BPLink</h1>
+			<i class="fa fa-bell-o fa-2x icon-menu"></i>
+		</nav>
+		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" />
+	</main>
+</section>
 
 <!-- <div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">
   <label ng-class="{'textSearchDelete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </label>
