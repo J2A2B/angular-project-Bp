@@ -1,66 +1,83 @@
 // GENERIC
+section{
+	position: absolute;
+	background: url(../images/bp-blue.png) no-repeat center fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	-webkit-transition: opacity 1s ease-in-out;
+  	-moz-transition: opacity 1s ease-in-out;
+  	-o-transition: opacity 1s ease-in-out;
+  	transition: opacity 1s ease-in-out;
 
-.searchbar {
-	display: flex;
-	flex-direction: column;
-	transition: 1.5s;
-	font-size: 25px;
+	
+	main{
+		position: relative;
 
-	label{
-		margin-bottom: 30px;
-		font-size: 30px;
-		width: 100px;
+		.searchbar {
+			display: flex;
+			flex-direction: column;
+			transition: 1.5s;
+			font-size: 25px;
+
+			label{
+				margin-bottom: 30px;
+				font-size: 44px;
+				width: 100px;
+			}
+
+			.container-input{
+				display: flex;
+				flex-direction:row;
+
+				
+
+				button{
+					height: 72px;
+					width: 80px;
+					border:none;
+					background: url(../images/search-icon.png) no-repeat center;
+					background-color: #de586c;
+
+					
+				}
+
+				button:focus {
+					outline: none;
+				}
+
+				input{
+					border: none;
+					height: 70px;
+					width: 100%;
+					padding-left: 50px;
+				}
+
+				input:focus {
+					outline: none;
+				}
+			}
 	}
 
-	.container-input{
-		display: flex;
-		flex-direction:row;
-
-		
-
-		button{
-			height: 72px;
-			width: 80px;
-			border:none;
-			background: url(../images/search-icon.png) no-repeat center;
-			background-color: #dc5a6e;
-
-			
-		}
-
-		button:focus {
-			outline: none;
-		}
-
-		input{
-			border: none;
-			height: 70px;
-			width: 100%;
+		.autocomplete-panel {
+			background-color: white;
+			color: blue;
+			margin-top: 1px;
+			width: 99%;
+			margin-left: 4px;
 			padding-left: 50px;
-		}
+			box-sizing: border-box;
 
-		input:focus {
-			outline: none;
-		}
-	}
-	.autocomplete-panel {
-		background-color: white;
-		color: blue;
-		margin-top: 1px;
-		width: 99%;
-		margin-left: 4px;
-		padding-left: 50px;
-		box-sizing: border-box;
+			li{
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
 
-		li{
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
+			li:hover{
+				background-color: blue;
+				
 
-		li:hover{
-			background-color: blue;
-			
-
+			}
 		}
 	}
 }
@@ -70,6 +87,11 @@
 .searchbar-centered{
 	margin-top: 0;
 	width: 100%;
+}
+
+.transparent{
+	opacity: 0;
+				
 }
 
 // When you land on the homepage
@@ -89,12 +111,18 @@
 	animation-fill-mode: forwards;
 }
 
+
+
 @-webkit-keyframes reduceHeight {
     from {height: 100px;width: 100px;opacity: 1;}
-    to {height: 0px;width: 400px;opacity: 0;}
+    to {height: 0px;width: 800px;opacity: 0;}
 }
 
 @keyframes reduceHeight {
     from {height: 100px;width: 100px;opacity: 1;}
-    to {height: 0px;width: 400px;opacity: 0;}
+    to {height: 0px;width: 800px;opacity: 0;}
 }
+
+// Disparition img 
+
+

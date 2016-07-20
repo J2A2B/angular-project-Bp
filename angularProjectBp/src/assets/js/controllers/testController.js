@@ -12,9 +12,7 @@ myApp.controller('testController',['$scope', '$http', function($scope, $http){
 			$scope.suggestions = response.data.result;
 			console.log($scope.suggestions);
 
-			document.getElementById("search").autocomplete({
-				source: $scope.suggestions;
-			});
+			
 		}, 
 			function (err) {
 				console.log('lol nope');
@@ -24,6 +22,7 @@ myApp.controller('testController',['$scope', '$http', function($scope, $http){
 
 	$scope.toggleSearchbarClicked = function(){
     	$scope.searchbarClicked = true;
+    	
   	};
 
 
