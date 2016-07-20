@@ -1,18 +1,27 @@
 // GENERIC
 section{
-	position: absolute;
-	background: url(../images/bp-blue.png) no-repeat center fixed;
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
-	-webkit-transition: opacity 1s ease-in-out;
-  	-moz-transition: opacity 1s ease-in-out;
-  	-o-transition: opacity 1s ease-in-out;
-  	transition: opacity 1s ease-in-out;
-
 	
-	main{
+	
+	.background-img{
 		position: relative;
+		height: 100vh;
+		width: 100vw;
+		-webkit-transition: opacity 1s ease-in-out;
+  		-moz-transition: opacity 1s ease-in-out;
+  		-o-transition: opacity 1s ease-in-out;
+  		transition: opacity 1s ease-in-out;
+
+  		img {
+  			width: 100%;
+  			height: 100%;
+  		}
+	}
+	
+	.container-home{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
 
 		.searchbar {
 			display: flex;
@@ -47,6 +56,7 @@ section{
 				}
 
 				input{
+					color: #4a7ab2;
 					border: none;
 					height: 70px;
 					width: 100%;
@@ -61,23 +71,24 @@ section{
 
 		.autocomplete-panel {
 			background-color: white;
-			color: blue;
+			color: #4a7ab2;
 			margin-top: 1px;
 			width: 99%;
 			margin-left: 4px;
-			padding-left: 50px;
 			box-sizing: border-box;
 
 			li{
+				padding-left: 50px;
 				padding-top: 10px;
 				padding-bottom: 10px;
+				cursor: pointer;
 			}
-
-			li:hover{
-				background-color: blue;
+			
+			.autocomplete-list:hover{
 				
-
+				background-color: #f0f0f5;
 			}
+
 		}
 	}
 }

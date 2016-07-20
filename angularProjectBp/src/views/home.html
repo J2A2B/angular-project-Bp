@@ -1,10 +1,15 @@
-<section ng-controller="testController" ng-class="{'transparent': searchbarClicked}">
-	<main class="container">
-		<nav>
-			<h1>BPLink</h1>
-			<i class="fa fa-bell-o fa-2x icon-menu"></i>
-		</nav>
-		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" />
+<section ng-controller="testController" >
+	<div class="background-img" ng-class="{'transparent': searchbarClicked}">
+		<img src="assets/images/bp-blue.png">
+	</div>
+	<main class="container-home">
+		<div class="container">
+			<nav>
+				<h1>BPLink</h1>
+				<i class="fa fa-bell-o fa-2x icon-menu"></i>
+			</nav>
+			<custom-searchbar suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" />
+		</div>
 	</main>
 </section>
 
