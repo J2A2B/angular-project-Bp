@@ -1,4 +1,4 @@
-<div class="searchbar" ng-class="{'slideInUp searchbar-centered': clicked, 'searchbar-down': !clicked }">
+<div class="searchbar searchbar-down" ng-class="{'slideInUp searchbar-centered': clicked, 'searchbar-down': !clicked }">
   <label ng-class="{'textSearchDelete': clicked}"> ENTREZ UNE ACTIVITÉ </label>
   <div class="container-input">
     <input type="text" id="search" ng-model="model" ng-click="clicked = true" ng-keydown="selected=false" ng-change="typeahead()">
@@ -7,7 +7,11 @@
 
   <div class="autocomplete-panel" ng-hide="!model.length || selected">
 		<ul class="list-unstyled">
+<<<<<<< HEAD
 			<li ng-repeat="suggestion in suggestions | track by $index" ng-click="onSelect(suggestion)" ng-mouseenter="setCurrent(index)">
+=======
+			<li ng-repeat="suggestion in suggestions track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent(index)}" ng-mouseenter="setCurrent(index)">
+>>>>>>> 3c8a84ac383534f7f0c8e0b7296eb27b7134505a
 				{{suggestion}}
 			</li>
 		</ul>
