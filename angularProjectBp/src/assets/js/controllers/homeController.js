@@ -1,4 +1,4 @@
-myApp.controller('testController',['$scope', '$http', function($scope, $http){
+myApp.controller('homeController',['$scope', '$http', function($scope, $http){
 
 	$scope.searchbarClicked = false;
 	$scope.suggestions = [];
