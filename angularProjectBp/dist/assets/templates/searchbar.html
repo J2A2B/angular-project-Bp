@@ -7,7 +7,7 @@
 
   <div class="autocomplete-panel" ng-hide="!model.length || selected">
 		<ul class="list-unstyled">
-			<li ng-repeat="suggestion in suggestions | filter:model track by $index" ng-click="onSelect(suggestion)" ng-mouseenter="setCurrent(index)">
+			<li ng-repeat="suggestion in suggestions | track by $index" ng-click="onSelect(suggestion)" ng-mouseenter="setCurrent(index)">
 				{{suggestion}}
 			</li>
 		</ul>

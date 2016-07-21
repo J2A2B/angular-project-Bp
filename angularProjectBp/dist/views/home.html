@@ -1,11 +1,12 @@
-<<<<<<< HEAD
-<main class="container" ng-controller="testController">
-	<nav>
-		<h1>BPLink</h1>
-		<i class="fa fa-bell-o fa-2x icon-menu"></i>
-	</nav>
-	<custom-searchbar suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" />
-</main>
+<section ng-controller="testController" ng-class="{'transparent': searchbarClicked}">
+	<main class="container">
+		<nav>
+			<h1>BPLink</h1>
+			<i class="fa fa-bell-o fa-2x icon-menu"></i>
+		</nav>
+		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" />
+	</main>
+</section>
 
 <!-- <div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">
   <label ng-class="{'textSearchDelete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </label>
@@ -21,27 +22,3 @@
 			</li>
 		</ul>
 	</div> -->
-=======
-<section ng-controller="testController" ng-class="{'transparent': searchbarClicked}">
-	<main class="container">
-		<nav>
-			<h1>BPLink</h1>
-			<i class="fa fa-bell-o fa-2x icon-menu"></i>
-		</nav>
-		<div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">
-			<label ng-class="{'textSearchDelete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </label>
-			<div class="container-input">
-				<input type="text" id="search" ng-model="userEntry" ng-change="autocomplete()">
-				<button></button>
-			</div>
-			<!-- <div class="autocomplete-panel" ng-show="userEntry.length > 0">
-				<ul class="list-unstyled">
-					<li ng-repeat="suggestion in data">
-						{{suggestion}}
-					</li>
-				</ul>
-			</div> -->
-		</div>
-	</main>
-</section>
->>>>>>> 188fd2c0931b9d712c9880599215cafd876d9ac0
