@@ -1,11 +1,15 @@
 <section ng-controller="search-resultController" >
-	<main class="container-home">
-		<div class="container">
-			<nav class="searchbar-up">
-				<h1>BPLink</h1>
-				<i class="fa fa-bell-o fa-2x icon-menu"></i>
-			</nav>
-			<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()" />
+	<div class="container">
+		<nav>
+			<h1>BPLink</h1>
+			<i class="fa fa-bell-o fa-2x icon-menu"></i>
+		</nav>
+
+		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
+		</custom-searchbar>
+		<div class="card card-big">
+			<i></i>
+			<p> HELLO </p>
 		</div>
-	</main>
+	</div>
 </section>

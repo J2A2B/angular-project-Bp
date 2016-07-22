@@ -21,6 +21,7 @@ section{
 		position: absolute;
 		left: 0;
 		top: 0;
+	}
 
 		.searchbar {
 			display: flex;
@@ -30,10 +31,10 @@ section{
 			//label is active
 
 			.text-label{
-				
+
 				font-size: 44px;
-				
-				
+
+
 			}
 
 			.container-input{
@@ -90,7 +91,6 @@ section{
 			}
 
 		}
-	}
 }
 
 // When the search is active
@@ -151,6 +151,5 @@ section{
 .stop-animation-search{
 	display: none;
 	animation-play-state: paused;
-	
-}
 
+}

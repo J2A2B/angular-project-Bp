@@ -28,6 +28,7 @@
     "normalize.css": "^4.2.0"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "gulp-copy": "0.0.2"
   }
 }
