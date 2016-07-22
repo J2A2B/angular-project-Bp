@@ -29,10 +29,10 @@ section{
 
 			//label is active
 
-			.textLabel{
-				height: 100px;
+			.text-label{
+				
 				font-size: 44px;
-				transition: color 1.5s;
+				
 				
 			}
 
@@ -115,41 +115,42 @@ section{
 
 // Disparition label searchbar with transition
 
-.textSearchDelete{
-	overflow: clip;
-	color: transparent;
-	height: 0px;
+
+.text-search-delete{
+	animation: reduce-height;
+	animation-iteration-count: 1;
+    animation-duration: 1.5s;
+	animation-fill-mode: forwards;
 }
 
-// .textSearchDelete{
-// 	animation: reduceHeight;
-// 	animation-iteration-count: 1;
-//     animation-duration: 1s;
-// 	animation-fill-mode: forwards;
-// }
 
 
+@-webkit-keyframes reduce-height {
+    from {height: 100px;opacity: 1;}
+    to {height: 0px;opacity: 0;}
+}
 
-// @-webkit-keyframes reduceHeight {
-//     from {height: 100px;width: 100px;opacity: 1;}
-//     to {height: 0px;width: 800px;opacity: 0;}
-// }
-
-// @keyframes reduceHeight {
-//     from {height: 100px;width: 100px;opacity: 1;}
-//     to {height: 0px;width: 800px;opacity: 0;}
-// }
+@keyframes reduce-height {
+    from {height: 100px;opacity: 1;}
+    to {height: 0px;opacity: 0;}
+}
 
 // Disparition label searchbar display none
 
-.textSearchNone{
-	display: none;
-}
+
 
 // Disparition img
 
-.transparent{
+.transparent-img{
 	opacity: 0;
 
+}
+
+// Stop animation !home
+
+.stop-animation-search{
+	display: none;
+	animation-play-state: paused;
+	
 }
 
