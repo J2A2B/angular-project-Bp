@@ -8,27 +8,12 @@
 		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar>
 		<div class="cards-row">
-			<div class="card card-big card-big-first">
+			<div class="card card-big card-big-first" ng-repeat="result in activity">
 				<div class="card-content">
 					<i class="fa fa-credit-card fa-4x"></i>
-					<p> CB </p>
+					<p>{{result.name}}</p>
 				</div>
 			</div>
-
-			<div class="card card-big card-big-first">
-				<div class="card-content">
-					<i class="fa fa-credit-card fa-4x"></i>
-					<p> CB </p>
-				</div>
-			</div>
-
-			<div class="card card-big card-big-first">
-				<div class="card-content">
-					<i class="fa fa-credit-card fa-4x"></i>
-					<p> CB </p>
-				</div>
-			</div>
-
 		</div>
 		<div class="cards-column">
 			<div class="card card-small card-small-1">
