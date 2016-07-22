@@ -25,13 +25,15 @@ section{
 		.searchbar {
 			display: flex;
 			flex-direction: column;
-			transition: 1.5s;
 			font-size: 25px;
 
-			label{
-				margin-bottom: 30px;
+			//label is active
+
+			.textLabel{
+				height: 100px;
 				font-size: 44px;
-				width: 100px;
+				transition: color 1.5s;
+				
 			}
 
 			.container-input{
@@ -96,40 +98,58 @@ section{
 .searchbar-centered{
 	margin-top: 0;
 	width: 100%;
-}
-
-.transparent{
-	opacity: 0;
+	transition: 1.5s;
 
 }
+
+
 
 // When you land on the homepage
 
 .searchbar-down {
 	width: 40%;
 	margin-top: 300px;
+
 }
 
 
-// Disparition text searchbar
+// Disparition label searchbar with transition
 
 .textSearchDelete{
-	animation: reduceHeight;
-	animation-iteration-count: 1;
-    animation-duration: 1s;
-	animation-fill-mode: forwards;
+	overflow: clip;
+	color: transparent;
+	height: 0px;
 }
 
+// .textSearchDelete{
+// 	animation: reduceHeight;
+// 	animation-iteration-count: 1;
+//     animation-duration: 1s;
+// 	animation-fill-mode: forwards;
+// }
 
 
-@-webkit-keyframes reduceHeight {
-    from {height: 100px;width: 100px;opacity: 1;}
-    to {height: 0px;width: 800px;opacity: 0;}
-}
 
-@keyframes reduceHeight {
-    from {height: 100px;width: 100px;opacity: 1;}
-    to {height: 0px;width: 800px;opacity: 0;}
+// @-webkit-keyframes reduceHeight {
+//     from {height: 100px;width: 100px;opacity: 1;}
+//     to {height: 0px;width: 800px;opacity: 0;}
+// }
+
+// @keyframes reduceHeight {
+//     from {height: 100px;width: 100px;opacity: 1;}
+//     to {height: 0px;width: 800px;opacity: 0;}
+// }
+
+// Disparition label searchbar display none
+
+.textSearchNone{
+	display: none;
 }
 
 // Disparition img
+
+.transparent{
+	opacity: 0;
+
+}
+

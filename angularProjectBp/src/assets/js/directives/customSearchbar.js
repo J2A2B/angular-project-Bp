@@ -5,10 +5,11 @@ myApp.directive('customSearchbar', function() {
       suggestions: '=',
       clicked: '=',
       model: '=',
-      typeahead: '&'
+      typeahead: '&',
+      home: '@?'
     },
     link: function(scope, elem, attrs) {
-      console.log(scope.suggestions);
+      console.log(scope.clicked);
       // keeps the index of the current selected item
       scope.current = 0;
       // to know if something is selected

@@ -1,10 +1,11 @@
 <section ng-controller="search-resultController" >
 	<main class="container-home">
 		<div class="container">
-			<nav>
+			<nav class="searchbar-up">
 				<h1>BPLink</h1>
 				<i class="fa fa-bell-o fa-2x icon-menu"></i>
 			</nav>
+			<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()" />
 		</div>
 	</main>
 </section>
