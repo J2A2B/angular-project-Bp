@@ -4,6 +4,54 @@
 	margin-top: auto;
 }
 
+// important cards
+
 .card-big {
 	height: 375px;
+	width: 33.33%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	.card-content {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+}
+
+.card-big-first {
+	background-color: #4ac9c5;
+}
+
+// row of important cards
+
+.cards-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+// secondary cards
+
+.card-small {
+	width: 100%;
+	padding: 100px auto ;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+
+	.card-content {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+}
+
+.card-small-1 {
+	background-color: #65cab2;
+}
+//column of important cards
+.cards-column {
+
 }
