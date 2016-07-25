@@ -43,7 +43,7 @@ section{
 
 
 
-				button{
+				a{
 					height: 72px;
 					width: 80px;
 					border:none;
@@ -154,7 +154,7 @@ section{
 }
 
 
-// Search error 
+// Search error
 
 .container-error{
 	position: relative;
@@ -186,8 +186,7 @@ section{
 
 
 .container-error-active{
-		
-		left: -2000px;
-		
-	}
 
+		left: -2000px;
+
+	}
