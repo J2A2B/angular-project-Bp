@@ -2,7 +2,7 @@
   <div class="text-label" ng-class="{'text-search-delete': clicked, 'text-label': home, 'stop-animation-search':!home}"> ENTREZ UNE ACTIVITÉ </div>
   <div class="container-input">
     <input type="text" id="search" ng-model="model" ng-click="clicked = true" ng-keydown="selected=false" ng-change="typeahead()">
-    <button></button>
+    <a ng-href="#/search-result/{{model}}"></a>
   </div>
 
   <div class="autocomplete-panel" ng-hide="!model.length || selected">
@@ -17,4 +17,3 @@
 		<p>Aucune thématique ne correspond aux termes de la recherche spécifiés</p>
 	</div>
 </div>
-
