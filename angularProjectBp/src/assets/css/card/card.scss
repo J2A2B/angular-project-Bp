@@ -10,6 +10,7 @@
 	height: 375px;
 	width: 33.33%;
 	display: flex;
+	flex: 3 1 auto;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
@@ -24,7 +25,12 @@
 .card-big-first {
 	background-color: #4ac9c5;
 }
-
+.card-big-second {
+	background-color: #81e0c9;
+}
+.card-big-third {
+	background-color: #43b3b0;
+}
 // row of important cards
 
 .cards-row {
@@ -51,7 +57,16 @@
 .card-small-1 {
 	background-color: #65cab2;
 }
+.card-small-2 {
+	background-color: #43b3b0;
+}
+.card-small-3 {
+	background-color: #339591;
+}
+.card-small-4 {
+	background-color: #72d4aa;
+}
 //column of important cards
 .cards-column {
-
+	background-color: #267774;
 }
