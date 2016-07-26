@@ -43,7 +43,7 @@ section{
 
 
 
-				a{
+				.button-search{
 					height: 72px;
 					width: 80px;
 					border:none;
@@ -157,14 +157,13 @@ section{
 // Search error
 
 .container-error{
-	position: relative;
-	left: 400px;
+	position: absolute;
+	left: -1000px;
 	display: flex;
 	justify-content:center;
 	margin-top: 100px;
 	height: 100px;
 	width: 100%;
-	transition: left 1.5s ease-in-out;
 
 }
 
@@ -177,6 +176,7 @@ section{
 		width: 100px;
 	}
 
+
 	.text-error{
 		width: 30%;
 		margin-right: 5px;
@@ -184,9 +184,16 @@ section{
 	}
 
 
+	// .container-error
 
-.container-error-active{
-
-		left: -2000px;
-
+	.horiz-translate {
+ 		 -webkit-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
+  		-moz-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
+  		-ms-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
+  		-o-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
+  		transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
+  		
+  		left: 0 !important;
 	}
+
+
