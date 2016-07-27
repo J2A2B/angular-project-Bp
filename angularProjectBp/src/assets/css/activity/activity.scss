@@ -1,0 +1,73 @@
+.activity {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+
+  .column-header {
+    text-align: center;
+    font-weight: normal;
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+
+  .contact-header {
+    background-color: #5b4370;
+  }
+  .ressource-header {
+    background-color: #4c78a2;
+  }
+
+  .activity-column {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .contact-card {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 30px 70px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      .avatar {
+        margin-right: 10px;
+      }
+    }
+
+    .ressource-card {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 30px 70px;
+    }
+  }
+
+}
+
+.ressource-card-1 {
+  background-color: #3ab2c3;
+}
+.ressource-card-2 {
+  background-color: #4279a9;
+}
+.ressource-card-3 {
+  background-color: #3ba8b8;
+}
+.ressource-card-4 {
+  background-color: #4a8cb2;
+}
+
+
+
+.contact-card-1 {
+  background-color: #8770bd;
+}
+.contact-card-2 {
+  background-color: #8a5495;
+}
+.contact-card-3 {
+  background-color: #77549a;
+}
+.contact-card-4 {
+  background-color: #d0a3bf;
+}

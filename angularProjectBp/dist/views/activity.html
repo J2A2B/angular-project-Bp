@@ -1,0 +1,32 @@
+<section ng-controller="activityController as aCtrl">
+	<div class="container">
+		<nav>
+			<h1>BPLink</h1>
+			<i class="fa fa-bell-o fa-2x icon-menu"></i>
+		</nav>
+
+		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
+		</custom-searchbar>
+		<div class="activity">
+			<div class="activity-column">
+				<h2 class="column-header contact-header"> Contacts </h2>
+				<div class="contact-card" ng-repeat="contact in contacts track by $index" ng-class="'contact-card-'+(($index+1)%4)">
+					<img class="avatar" src="" alt="photo">
+					<div class="contact-info">
+						<h3 class="contact-name"> {{contact.first_name}} {{contact.last_name}} </h3>
+						<p> {{contact.job}} </p>
+					</div>
+				</div>
+			</div>
+			<div class="activity-column">
+				<h2 class="column-header ressource-header"> Liens Utiles </h2>
+				<div class="ressource-card" ng-repeat="ressource in ressources track by $index" ng-class="'ressource-card-'+(($index+1)%4)">
+					<i class="fa fa-book fa-3x"></i>
+					<div class="ressource-info">
+						<p> {{ressource.title}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
