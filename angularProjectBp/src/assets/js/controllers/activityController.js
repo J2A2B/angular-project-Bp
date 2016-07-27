@@ -1,9 +1,9 @@
-myApp.controller('activityController',['$scope', '$http', function($scope, $http){
+myApp.controller('activityController',['$scope', '$http', 'ApiFactory', function($scope, $http, ApiFactory){
   $scope.hello = "plop";
   $scope.contacts = [];
   $scope.ressources = [];
 
-  $http.get('http://private-anon-20c707377a-bplink.apiary-mock.com/api/activities/1/contacts')
+  $http.get(ApiFactory.api+'activities/1/contacts')
   .then(
     function(response) {
       $scope.contacts = response.data.result;
@@ -12,7 +12,7 @@ myApp.controller('activityController',['$scope', '$http', function($scope, $http
       console.log("Couldn't retrieve contacts");
   });
 
-  $http.get('http://private-anon-20c707377a-bplink.apiary-mock.com/api/activities/1/resources')
+  $http.get(ApiFactory.api +'activities/1/resources')
   .then(
     function(response) {
       $scope.ressources = response.data.result;
