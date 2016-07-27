@@ -1,5 +1,5 @@
 <div class="searchbar" ng-class="{'searchbar-centered': clicked, 'searchbar-down': !clicked }">
-  <div class="text-label" ng-class="{'text-search-delete': clicked, 'text-label': home, 'stop-animation-search':!home}"> ENTREZ UNE ACTIVITÉ </div>
+  
   <div class="container-input">
     <input type="text" id="search" ng-model="model" ng-click="clicked = true" ng-keydown="selected=false" ng-change="typeahead()">
     <button class="button-search" ng-click="error()"  ></button>

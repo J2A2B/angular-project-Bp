@@ -31,12 +31,12 @@
 
 			//label is active
 
-			.text-label{
-				width: 100px;
-				font-size: 44px;
+			// .text-label{
+			// 	width: 100px;
+			// 	font-size: 44px;
 
 
-			}
+			// }
 
 			.container-input{
 				display: flex;
@@ -76,8 +76,8 @@
 			background-color: white;
 			color: #4a7ab2;
 			margin-top: 1px;
-			width: 99%;
-			margin-left: 4px;
+			width: 100%;
+			
 			box-sizing: border-box;
 
 			li{
@@ -97,7 +97,7 @@
 // When the search is active
 
 .searchbar-centered{
-	margin-top: 0;
+	
 	width: 100%;
 	transition: 1.5s;
 
@@ -109,7 +109,7 @@
 
 .searchbar-down {
 	width: 40%;
-	margin-top: 300px;
+	
 
 }
 
@@ -117,24 +117,24 @@
 // Disparition label searchbar with transition
 
 
-.text-search-delete{
-	animation: reduce-height;
-	animation-iteration-count: 1;
-    animation-duration: 1.5s;
-	animation-fill-mode: forwards;
-}
+// .text-search-delete{
+// 	animation: reduce-height;
+// 	animation-iteration-count: 1;
+//     animation-duration: 1.5s;
+// 	animation-fill-mode: forwards;
+// }
 
 
 
-@-webkit-keyframes reduce-height {
-    from {height: 100px;width:100px;opacity: 1;font-size: 44px;}
-    to {height: 0px;width:800px;opacity: 0;font-size: 34px;}
-}
+// @-webkit-keyframes reduce-height {
+//     from {height: 100px;width:100px;opacity: 1;font-size: 44px;}
+//     to {height: 0px;width:800px;opacity: 0;font-size: 34px;}
+// }
 
-@keyframes reduce-height {
-    from {height: 100px;width:100px;opacity: 1;font-size: 44px;}
-    to {height: 0px;width:800px;opacity: 0;font-size: 34px;}
-}
+// @keyframes reduce-height {
+//     from {height: 100px;width:100px;opacity: 1;font-size: 44px;}
+//     to {height: 0px;width:800px;opacity: 0;font-size: 34px;}
+// }
 
 // Disparition label searchbar display none
 
@@ -149,10 +149,10 @@
 
 // Stop animation !home
 
-.stop-animation-search{
-	display: none;
+// .stop-animation-search{
+// 	display: none;
 
-}
+// }
 
 
 // Search error
@@ -195,4 +195,8 @@
   		transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
 
   		left: 0 !important;
+	}
+
+	.margin-custom-searchbar{
+		margin-bottom: 50px;
 	}

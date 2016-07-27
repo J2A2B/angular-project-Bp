@@ -9,11 +9,13 @@
 				<div class="notif-pastille">3</div>
 				<i class="fa fa-bell-o fa-2x icon-menu"></i>
 			</nav>
+			<div class="text-label" ng-class="{'text-search-delete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </div>
 			<custom-searchbar class="searchbar-down" suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" home="true" />
 		</div>
 	</main>
 	<div ng-notification></div>
 </section>
+
 
 <!-- <div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">
   <label ng-class="{'textSearchDelete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </label>
