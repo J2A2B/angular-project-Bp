@@ -32,29 +32,29 @@ myApp.directive('customSearchbar',['$http','$routeParams', function($http, $rout
         scope.selected = true;
       };
 
-      scope.activity = [];
+      // scope.activity = [];
 
-    //   $http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/search?q='+scope.model+'&limit=10')
-    //   .then(
-    //   function (response) {
-    //   scope.activity = response.data.result;
-    // },
-    //   function (err) {
-    //     console.log('Unable to retrieve data from the API :/');
-    // });
+      $http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/search?q='+scope.model+'&limit=10')
+      .then(
+      function (response) {
+      scope.activity = response.data.result;
+    },
+      function (err) {
+        console.log('Unable to retrieve data from the API :/');
+    });
       scope.error = function(){
        console.log(scope.buttonSearchClicked);
 
         if (scope.activity.length == 0) {
           console.log(scope.activity.length);
           scope.buttonSearchClicked = true;
-          
+
         }
         else{
           window.location.href = "#/search-result/{{model}}";
         };
       }
-      
+
 
     },
     templateUrl: 'assets/templates/searchbar.html'

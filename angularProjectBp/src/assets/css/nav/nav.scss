@@ -1,5 +1,27 @@
-nav{
+nav {
 	display:flex ;
 	flex-direction: row;
 	justify-content: space-between;
+	position: relative;
+
+	h1 {
+		margin: 0;
+	}
+
+	i{
+		position: absolute;
+	}
+
+	.notif-pastille{
+		z-index: 1000;
+		text-align: center;
+		position: relative;
+		left: 35px;
+		width: 18px;
+		height: 18px;
+		background-color: #eb5269;
+		border-radius: 40px;
+		font-size: 14px;
+	}
+
 }
