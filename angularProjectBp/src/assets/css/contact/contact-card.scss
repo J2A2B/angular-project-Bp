@@ -1,0 +1,110 @@
+.container-infos{
+	
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	width: 100%;
+	
+	
+	.pastille{
+		position: relative;
+		left: 60px;
+		top: 60px;
+		width: 20px;
+		height: 20px;
+		background-color: #e74937;
+		border: 1px solid white;
+		border-radius:50%;
+	}
+
+	.img-contact{
+		border-radius: 50%;
+		border-style: solid;
+		border-color: white;
+		margin: 20px;
+		height: 150px;
+		width: 150px;
+		background: url(../images/img-contact.png) no-repeat center;
+	}
+	
+	h1{
+		font-size: 24px;
+		margin: 0;
+	}
+
+	p{	
+		margin: 15px;
+		font-size: 16px;
+		color: white;
+	}
+	
+	.container-contact-assets{
+		width: 100%;
+		display: flex;
+		flex-direction:column;
+
+		.container-main-assets{
+			
+			display: flex;
+
+			.container-asset{
+				display: flex;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+				height: 150px;
+				width: 50%;
+				
+
+				.generic-cont{
+					width: 50px;
+					height: 50px;
+					margin: 10px;
+				}
+				
+				.img-call{
+					background: url(../images/phone-call.svg) no-repeat center;
+					background-size: cover;
+				}
+				.img-mail{
+					background: url(../images/mail.svg) no-repeat center;
+					background-size: cover;
+				}
+				.img-call-back{
+					background: url(../images/call-back.svg) no-repeat center;
+					background-size: cover;
+				}
+				.img-chat{
+					background: url(../images/chat.svg) no-repeat center;
+					background-size: cover;
+				}
+				
+				p{
+					font-size: 20px;
+					margin: 5px;
+				}
+
+			}
+
+			.color-cont-one{
+				background-color: #5e549a;
+			}
+
+			.color-cont-two{
+				background-color: #77549a;
+			}
+
+			.color-cont-three{
+				background-color: #5b4370;
+			}
+
+			.color-cont-four{
+				background-color: #473359;
+			}
+
+		}
+
+
+	}
+
+}

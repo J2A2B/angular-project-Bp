@@ -1,5 +1,5 @@
 // GENERIC
-section{
+.main-container{
 
 	.background-img{
 		position: relative;
@@ -21,6 +21,29 @@ section{
 		position: absolute;
 		left: 0;
 		top: 0;
+
+		nav{
+			
+			position: relative;
+			
+			i{
+				position: absolute;
+			}
+
+			.notif-pastille{
+				z-index: 1000;
+				text-align: center;
+				position: relative;
+				left: 35px;
+				width: 18px;
+				height: 18px;
+				background-color: #eb5269;
+				border-radius: 40px;
+				font-size: 14px;
+			}
+
+		}
+
 	}
 
 		.searchbar {

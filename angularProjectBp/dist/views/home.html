@@ -1,4 +1,4 @@
-<section ng-controller="homeController" >
+<section class="main-container" ng-controller="homeController" >
 	<div class="background-img" ng-class="{'transparent-img': searchbarClicked}">
 		<img src="assets/images/bp-blue.png">
 	</div>
@@ -6,12 +6,13 @@
 		<div class="container">
 			<nav>
 				<h1>BPLink</h1>
+				<div class="notif-pastille">3</div>
 				<i class="fa fa-bell-o fa-2x icon-menu"></i>
 			</nav>
 			<custom-searchbar class="searchbar-down" suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" home="true" />
 		</div>
 	</main>
-	
+	<div ng-notification></div>
 </section>
 
 <!-- <div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">
