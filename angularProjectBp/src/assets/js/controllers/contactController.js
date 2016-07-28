@@ -11,14 +11,14 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', functio
 	// 	{name: "I'm so fake"}
 	// ];
 
-	$scope.contact = [];
+	$scope.contacts = [];
 
-	$http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/contacts/id')
+	$http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/contacts/20')
 		.then(
 			function (response) {
-			$scope.contact = response.data.result;
+			$scope.contacts = response.data;
 
-			console.log($scope.contact.length);
+			console.log($scope.contacts);
 		},
 			function (err) {
 				console.log('Unable to retrieve data from the API :/');
