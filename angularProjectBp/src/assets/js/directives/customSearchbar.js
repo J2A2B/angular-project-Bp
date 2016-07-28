@@ -1,4 +1,4 @@
-myApp.directive('customSearchbar',['$http','$routeParams', function($http, $routeParams) {
+myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function($http, $routeParams, ApiFactory) {
   return {
     restrict: 'E',
     scope: {
@@ -34,7 +34,7 @@ myApp.directive('customSearchbar',['$http','$routeParams', function($http, $rout
 
       // scope.activity = [];
 
-      $http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/search?q='+scope.model+'&limit=10')
+      $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
       .then(
       function (response) {
       scope.activity = response.data.result;

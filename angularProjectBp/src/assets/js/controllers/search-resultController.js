@@ -1,4 +1,4 @@
-myApp.controller('search-resultController',['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
+myApp.controller('search-resultController',['$scope', '$http', '$routeParams', 'ApiFactory', function($scope, $http, $routeParams, ApiFactory){
 
 	$scope.query = $routeParams.model;
 	// $scope.activity=[
@@ -13,7 +13,7 @@ myApp.controller('search-resultController',['$scope', '$http', '$routeParams', f
 
 	$scope.activity = [];
 
-	$http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/search?q='+$scope.query+'&limit=10')
+	$http.get(ApiFactory.api + 'search?q='+$scope.query+'&limit=10')
 		.then(
 			function (response) {
 			$scope.activity = response.data.result;

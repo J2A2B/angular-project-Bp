@@ -1,4 +1,4 @@
-myApp.controller('contactController',['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
+myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFactory' function($scope, $http, $routeParams, ApiFactory){
 
 
 	// $scope.activity=[
@@ -13,7 +13,7 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', functio
 
 	$scope.contacts = [];
 
-	$http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/contacts/20')
+	$http.get(ApiFactory.api + 'contacts/20')
 		.then(
 			function (response) {
 			$scope.contacts = response.data;

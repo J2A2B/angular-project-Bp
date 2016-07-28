@@ -1,4 +1,4 @@
-myApp.controller('homeController',['$scope', '$http', function($scope, $http){
+myApp.controller('homeController',['$scope', '$http', 'ApiFactory', function($scope, $http, ApiFactory){
 
 	$scope.searchbarClicked = false;
 	$scope.buttonSearchClicked = false;
@@ -6,7 +6,7 @@ myApp.controller('homeController',['$scope', '$http', function($scope, $http){
 	$scope.userEntry = '';
 
 	$scope.typeahead = function() {
-		$http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/search/complete?q='+$scope.userEntry+'&limit=5')
+		$http.get(ApiFactory.api+'search/complete?q='+$scope.userEntry+'&limit=5')
 		.then(
 			function (response) {
 			$scope.suggestions = response.data.result;
@@ -22,7 +22,7 @@ myApp.controller('homeController',['$scope', '$http', function($scope, $http){
 	// 		$scope.coucou="coucou";
 	// 		console.log($scope.coucou);
  //          $(function coucou () {
-            
+
  //          	$('.container-error').addClass('horiz-translate');
  //    		$('.container-error').css('left');
 
@@ -30,7 +30,7 @@ myApp.controller('homeController',['$scope', '$http', function($scope, $http){
 
 
 
-          
+
  //      };
 
 
