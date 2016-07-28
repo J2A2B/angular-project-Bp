@@ -4,13 +4,23 @@
 	margin-top: auto;
 }
 
+// links
+
+.activity-link {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	width: 33.33%;
+	height: 100%;
+	flex: 3 1 auto;
+}
+
 // important cards
 
 .card-big {
 	height: 375px;
-	width: 33.33%;
+	width: 100%;
 	display: flex;
-	flex: 3 1 auto;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
@@ -66,7 +76,7 @@
 .card-small-4 {
 	background-color: #72d4aa;
 }
-//column of important cards
+//column of secondary cards
 .cards-column {
 	background-color: #267774;
 }

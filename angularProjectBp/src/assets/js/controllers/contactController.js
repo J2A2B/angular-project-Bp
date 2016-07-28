@@ -1,19 +1,8 @@
-myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFactory' function($scope, $http, $routeParams, ApiFactory){
-
-
-	// $scope.activity=[
-	// 	{name: "I'm so fake1"},
-	// 	{name: "I'm so fake"},
-	// 	{name: "I'm so fake"},
-	// 	{name: "I'm so fake"},
-	// 	{name: "I'm so fake"},
-	// 	{name: "I'm so fake"},
-	// 	{name: "I'm so fake"}
-	// ];
+myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFactory', function($scope, $http, $routeParams, ApiFactory){
 
 	$scope.contacts = [];
 
-	$http.get(ApiFactory.api + 'contacts/20')
+	$http.get(ApiFactory.api + 'contacts/'+$routeParams.id_contact)
 		.then(
 			function (response) {
 			$scope.contacts = response.data;

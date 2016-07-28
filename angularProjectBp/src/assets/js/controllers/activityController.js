@@ -1,9 +1,10 @@
-myApp.controller('activityController',['$scope', '$http', 'ApiFactory', function($scope, $http, ApiFactory){
+myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeParams', function($scope, $http, ApiFactory, $routeParams){
   $scope.hello = "plop";
   $scope.contacts = [];
-  $scope.ressources = [];
+  $scope.ressources = [
+  ];
 
-  $http.get(ApiFactory.api+'activities/1/contacts')
+  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts')
   .then(
     function(response) {
       $scope.contacts = response.data.result;
@@ -12,7 +13,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', function
       console.log("Couldn't retrieve contacts");
   });
 
-  $http.get(ApiFactory.api +'activities/1/resources')
+  $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources')
   .then(
     function(response) {
       $scope.ressources = response.data.result;
