@@ -4,6 +4,8 @@ myApp.controller('homeController',['$scope', '$http', function($scope, $http){
 	$scope.buttonSearchClicked = false;
 	$scope.suggestions = [];
 	$scope.userEntry = '';
+	$scope.openNews = true;
+
 
 	$scope.typeahead = function() {
 		$http.get('http://private-anon-d042e0f724-bplink.apiary-mock.com/api/search/complete?q='+$scope.userEntry+'&limit=5')
@@ -16,7 +18,10 @@ myApp.controller('homeController',['$scope', '$http', function($scope, $http){
 		});
 	};
 
-
+	$scope.Bellclicked = function(){
+		$scope.openNews = false;
+		
+	}
 
 	// $scope.errormessage = function () {
 	// 		$scope.coucou="coucou";
