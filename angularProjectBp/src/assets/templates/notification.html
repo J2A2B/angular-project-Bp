@@ -1,1 +1,10 @@
-<p>coucou les gens</p>
+<div class="container-news" ng-controller="notificationsController" ng-class="{'container-news-closed': closeNews}">
+	<div class="title-news">
+		<h1>NOUVEAUTÉ</h1>
+		<div class="cross-news" ng-click="clickedBell()"></div>
+	</div>
+	<div class="container-info-news" ng-repeat="notification in notifications">
+		<div class="news-service" >3</div>
+		<p>Nouveautés {{notification.activity.name}}</p>
+	</div>
+</div>

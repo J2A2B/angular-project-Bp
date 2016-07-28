@@ -1,9 +1,14 @@
 myApp.directive('ngNotification', function () {
 	return {
-		scope: {
-			notifications: "="
-		},
 		restrict : "E",
-		templateUrl: 'assets/templates/notification.html'
+		templateUrl: 'assets/templates/notification.html',
+		scope: {
+			notifications: '=',
+			closeNews: '@'
+		},
+		link: function(scope, elem, attrs) {
+			
+		
+		}
 	}
-})
+});

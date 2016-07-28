@@ -1,0 +1,69 @@
+.container-news{
+	z-index: 2000;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	display: none;
+	height: 100vh;
+	width: 25%;
+	background-color: #faa851;
+
+	.title-news{
+		height: 95px;
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content:space-around;
+
+		h1{
+			margin: 0;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 24px;
+			color: #eb5269;
+			/* Text style for "NOUVEAUTÉ" */
+			letter-spacing: 0.5px;
+			/* Text style for "S" */
+		}
+
+		.cross-news{
+			background: url(../images/cross.png) no-repeat center;
+			height: 18px;
+			width: 18px;
+			background-size: cover;
+		}
+
+	}
+
+	.container-info-news{
+		display: flex;
+		margin-left: 13%;
+		margin-right: 13%;
+		align-items: center;
+		height: 70px;
+
+		.news-service{
+			margin-right: 5%;
+			text-align: center;
+			position: relative;
+			width: 18px;
+			height: 18px;
+			background-color: #eb5269;
+			border-radius: 40px;
+			font-size: 14px;
+
+		}
+
+	}
+}
+
+.container-news-closed{
+	z-index: 2000;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	display: block;
+	height: 100vh;
+	width: 25%;
+	background-color: #faa851;
+}
