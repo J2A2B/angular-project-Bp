@@ -3,7 +3,6 @@
 	position: absolute;
 	top:0px;
 	right: 0px;
-	display: none;
 	height: 100vh;
 	width: 25%;
 	background-color: #faa851;
@@ -57,13 +56,17 @@
 	}
 }
 
-.container-news-closed{
-	z-index: 2000;
-	position: absolute;
-	top:0px;
-	right: 0px;
-	display: block;
-	height: 100vh;
-	width: 25%;
-	background-color: #faa851;
+.container-news-closed {
+	display: none;
 }
+
+// .container-news-closed{
+// 	z-index: 2000;
+// 	position: absolute;
+// 	top:0px;
+// 	right: 0px;
+// 	display: block;
+// 	height: 100vh;
+// 	width: 25%;
+// 	background-color: #faa851;
+// }

@@ -1,4 +1,4 @@
-<section class="main-container" ng-controller="homeController " >
+<section class="main-container" ng-controller="homeController" >
 	<div class="background-img" ng-class="{'transparent-img': searchbarClicked}">
 		<img src="assets/images/bp-blue.png">
 	</div>
@@ -7,14 +7,15 @@
 			<nav>
 				<h1>BPLink</h1>
 				<div class="notif-pastille" >3</div>
-				<i class="fa fa-bell-o fa-2x icon-menu" ng-click="newsFactory.newsClicked"></i>
+				<i class="fa fa-bell-o fa-2x icon-menu" ng-click="toggleNews()"></i>
 			</nav>
 			<div class="text-label" ng-class="{'text-search-delete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </div>
 			<custom-searchbar class="searchbar-down" suggestions="suggestions" model="userEntry" clicked="searchbarClicked" typeahead="typeahead()" home="true" />
 		</div>
 	</main>
-	<ng-notification ng-class="{'container-news-closed': newsFactory.newsClicked}" notifications="notifications"></ng-notification>
+	<ng-notification></ng-notification>
 </section>
+
 
 
 <!-- <div ng-click="toggleSearchbarClicked()" class="searchbar" ng-class="{'slideInUp searchbar-centered': searchbarClicked, 'searchbar-down': !searchbarClicked }">

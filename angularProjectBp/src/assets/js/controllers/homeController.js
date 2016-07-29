@@ -5,6 +5,10 @@ myApp.controller('homeController',['$scope', '$http', 'ApiFactory', 'newsFactory
 	$scope.suggestions = [];
 	$scope.userEntry = '';
 
+	$scope.toggleNews = function() {
+		newsFactory.newsClicked = !newsFactory.newsClicked;
+		console.log('yes');
+	}
 
 	$scope.typeahead = function() {
 		$http.get(ApiFactory.api+'search/complete?q='+$scope.userEntry+'&limit=5')
@@ -29,10 +33,6 @@ myApp.controller('homeController',['$scope', '$http', 'ApiFactory', 'newsFactory
  //    		$('.container-error').css('left');
 
  //          });
-
-
-
-
  //      };
 
 

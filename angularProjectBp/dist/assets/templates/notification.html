@@ -1,7 +1,7 @@
-<div class="container-news" ng-controller="notificationsController" ng-class="{'container-news-closed': closeNews}">
+<div class="container-news" ng-class="{'container-news-closed': !show}">
 	<div class="title-news">
 		<h1>NOUVEAUTÉ</h1>
-		<div class="cross-news" ng-click="clickedBell()"></div>
+		<div class="cross-news" ng-click="toggleNews()"></div>
 	</div>
 	<div class="container-info-news" ng-repeat="notification in notifications">
 		<div class="news-service" >3</div>
