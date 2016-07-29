@@ -1,4 +1,4 @@
-myApp.controller('search-resultController',['$scope', '$http', '$routeParams', 'ApiFactory', function($scope, $http, $routeParams, ApiFactory){
+myApp.controller('search-resultController',['$scope', '$http', '$routeParams', 'ApiFactory', 'newsFactory', function($scope, $http, $routeParams, ApiFactory, newsFactory){
 
 	$scope.query = $routeParams.model;
 	// $scope.activity=[

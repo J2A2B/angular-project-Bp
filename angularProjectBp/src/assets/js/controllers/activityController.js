@@ -1,4 +1,4 @@
-myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeParams', function($scope, $http, ApiFactory, $routeParams){
+myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeParams', 'newsFactory', function($scope, $http, ApiFactory, $routeParams, newsFactory){
   $scope.hello = "plop";
   $scope.contacts = [];
   $scope.ressources = [

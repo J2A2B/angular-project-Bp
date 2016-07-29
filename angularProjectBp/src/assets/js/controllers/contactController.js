@@ -1,4 +1,4 @@
-myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFactory', function($scope, $http, $routeParams, ApiFactory){
+myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFactory', 'newsFactory', function($scope, $http, $routeParams, ApiFactory, newsFactory){
 
 	$scope.contacts = [];
 

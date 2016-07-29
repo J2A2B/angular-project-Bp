@@ -1,7 +1,6 @@
-myApp.controller('notificationsController',['$scope', '$http', '$routeParams', 'ApiFactory', function($scope, $http, $routeParams, ApiFactory){
+myApp.controller('notificationsController',['$scope', '$http', '$routeParams', 'ApiFactory', 'newsFactory', function($scope, $http, $routeParams, ApiFactory, newsFactory){
 
 	$scope.notifications = [];
-	$scope.closeNews = false;
 
 
 	$http.get(ApiFactory.api + 'news?limit=10&offset=0')
@@ -15,9 +14,6 @@ myApp.controller('notificationsController',['$scope', '$http', '$routeParams', '
 				console.log('Unable to retrieve data from the API :/');
 		});
 
-	$scope.clickedBell = function(){
-		$scope.closeNews = true;
-		
-	}
+
 
 }]);

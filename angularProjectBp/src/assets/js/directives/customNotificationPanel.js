@@ -10,5 +10,5 @@ myApp.directive('ngNotification', function () {
 			
 		
 		}
-	}
+	};
 });

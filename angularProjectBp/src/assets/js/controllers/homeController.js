@@ -1,10 +1,9 @@
-myApp.controller('homeController',['$scope', '$http', 'ApiFactory', function($scope, $http, ApiFactory){
+myApp.controller('homeController',['$scope', '$http', 'ApiFactory', 'newsFactory',  function($scope, $http, ApiFactory, newsFactory){
 
 	$scope.searchbarClicked = false;
 	$scope.buttonSearchClicked = false;
 	$scope.suggestions = [];
 	$scope.userEntry = '';
-	$scope.openNews = true;
 
 
 	$scope.typeahead = function() {
@@ -18,10 +17,8 @@ myApp.controller('homeController',['$scope', '$http', 'ApiFactory', function($sc
 		});
 	};
 
-	$scope.Bellclicked = function(){
-		$scope.openNews = false;
-		
-	}
+
+
 
 	// $scope.errormessage = function () {
 	// 		$scope.coucou="coucou";
