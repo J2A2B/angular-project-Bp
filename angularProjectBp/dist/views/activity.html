@@ -12,7 +12,7 @@
 			<div class="activity-column">
 				<h2 class="column-header contact-header"> Contacts </h2>
 				<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
-					<div class="contact-card" ng-class="'contact-card-'+(($index+1)%4)">
+					<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
 						<img class="avatar" src="" alt="photo">
 						<div class="contact-info">
 							<h3 class="contact-name"> {{contact.first_name}} {{contact.last_name}} </h3>
