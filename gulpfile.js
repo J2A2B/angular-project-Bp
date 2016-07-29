@@ -124,6 +124,8 @@ gulp.task('images', function () {
 gulp.task('copy', function() {
     gulp.src('src/**/*.html')
     .pipe(gulp.dest('dist'));
+    gulp.src('src/lib')
+    .pipe(gulp.dest('dist'));
 });
 
 
