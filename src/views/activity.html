@@ -18,7 +18,7 @@
 						<div class="contact-info">
 							<p class="contact-name"> {{contact.first_name}} {{contact.last_name}} </p>
 							<p> {{contact.job}} </p>
-							<div class="container-alert-news">
+							<div ng-show="contact.is_new" class="container-alert-news">
 								<div class = "news-icon">Nouveau</div>
 								<p class="text-news">Prise en charge du traitement des alertes fraude</p>
 							</div>
@@ -28,7 +28,7 @@
 			</div>
 			<div class="activity-column">
 				<h2 class="column-header ressource-header"> Liens Utiles </h2>
-				<div class="ressource-card" ng-repeat="ressource in ressources track by $index" ng-class="'ressource-card-'+(($index+1)%4)">
+				<div class="ressource-card" ng-repeat="ressource in ressources track by $index" ng-class="'ressource-card-'+(($index%4)+1)">
 					<i class="fa fa-book fa-3x img-ressource"></i>
 					<div class="ressource-info">
 						<p> {{ressource.title}}</p>

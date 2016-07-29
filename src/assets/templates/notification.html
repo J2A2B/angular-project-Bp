@@ -3,8 +3,8 @@
 		<h1>NOUVEAUTÉ</h1>
 		<div class="cross-news" ng-click="toggleNews()"></div>
 	</div>
-	<div class="container-info-news" ng-repeat="notification in notifications">
+	<a class="container-info-news" ng-repeat="notification in notifications" ng-href="#/activity/{{notification.activity.id_activity}}">
 		<div class="news-service" >3</div>
 		<p>Nouveautés {{notification.activity.name}}</p>
-	</div>
+	</a>
 </div>
