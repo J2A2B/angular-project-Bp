@@ -19,34 +19,106 @@
 
   .activity-column {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
 
+    h2{
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      /* Text style for "CONTACT" */
+      letter-spacing: 1px;
+      /* Text style for "S" */
+      letter-spacing: 0.8px;
+      }
+    
     .activity-link {
     	text-decoration: none;
     	color: white;
     	display: inline-block;
       width: 100%;
-    	height: 100%;
+    	
     }
 
     .contact-card {
       display: flex;
       flex-flow: row nowrap;
-      padding: 30px 70px;
-      display: flex;
-      flex-flow: row nowrap;
+      padding: 20px 40px;
       align-items: center;
+      justify-content: flex-start;
+      height: 150px;
 
-      .avatar {
-        margin-right: 10px;
+      .img-activity-contact {
+        border-radius: 50%;
+        border-style: solid;
+        border-color: white;
+        height: 80px;
+        width: 80px;
+        background: url(../images/img-contact.png) no-repeat center;
+        background-size: cover;
+        margin-right: 20px;
       }
+
+      .pastille-activity{
+        position: relative;
+        right: 40px;
+        bottom: 30px;
+        width: 15px;
+        height: 15px;
+        background-color: #e74937;
+        border: 1px solid white;
+        border-radius:50%;
+      }
+
+      .contact-info{
+        
+
+          p{
+            margin: 0;
+          }
+          
+          .container-alert-news{
+            margin-top: 10px;
+            display: flex;
+          
+
+          .news-icon{
+            width: 68px;
+            height: 17px;
+            background-color: #f4984e;
+            border-radius: 40px;
+            font-size: 12px;
+            text-align: center;
+            font-style: italic;
+            
+          }
+
+          .text-news{
+            font-size: 12px;
+          }
+        }
+      }
+
     }
 
     .ressource-card {
       display: flex;
       flex-flow: row nowrap;
-      padding: 30px 70px;
+      padding: 20px 40px;
+      align-items: center;
+      justify-content: flex-start;
+      height: 150px;
+
+    .img-ressource{
+      margin-right: 20px;
+    }
+
+    p{
+          margin: 0;
+        }
+
     }
   }
 

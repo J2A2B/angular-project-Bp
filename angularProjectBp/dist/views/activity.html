@@ -12,11 +12,21 @@
 			<div class="activity-column">
 				<h2 class="column-header contact-header"> Contacts </h2>
 				<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
+<<<<<<< c9ce7262597c4637dda9c577874420fe860393b9
 					<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
 						<img class="avatar" src="" alt="photo">
+=======
+					<div class="contact-card" ng-class="'contact-card-'+(($index+1)%4)">
+						<div class="img-activity-contact"></div>
+						<div class="pastille-activity"></div>
+>>>>>>> style activity bug
 						<div class="contact-info">
-							<h3 class="contact-name"> {{contact.first_name}} {{contact.last_name}} </h3>
+							<p class="contact-name"> {{contact.first_name}} {{contact.last_name}} </p>
 							<p> {{contact.job}} </p>
+							<div class="container-alert-news">
+								<div class = "news-icon">Nouveau</div>
+								<p class="text-news">Prise en charge du traitement des alertes fraude</p>
+							</div>
 						</div>
 					</div>
 				</a>
@@ -24,7 +34,7 @@
 			<div class="activity-column">
 				<h2 class="column-header ressource-header"> Liens Utiles </h2>
 				<div class="ressource-card" ng-repeat="ressource in ressources track by $index" ng-class="'ressource-card-'+(($index+1)%4)">
-					<i class="fa fa-book fa-3x"></i>
+					<i class="fa fa-book fa-3x img-ressource"></i>
 					<div class="ressource-info">
 						<p> {{ressource.title}}</p>
 					</div>
