@@ -5,7 +5,6 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
       suggestions: '=',
       clicked: '=',
       model: '=',
-      typeahead: '&',
       home: '@?'
     },
     link: function(scope, elem, attrs) {
@@ -36,12 +35,13 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
 
       $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
       .then(
-      function (response) {
-      scope.activity = response.data.result;
-    },
-      function (err) {
-        console.log('Unable to retrieve data from the API :/');
-    });
+        function (response) {
+        scope.activity = response.data.result;
+      },
+        function (err) {
+          console.log('Unable to retrieve data from the API :/');
+      });
+
       scope.error = function(){
        console.log(scope.buttonSearchClicked);
 
@@ -53,10 +53,20 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
         else{
           window.location.href = "#/search-result/{{model}}";
         };
+      };
+
+      scope.typeahead = function() {
+    		$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=5')
+    		.then(
+    			function (response) {
+    			scope.suggestions = response.data.result;
+    		},
+    			function (err) {
+    				console.log('Unable to retrieve data from the API :/');
+    		});
       }
-
-
     },
     templateUrl: 'assets/templates/searchbar.html'
   };
+
 }]);

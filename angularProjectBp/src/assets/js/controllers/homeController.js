@@ -10,20 +10,6 @@ myApp.controller('homeController',['$scope', '$http', 'ApiFactory', 'newsFactory
 		console.log('yes');
 	}
 
-	$scope.typeahead = function() {
-		$http.get(ApiFactory.api+'search/complete?q='+$scope.userEntry+'&limit=5')
-		.then(
-			function (response) {
-			$scope.suggestions = response.data.result;
-		},
-			function (err) {
-				console.log('Unable to retrieve data from the API :/');
-		});
-	};
-
-
-
-
 	// $scope.errormessage = function () {
 	// 		$scope.coucou="coucou";
 	// 		console.log($scope.coucou);
@@ -34,7 +20,5 @@ myApp.controller('homeController',['$scope', '$http', 'ApiFactory', 'newsFactory
 
  //          });
  //      };
-
-
 
 }]);
