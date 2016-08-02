@@ -51,7 +51,7 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
 
         }
         else{
-          window.location.href = "#/search-result/{{model}}";
+          window.location.href = '#/search-result/' + scope.model;
         };
       };
 
