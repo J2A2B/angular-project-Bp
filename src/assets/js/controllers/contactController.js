@@ -3,7 +3,7 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFac
 	$scope.contacts = [];
 
 	$http.get(ApiFactory.api + 'contacts/'+$routeParams.id_contact)
-		.then(
+				.then(
 			function (response) {
 			$scope.contacts = response.data;
 

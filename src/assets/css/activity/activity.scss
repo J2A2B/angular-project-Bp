@@ -43,6 +43,7 @@
     }
 
     .contact-card {
+      cursor:pointer;
       display: flex;
       flex-flow: row nowrap;
       padding: 20px 40px;
@@ -104,6 +105,7 @@
     }
 
     .ressource-card {
+      cursor:pointer;
       display: flex;
       flex-flow: row nowrap;
       padding: 20px 40px;
