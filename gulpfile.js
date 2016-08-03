@@ -19,7 +19,6 @@ var uglify       = require('gulp-uglify');
 var rename       = require("gulp-rename");
 var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
-var gulpCopy     = require('gulp-copy');
 var inject       = require('gulp-inject');
 var util         = require('gulp-util');
 var gulpIf       = require('gulp-if');
