@@ -15,11 +15,9 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeou
 
       $timeout(function(){
         scope.buttonSearchClicked = ApiFactory.buttonSearchClicked || false;
-        if (!scope.buttonSearchClicked) {
-          ApiFactory.buttonSearchClicked = false;
-        }
       }, 500);
       
+
       
       // tracks if an item is the current item
       scope.isCurrent = function(index) {
@@ -36,13 +34,12 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeou
         scope.selected = true;
       };
 
-      scope.error = function() { 
+      scope.error = function() {
+      ApiFactory.buttonSearchClicked = false;
       $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
         .then(
           function (response) {
               scope.activity = response.data.result;
-              console.log('Scope activity:');
-              console.log(response);
               if (scope.activity.length === 0) {
                   $location.path('/search-result/noresult');
                   ApiFactory.buttonSearchClicked = true; 
