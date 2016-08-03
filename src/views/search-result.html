@@ -3,7 +3,7 @@
 		<ng-nav></ng-nav>
 		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar >
-		<div class="cards-row" ng-hide="ApiFactory.buttonSearchClicked">
+		<div class="cards-row">
 			<a class="activity-link" ng-repeat="result in activity | limitTo: 3 track by $index" ng-href="#/activity/{{result.id_activity}}">
 				<div class="card card-big" ng-class="{'card-big-first': $index == 0, 'card-big-second': $index == 1, 'card-big-third': $index == 2}">
 					<div class="card-content">
@@ -13,7 +13,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="cards-column" ng-hide="activity.length < 3 || ApiFactory.buttonSearchClicked">
+		<div class="cards-column" ng-hide="activity.length < 3">
 			<div class="card card-small card-small-1" ng-repeat="result in activity | limitTo: 3 - activity.length track by $index" ng-class="'card-small-'+(($index+1)%4)">
 				<div class="card-content">
 					<i class="fa fa-credit-card fa-2x"></i>
