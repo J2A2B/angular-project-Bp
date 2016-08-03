@@ -15,6 +15,9 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeou
 
       $timeout(function(){
         scope.buttonSearchClicked = ApiFactory.buttonSearchClicked || false;
+        if (!scope.buttonSearchClicked) {
+          ApiFactory.buttonSearchClicked = false;
+        }
       }, 500);
       
       
