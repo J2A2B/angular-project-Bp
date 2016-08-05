@@ -1,4 +1,4 @@
-myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams, ApiFactory, $timeout, $location) {
+myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams, ApiFactory, $timeout, $location) {
   return {
     restrict: 'E',
     scope: {
@@ -11,12 +11,7 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeou
       // keeps the index of the current selected item
       scope.current = 0;
       // to know if something is selected
-      scope.selected = false;
-
-      $timeout(function(){
-        scope.buttonSearchClicked = ApiFactory.buttonSearchClicked || false;
-      }, 500);
-      
+      scope.selected = false; 
 
       
       // tracks if an item is the current item
@@ -36,12 +31,13 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeou
 
       scope.error = function() {
       ApiFactory.buttonSearchClicked = false;
+      console.log("coucou" + ApiFactory.buttonSearchClicked );
       $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
         .then(
           function (response) {
               scope.activity = response.data.result;
               if (scope.activity.length === 0) {
-                  $location.path('/search-result/noresult');
+                  $location.path('/search-error');
                   ApiFactory.buttonSearchClicked = true; 
                 }
                 else{

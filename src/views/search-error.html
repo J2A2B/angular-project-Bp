@@ -1,7 +1,14 @@
-<section class="main-container">
+<section class="main-container" ng-controller="search-errorController">
 	<div class="container">
 		<ng-nav></ng-nav>
+		<h1>{{test}}</h1>
 		<custom-searchbar class="" suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar>
+
+		<div class="container-error" ng-show="buttonSearchClicked" ng-class="{'horiz-translate': buttonSearchClicked}">
+			<div class="warning-img"></div>
+			<p class="text-error">Aucune thématique ne correspond aux termes de la recherche spécifiés</p>
+		</div>
+	</div>
 	<ng-notification></ng-notification>
 </section>
