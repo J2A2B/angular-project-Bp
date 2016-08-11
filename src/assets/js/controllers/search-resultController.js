@@ -25,3 +25,4 @@ myApp.controller('search-resultController',['$scope', '$http', '$routeParams', '
 		});
 
 }]);
+

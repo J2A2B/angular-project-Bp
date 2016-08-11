@@ -1,4 +1,4 @@
-myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function($http, $routeParams, ApiFactory) {
+myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams, ApiFactory, $timeout, $location) {
   return {
     restrict: 'E',
     scope: {
@@ -12,6 +12,13 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
       scope.current = 0;
       // to know if something is selected
       scope.selected = false;
+
+      $timeout(function(){
+        scope.buttonSearchClicked = ApiFactory.buttonSearchClicked || false;
+      }, 500);
+      
+
+      
       // tracks if an item is the current item
       scope.isCurrent = function(index) {
         return index === scope.current;
@@ -27,16 +34,15 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
         scope.selected = true;
       };
 
-      scope.error = function() { 
+      scope.error = function() {
+      ApiFactory.buttonSearchClicked = false;
       $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
         .then(
           function (response) {
               scope.activity = response.data.result;
-              console.log('Scope activity:');
-              console.log(response);
               if (scope.activity.length === 0) {
-                  ApiFactory.buttonSearchClicked = true;
-                  console.log('Animation is gonna show?'+ApiFactory.buttonSearchClicked);
+                  $location.path('/search-result/noresult');
+                  ApiFactory.buttonSearchClicked = true; 
                 }
                 else{
                   window.location.href = '#/search-result/' + scope.model;
