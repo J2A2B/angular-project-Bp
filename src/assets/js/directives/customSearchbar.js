@@ -11,9 +11,9 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
       // keeps the index of the current selected item
       scope.current = 0;
       // to know if something is selected
-      scope.selected = false; 
+      scope.selected = false;
 
-      
+
       // tracks if an item is the current item
       scope.isCurrent = function(index) {
         return index === scope.current;
@@ -38,7 +38,7 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
               scope.activity = response.data.result;
               if (scope.activity.length === 0) {
                   $location.path('/search-error');
-                  ApiFactory.buttonSearchClicked = true; 
+                  ApiFactory.buttonSearchClicked = true;
                 }
                 else{
                   window.location.href = '#/search-result/' + scope.model;
@@ -47,7 +47,7 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
               function (err) {
                 console.log('Unable to retrieve data from the API :/');
             });
-        
+
       };
 
       scope.typeahead = function() {
@@ -59,6 +59,23 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
     			function (err) {
     				console.log('Unable to retrieve data from the API :/');
     		});
+      }
+      // Key events handler for the autocomplete panel
+      scope.keyHandler = function(event) {
+        // Press enter to search
+        if (event.keyCode == 13) {
+          scope.error();
+        }
+        if (scope.suggestionIndex) {
+          if (keyEvent.keyCode === 40) {
+            console.log("Plus !");
+            scope.setCurrent(index+1);
+          }
+          if (keyEvent.keyCode === 38) {
+            console.log("Minus !");
+            scope.setCurrent(index+1);
+          }
+        }
       }
     },
     templateUrl: 'assets/templates/searchbar.html'
