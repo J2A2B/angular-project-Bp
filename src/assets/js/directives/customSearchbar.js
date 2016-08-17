@@ -1,4 +1,4 @@
-myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function($http, $routeParams, ApiFactory) {
+myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams, ApiFactory, $timeout, $location) {
   return {
     restrict: 'E',
     scope: {
@@ -12,10 +12,8 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
       scope.current = 0;
       // to know if something is selected
       scope.selected = false;
-      // tracks if the search button has been pressed
-      scope.buttonSearchClicked;
 
-      console.log(scope.buttonSearchClicked);
+
       // tracks if an item is the current item
       scope.isCurrent = function(index) {
         return index === scope.current;
@@ -31,28 +29,25 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
         scope.selected = true;
       };
 
-      // scope.activity = [];
-
+      scope.error = function() {
+      ApiFactory.buttonSearchClicked = false;
+      console.log("coucou" + ApiFactory.buttonSearchClicked );
       $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
-      .then(
-        function (response) {
-        scope.activity = response.data.result;
-      },
-        function (err) {
-          console.log('Unable to retrieve data from the API :/');
-      });
+        .then(
+          function (response) {
+              scope.activity = response.data.result;
+              if (scope.activity.length === 0) {
+                  $location.path('/search-error');
+                  ApiFactory.buttonSearchClicked = true;
+                }
+                else{
+                  window.location.href = '#/search-result/' + scope.model;
+                };
+            },
+              function (err) {
+                console.log('Unable to retrieve data from the API :/');
+            });
 
-      scope.error = function(){
-       console.log(scope.buttonSearchClicked);
-
-        if (scope.activity.length == 0) {
-          console.log(scope.activity.length);
-          scope.buttonSearchClicked = true;
-
-        }
-        else{
-          window.location.href = "#/search-result/{{model}}";
-        };
       };
 
       scope.typeahead = function() {
@@ -64,6 +59,23 @@ myApp.directive('customSearchbar',['$http','$routeParams','ApiFactory', function
     			function (err) {
     				console.log('Unable to retrieve data from the API :/');
     		});
+      }
+      // Key events handler for the autocomplete panel
+      scope.keyHandler = function(event) {
+        // Press enter to search
+        if (event.keyCode == 13) {
+          scope.error();
+        }
+        if (scope.suggestionIndex) {
+          if (keyEvent.keyCode === 40) {
+            console.log("Plus !");
+            scope.setCurrent(index+1);
+          }
+          if (keyEvent.keyCode === 38) {
+            console.log("Minus !");
+            scope.setCurrent(index+1);
+          }
+        }
       }
     },
     templateUrl: 'assets/templates/searchbar.html'

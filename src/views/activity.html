@@ -1,18 +1,13 @@
 <section class ="main-container" ng-controller="activityController as aCtrl">
 	<div class="container">
-		<nav class="margin-custom-searchbar">
-			<h1>BPLink</h1>
-			<div class="notif-pastille">3</div>
-			<i class="fa fa-bell-o fa-2x icon-menu"></i>
-		</nav>
-
+		<ng-nav></ng-nav>
 		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar>
 		<div class="activity">
 			<div class="activity-column">
 				<h2 class="column-header contact-header"> Contacts </h2>
 				<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
-					<div class="contact-card" ng-class="'contact-card-'+(($index+1)%4)">
+					<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
 						<div class="img-activity-contact"></div>
 						<div class="pastille-activity"></div>
 						<div class="contact-info">
@@ -20,7 +15,7 @@
 							<p> {{contact.job}} </p>
 							<div ng-show="contact.is_new" class="container-alert-news">
 								<div class = "news-icon">Nouveau</div>
-								<p class="text-news">Prise en charge du traitement des alertes fraude</p>
+								<p class="text-news">{{contact.label_new}}</p>
 							</div>
 						</div>
 					</div>
@@ -32,9 +27,14 @@
 					<i class="fa fa-book fa-3x img-ressource"></i>
 					<div class="ressource-info">
 						<p> {{ressource.title}}</p>
+						<div ng-show="contact.is_new" class="container-alert-news">
+								<div class = "news-icon">Nouveau</div>
+								<p class="text-news">{{ressource.label_new}}</p>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<ng-notification></ng-notification>
+</section>

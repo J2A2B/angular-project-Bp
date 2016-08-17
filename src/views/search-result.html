@@ -1,12 +1,6 @@
 <section class="main-container" ng-controller="search-resultController" >
 	<div class="container">
-		<nav class="margin-custom-searchbar">
-			<h1>BPLink</h1>
-			<div class="notif-pastille">3</div>
-			<i class="fa fa-bell-o fa-2x icon-menu"></i>
-		</nav>
-
-
+		<ng-nav></ng-nav>
 		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar >
 		<div class="cards-row">
@@ -28,4 +22,5 @@
 			</div>
 		</div>
 	</div>
+	<ng-notification></ng-notification>
 </section>

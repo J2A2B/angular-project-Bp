@@ -43,6 +43,7 @@
     }
 
     .contact-card {
+      cursor:pointer;
       display: flex;
       flex-flow: row nowrap;
       padding: 20px 40px;
@@ -104,6 +105,7 @@
     }
 
     .ressource-card {
+      cursor:pointer;
       display: flex;
       flex-flow: row nowrap;
       padding: 20px 40px;
@@ -151,3 +153,14 @@
 .contact-card-4 {
   background-color: #49306B;
 }
+
+.news-icon{
+            width: 68px;
+            height: 17px;
+            background-color: #f4984e;
+            border-radius: 40px;
+            font-size: 12px;
+            text-align: center;
+            font-style: italic;
+            
+          }

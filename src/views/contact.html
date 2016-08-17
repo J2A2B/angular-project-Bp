@@ -1,10 +1,6 @@
 <section class="main-container" ng-controller="contactController" >
 	<div class="container">
-		<nav>
-			<h1>BPLink</h1>
-			<div class="notif-pastille">3</div>
-			<i class="fa fa-bell-o fa-2x icon-menu"></i>
-		</nav>
+		<ng-nav></ng-nav>
 		<div class="container-infos" >
 			<div class="pastille"></div>
 			<div class="img-contact"></div>
@@ -16,7 +12,7 @@
 						<div class="generic-cont img-call"></div>
 						<p>Appel</p>
 					</a>
-					<a href="EMAIL" class="container-asset color-cont-two">
+					<a href="mailto:{{contacts.email}}" class="container-asset color-cont-two">
 						<div class="generic-cont img-mail"></div>
 						<p>E-mail</p>
 					</a>
@@ -34,4 +30,5 @@
 			</div>
 		</div>
 	</div>
+	<ng-notification></ng-notification>
 </section>
