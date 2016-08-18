@@ -1,10 +1,12 @@
-<div class="container-news" ng-class="{'container-news-closed': !show}">
+<div class="container-news" ng-class="{'container-news-is-open': show}" id="myDivId">
 	<div class="title-news">
 		<h1>NOUVEAUTÉ</h1>
 		<div class="cross-news" ng-click="toggleNews()"></div>
 	</div>
 	<a class="container-info-news" ng-repeat="notification in notifications" ng-href="#/activity/{{notification.activity.id_activity}}">
-		<div class="news-service" >{{notification.count}}</div>
+		<div class="news-service" >
+			<div class="news-infos">{{notification.count}}</div>
+		</div>
 		<p>Nouveautés {{notification.activity.name}}</p>
 	</a>
 </div>

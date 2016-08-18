@@ -19,9 +19,14 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 				scope.toggleNews = function() {
 					newsFactory.newsClicked = !newsFactory.newsClicked;
 					scope.show = newsFactory.newsClicked;
-					console.log('no');
+					console.log(scope.show);
 				}
+
+				// angular.element( '#myDivId' ).css( 'background-color', 'red' );
 
 		}
 	};
+
+
 }]);
+

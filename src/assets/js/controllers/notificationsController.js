@@ -12,4 +12,7 @@ myApp.controller('notificationsController', ['$scope', '$http', '$routeParams', 
 		});
 
 
+
 }]);
+
+
