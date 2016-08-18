@@ -11,12 +11,24 @@ body {
 	background-color: $cyan;
 	color: $white;
 	box-sizing:border-box;
+	
 
 	.container {
+		
 		width: 70%;
-		margin: 30px auto;
+		margin-left: 15%;
+		margin-right: 15%;
 		margin-top: 0;
 		padding-top: 30px;
+		transition: margin-left 0.2s linear;
+
+		
+	}
+
+
+	.news-is-open{
+		transition: margin-left 0.2s linear;
+		margin-left: 8%;
 	}
 
 	.list-unstyled {
