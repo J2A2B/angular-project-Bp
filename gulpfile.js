@@ -19,8 +19,10 @@ var uglify       = require('gulp-uglify');
 var rename       = require("gulp-rename");
 var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
-var gulpCopy     = require('gulp-copy');
 var inject       = require('gulp-inject');
+var util         = require('gulp-util');
+var gulpIf       = require('gulp-if');
+var merge        = require('merge-stream');
 
 /**
 *
@@ -36,7 +38,7 @@ var inject       = require('gulp-inject');
 
 
 gulp.task('sass', function() {
-  gulp.src('src/assets/css/styles.scss')
+  return gulp.src('src/assets/css/styles.scss')
   .pipe(inject(gulp.src(['**/*.scss'], {read: false, cwd: 'src/assets/css'}), {
     starttag: '/* IMPORTS */',
     endtag: '/* Fin des IMPORTS */',
@@ -72,17 +74,12 @@ gulp.task('browser-sync', function() {
 *
 * Javascript
 * - Uglify
-* - JsLint
 *
 **/
 gulp.task('scripts', function() {
   
   //source
-  gulp.src('src/assets/js/**/*.js')
-
-  //lint
-  .pipe(jshint())
-  .pipe(jshint.reporter(stylish))
+  return gulp.src('src/assets/js/**/*.js')
 
   //uglify
   .pipe(uglify())
@@ -96,7 +93,18 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest('dist/assets/js'))
 });
 
-
+/**
+*
+* Javascript
+* - JsLint
+*
+**/
+gulp.task('lint', function () {
+  return gulp.src('src/assets/js/**/*.js')
+  .pipe(jshint())
+  .pipe(jshint.reporter(stylish))
+  .pipe(gulpIf(util.env.strict, jshint.reporter('fail')))
+})
 
 /**
 *
@@ -120,14 +128,22 @@ gulp.task('images', function () {
 * - Copy the index.html!
 *
 **/
-
 gulp.task('copy', function() {
-    gulp.src('src/**/*.html')
+    var copyHtml = gulp.src('src/**/*.html')
     .pipe(gulp.dest('dist'));
-    gulp.src('src/lib/**/*')
+    var lib = gulp.src('src/lib/**/*')
     .pipe(gulp.dest('dist/lib'));
+
+    return merge(copyHtml, lib);
 });
 
+/**
+*
+* Build task
+* - Runs sass, scripts, copy and image tasks
+*
+**/
+gulp.task('build', ['sass', 'scripts', 'images', 'copy']);
 
 /**
 *
@@ -136,7 +152,7 @@ gulp.task('copy', function() {
 * - Watchs for file changes for images, scripts and sass/css
 *
 **/
-gulp.task('default', ['sass', 'scripts', 'images', 'copy', 'browser-sync'], function () {
+gulp.task('default', ['build', 'browser-sync'], function () {
   gulp.watch('src/assets/css/**/*.scss', ['sass']);
   gulp.watch('src/**/*.js', ['scripts']);
   gulp.watch('src/assets/images/*', ['images']);
