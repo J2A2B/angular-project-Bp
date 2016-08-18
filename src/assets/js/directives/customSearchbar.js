@@ -31,7 +31,6 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
 
       scope.error = function() {
       ApiFactory.buttonSearchClicked = false;
-      console.log("coucou" + ApiFactory.buttonSearchClicked );
       $http.get(ApiFactory.api + 'search?q='+scope.model+'&limit=10')
         .then(
           function (response) {
@@ -51,6 +50,7 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
       };
 
       scope.typeahead = function() {
+        console.log(ApiFactory.api);
     		$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=5')
     		.then(
     			function (response) {
@@ -63,17 +63,14 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
       // Key events handler for the autocomplete panel
       scope.keyHandler = function(event) {
         // Press enter to search
-        console.log(scope.current);
         if (event.keyCode == 13) {
           scope.model = scope.suggestions[scope.current];
           scope.error();
         }
         if (event.keyCode == 40) {
-          console.log("Plus !");
           scope.setCurrent((scope.current+1)%scope.suggestions.length);
         }
         if (event.keyCode == 38) {
-          console.log("Minus !");
           if (scope.current == 0) {
             scope.setCurrent(scope.suggestions.length-1);
           }
