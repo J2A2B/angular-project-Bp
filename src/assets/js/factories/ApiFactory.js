@@ -10,7 +10,7 @@ myApp.factory('ApiFactory', function() {
   }
   else {
     // console.log('Are we somewhere else ? ' + location.hostname === "localhost");
-    usedApi = location.hostname + '/api/';
+    usedApi = "http://" + location.hostname + '/api/';
   }
   console.log('usedApi: ' + usedApi);
   obj.api = usedApi;
