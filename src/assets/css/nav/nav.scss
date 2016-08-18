@@ -24,6 +24,8 @@
 	.container-bell{
 		cursor:pointer;
 
+
+
 		.notif-pastille{
 			z-index: 1000;
 			text-align: center;
@@ -35,4 +37,10 @@
 			font-size: 14px;
 		}
 	}
+
+
 }
+
+.container-bell-hidden{
+		display: none;
+	}

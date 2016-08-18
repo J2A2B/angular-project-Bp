@@ -3,10 +3,10 @@
 		<img src="assets/images/bp-blue.png">
 	</div>
 	<main class="container-home">
-		<div class="container">
+		<div class="container" ng-class="{'news-is-open': show && sizeSearch, 'container2': !sizeSearch && show }">
 			<ng-nav></ng-nav>
 			<div class="text-label" ng-class="{'text-search-delete': searchbarClicked}"> ENTREZ UNE ACTIVITÉ </div>
-			<custom-searchbar class="searchbar-down" suggestions="suggestions" model="userEntry" clicked="searchbarClicked" home="true" />
+			<custom-searchbar class="searchbar-down" suggestions="suggestions" model="userEntry" clicked="searchbarClicked" home="true" ng-class="{'searchbar-centered-news-is-open': !show}" />
 		</div>
 	</main>
 	<ng-notification></ng-notification>

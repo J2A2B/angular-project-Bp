@@ -5,10 +5,23 @@ myApp.controller('homeController',['$scope', '$http', 'ApiFactory', 'newsFactory
 	$scope.suggestions = [];
 	$scope.userEntry = '';
 
+
 	$scope.toggleNews = function() {
+
 		newsFactory.newsClicked = !newsFactory.newsClicked;
 		console.log('yes');
+
+		$scope.search = angular.element( '.searchbar-centered' ).width();
+		console.log($scope.search);
+
+
+
+
 	}
+
+	
+
+
 
 	// $scope.errormessage = function () {
 	// 		$scope.coucou="coucou";
