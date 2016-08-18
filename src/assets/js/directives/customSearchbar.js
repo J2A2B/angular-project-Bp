@@ -63,18 +63,24 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
       // Key events handler for the autocomplete panel
       scope.keyHandler = function(event) {
         // Press enter to search
+        console.log(scope.current);
         if (event.keyCode == 13) {
+          scope.model = scope.suggestions[scope.current];
           scope.error();
         }
-        if (scope.suggestionIndex) {
-          if (keyEvent.keyCode === 40) {
-            console.log("Plus !");
-            scope.setCurrent(index+1);
+        if (event.keyCode == 40) {
+          console.log("Plus !");
+          scope.setCurrent((scope.current+1)%scope.suggestions.length);
+        }
+        if (event.keyCode == 38) {
+          console.log("Minus !");
+          if (scope.current == 0) {
+            scope.setCurrent(scope.suggestions.length-1);
           }
-          if (keyEvent.keyCode === 38) {
-            console.log("Minus !");
-            scope.setCurrent(index+1);
+          else {
+            scope.setCurrent(scope.current-1);
           }
+
         }
       }
     },
