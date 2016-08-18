@@ -13,7 +13,6 @@ myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeo
       // to know if something is selected
       scope.selected = false;
 
-
       // tracks if an item is the current item
       scope.isCurrent = function(index) {
         return index === scope.current;
