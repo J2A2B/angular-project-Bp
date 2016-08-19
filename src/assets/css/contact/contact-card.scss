@@ -110,3 +110,33 @@
 	}
 
 }
+
+@media screen and (max-width: 500px) {
+	
+
+
+		.img-contact {
+
+				height: 110px !important;
+				width: 110px !important;
+				background-size: cover !important;
+		}
+
+		.container-asset{
+				height: 150px !important;
+		}
+
+		.pastille{
+		position: relative !important;
+		left: 40px !important;
+		top: 45px !important;
+		width: 15px !important;
+		height: 15px !important;
+		background-color: #e74937;
+		border: 1px solid white;
+		border-radius:50%;
+	}
+
+}
+
+

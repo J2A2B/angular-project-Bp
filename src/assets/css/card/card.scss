@@ -1,6 +1,6 @@
 .card {
 	color: white;
-	font-size: 20px;
+	font-size: 16px;
 	margin-top: auto;
 }
 
@@ -66,6 +66,7 @@
 	.card-content {
 		display: flex;
 		flex-flow: row nowrap;
+
 		align-items: center;
 		margin-left: 25%;
 		margin-right: 25%;
@@ -92,4 +93,13 @@
 //column of secondary cards
 .cards-column {
 	background-color: #267774;
+}
+
+@media screen and (max-width: 500px) {
+
+	.card-big {
+	height: 150px;
+
+	}
+
 }

@@ -1,4 +1,4 @@
-myApp.directive('customSearchbar', ['$http','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams, ApiFactory, $timeout, $location) {
+myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams,$window, ApiFactory, $timeout, $location) {
   return {
     restrict: 'E',
     scope: {
