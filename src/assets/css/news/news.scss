@@ -85,4 +85,35 @@
 	
 }
 
+@media screen and (max-width: 500px) {
+	
+	.container-news {
+		right: -1000px;
+		width: 100%;
+
+		.title-news{
+		height: 100px;
+		}
+	}
+
+	.container-news-closed {
+
+	right: -1000px;
+
+}
+
+.container-news-is-open{
+	z-index: 2000;
+	position: fixed;
+	transition:  0.4s all;
+	right: 0;
+	top:0;
+	
+}
+
+
+}
+
+
+
 

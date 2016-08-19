@@ -202,3 +202,14 @@
 	.margin-custom-searchbar{
 		margin-bottom: 50px;
 	}
+
+@media screen and (max-width: 500px) {
+	
+	.searchbar {
+			display: flex;
+			flex-direction: column;
+			font-size: 25px;
+			width: 100%;
+	}
+
+}

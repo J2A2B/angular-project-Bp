@@ -1,6 +1,6 @@
 .card {
 	color: white;
-	font-size: 20px;
+	font-size: 16px;
 	margin-top: auto;
 }
 
@@ -61,6 +61,8 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
+
+
 	}
 }
 
@@ -79,4 +81,13 @@
 //column of secondary cards
 .cards-column {
 	background-color: #267774;
+}
+
+@media screen and (max-width: 500px) {
+	
+	.card-big {
+	height: 150px;
+	
+	}
+
 }
