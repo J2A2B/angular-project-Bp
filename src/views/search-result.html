@@ -14,12 +14,15 @@
 			</a>
 		</div>
 		<div class="cards-column" ng-hide="activity.length < 3">
-			<div class="card card-small card-small-1" ng-repeat="result in activity | limitTo: 3 - activity.length track by $index" ng-class="'card-small-'+(($index+1)%4)">
-				<div class="card-content">
-					<i class="fa fa-credit-card fa-2x"></i>
-					<p> {{result.name}} </p>
+			<a class="activity-link-sec" ng-repeat="result in activity | limitTo: 3 - activity.length track by $index" ng-href="#/activity/{{result.id_activity}}">
+				<div class="card card-small" ng-class="'card-small-'+(($index+1)%4)">
+					<div class="card-content">
+						<i class="fa fa-credit-card fa-2x"></i>
+						<p> {{result.name}} </p>
+					</div>
 				</div>
-			</div>
+			</a>
+
 		</div>
 	</div>
 	<ng-notification></ng-notification>
