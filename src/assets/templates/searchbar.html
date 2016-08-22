@@ -1,7 +1,7 @@
 <div class="searchbar" ng-class="{'searchbar-centered': clicked, 'searchbar-down': !clicked }">
 
   <div class="container-input">
-    <input type="text" id="search" list="advice" ng-model="model" ng-click="clicked = true" ng-keydown="selected=false" ng-change="typeahead()" ng-keyup="keyHandler($event)">
+    <input type="text" id="search" list="advice" ng-model="model" ng-click="inputClick($event)" ng-keydown="selected=false" ng-change="typeahead()" ng-keyup="keyHandler($event)">
     <button class="button-search" ng-click="error()"  ></button>
   </div>
 
@@ -15,7 +15,7 @@
   </datalist> -->
   <div class="autocomplete-panel" ng-hide="!model.length || selected">
 		<ul class="list-unstyled">
-			<li ng-repeat="suggestion in suggestions track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent($index)">
+			<li ng-repeat="suggestion in suggestions | unique:suggestion track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent($index)">
 				{{suggestion}}
 			</li>
 		</ul>

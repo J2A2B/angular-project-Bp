@@ -13,6 +13,11 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
       // to know if something is selected
       scope.selected = false;
 
+      scope.inputClick = function(event) {
+        scope.clicked = true;
+        console.log(scope.clicked);
+      }
+
       // tracks if an item is the current item
       scope.isCurrent = function(index) {
         return index === scope.current;
