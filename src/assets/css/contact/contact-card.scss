@@ -36,6 +36,7 @@
 		margin: 15px;
 		font-size: 16px;
 		color: white;
+
 	}
 	
 	.container-contact-assets{
@@ -67,6 +68,7 @@
 				.img-call{
 					background: url(../images/phone-call.svg) no-repeat center;
 					background-size: cover;
+
 				}
 				.img-mail{
 					background: url(../images/mail.svg) no-repeat center;
@@ -75,15 +77,25 @@
 				.img-call-back{
 					background: url(../images/call-back.svg) no-repeat center;
 					background-size: cover;
+					opacity: 0.5;
 				}
 				.img-chat{
 					background: url(../images/chat.svg) no-repeat center;
 					background-size: cover;
+					opacity: 0.5;
 				}
 				
 				p{
 					font-size: 20px;
 					margin: 5px;
+				}
+
+				.text-callback{
+					opacity: 0.5;
+				}
+
+				.text-chat{
+					opacity: 0.5;
 				}
 
 			}
@@ -92,16 +104,36 @@
 				background-color: #5e549a;
 			}
 
+			.color-cont-one:hover{
+				background-color: lighten(#5e549a, 8%);
+			}
+
 			.color-cont-two{
 				background-color: #77549a;
+			}
+
+			.color-cont-two:hover{
+				background-color: lighten(#77549a, 8%);
 			}
 
 			.color-cont-three{
 				background-color: #5b4370;
 			}
 
+			.color-cont-three:hover{
+				cursor: not-allowed;
+				// background-color: lighten(#5b4370, 8%);
+			}
+
 			.color-cont-four{
 				background-color: #473359;
+
+			}
+
+			.color-cont-four:hover{
+				cursor: not-allowed;
+				// background-color: lighten(#473359, 8%);
+				
 			}
 
 		}
