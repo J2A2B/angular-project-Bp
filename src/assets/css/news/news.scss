@@ -1,7 +1,7 @@
 
 
 .container-news{
-	
+	visibility: hidden;
 	right: -350px;
 	top: 0;
 	position: fixed;
@@ -75,7 +75,7 @@
 }
 
 .container-news-closed {
-
+	visibility: hidden;
 	transition:  0.4s all;
 	top: 0;
 	right: -350px;
@@ -83,6 +83,7 @@
 }
 
 .container-news-is-open{
+	visibility: visible;
 	z-index: 2000;
 	position: fixed;
 	transition:  0.4s all;

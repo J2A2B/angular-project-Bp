@@ -8,9 +8,8 @@
 				<h2 class="column-header contact-header"> Contacts </h2>
 				<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
 					<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
-						<!-- <div class="img-activity-contact"></div> -->
-						<img class="img-activity-contact" ng-src="{{photos}}{{contact.bp_id}}.gif">
-						<div class="pastille-activity"></div>
+							<img class="img-activity-contact" ng-src="{{photos}}{{contact.bp_id}}.gif">
+							<div class="pastille-activity"></div>
 						<div class="contact-info">
 							<p class="contact-name"> {{contact.first_name}} {{contact.last_name}} </p>
 							<p> {{contact.job}} </p>
