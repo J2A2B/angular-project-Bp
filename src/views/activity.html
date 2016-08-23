@@ -9,7 +9,7 @@
 				<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
 					<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
 						<!-- <div class="img-activity-contact"></div> -->
-						<img class="img-activity-contact" ng-src="{{photos}}0{{contact.bp_id}}.gif">
+						<img class="img-activity-contact" ng-src="{{photos}}{{contact.bp_id}}.gif">
 						<div class="pastille-activity"></div>
 						<div class="contact-info">
 							<p class="contact-name"> {{contact.first_name}} {{contact.last_name}} </p>
@@ -26,7 +26,7 @@
 			<div class="activity-column">
 				<h2 class="column-header ressource-header"> Liens Utiles </h2>
 
-				<a class="activity-link" ng-repeat="ressource in ressources track by $index" ng-href="{{ressource.is_mailto}} == 1 ? 'mailto:{{ressource.mailto_dest}}?subject={{ressource.mailto_subject}}&body={{ressource.mailto_body}}':'{{ressource.link}}';">
+				<a class="activity-link" ng-repeat="ressource in ressources track by $index" ng-href="{{ressource.is_mailto == 1 ? 'mailto:'+ressource.mailto_dest+'?subject='+ressource.mailto_subject+'&body='+ressource.mailto_body:ressource.link;}}">
 					<div class="ressource-card" ng-class="'ressource-card-'+(($index%4)+1)">
 						<i class="fa fa-book fa-3x img-ressource"></i>
 						<div class="ressource-info">
