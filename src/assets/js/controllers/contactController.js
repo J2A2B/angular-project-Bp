@@ -14,6 +14,20 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFac
 				console.log('Unable to retrieve data from the API :/');
 		});
 
+	$scope.getImage = function(id) {
+    // body...
+    var img = $scope.photos + id +'.gif';
+    console.log(img);
+    return img;
+  };
+
+    $scope.getImage = function(id) {
+    // body...
+    var img = $scope.photos + id;
+    console.log(img);
+    return img;
+  };
+
 }]);
 
 // +$scope.query+

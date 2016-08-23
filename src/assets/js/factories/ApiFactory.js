@@ -1,7 +1,5 @@
 myApp.factory('ApiFactory', function() {
   var obj = {};
-
-  console.log(location.hostname);
   var usedApi = '';
 
   if (location.hostname === 'localhost') {
