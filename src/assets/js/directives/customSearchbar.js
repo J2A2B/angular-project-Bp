@@ -55,7 +55,7 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
 
       scope.typeahead = function() {
         console.log(ApiFactory.api);
-    		$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=100')
+    		$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=6')
     		.then(
     			function (response) {
     			scope.suggestions = response.data.result;
