@@ -1,8 +1,7 @@
 myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeParams', 'newsFactory', function($scope, $http, ApiFactory, $routeParams, newsFactory){
-  $scope.hello = "plop";
   $scope.contacts = [];
-  $scope.ressources = [
-  ];
+  $scope.ressources = [];
+  $scope.photos = ApiFactory.media;
 
   $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts')
   .then(

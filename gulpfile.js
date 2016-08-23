@@ -77,7 +77,7 @@ gulp.task('browser-sync', function() {
 *
 **/
 gulp.task('scripts', function() {
-  
+
   //source
   return gulp.src('src/assets/js/**/*.js')
 
@@ -113,7 +113,7 @@ gulp.task('lint', function () {
 *
 **/
 gulp.task('images', function () {
-  return gulp.src('src/**/images/*')
+  return gulp.src('src/**/images/**/*')
   .pipe(imagemin({
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
@@ -121,6 +121,13 @@ gulp.task('images', function () {
   }))
   .pipe(gulp.dest('dist'));
 });
+
+// gulp.task('photos', function () {
+//   return gulp.src('src/**/images/photos/*')
+//   .pipe(imagemin(imagemin.gifsicle()
+//   }))
+//   .pipe(gulp.dest('dist'));
+// });
 
 /**
 *
