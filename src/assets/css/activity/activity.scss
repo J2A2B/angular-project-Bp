@@ -60,7 +60,8 @@
         width: 80px;
         min-width: 80px;
         margin-right: 20px;
-        background-size: contain;
+        background-size: cover;
+        background-repeat:no-repeat;
         background-position: center;
 
         // overflow: hidden;
