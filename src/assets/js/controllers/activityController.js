@@ -8,6 +8,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   .then(
     function(response) {
       $scope.contacts = response.data.result;
+      console.log($scope.contacts);
     },
     function(err) {
       console.log("Couldn't retrieve contacts");
@@ -18,6 +19,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
     function(response) {
       $scope.ressources = response.data.result;
       console.log($scope.ressources);
+
     },
     function(err) {
       console.log("Couldn't retrieve ressources");

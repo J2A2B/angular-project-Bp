@@ -51,6 +51,16 @@
 .card-big-third {
 	background-color: #43b3b0;
 }
+
+.card-big-first:hover {
+	background-color: lighten(#4ac9c5, 8%);
+}
+.card-big-second:hover {
+	background-color: lighten(#81e0c9, 8%);
+}
+.card-big-third:hover {
+	background-color: lighten(#43b3b0, 8%);
+}
 // row of important cards
 
 .cards-row {

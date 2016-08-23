@@ -140,6 +140,20 @@
 }
 
 
+.ressource-card-1:hover {
+  background-color: lighten(#3ab2c3, 8%);
+}
+.ressource-card-2:hover {
+  background-color: lighten(#4279a9, 8%);
+}
+.ressource-card-3:hover {
+  background-color: lighten(#3ba8b8, 8%);
+}
+.ressource-card-4:hover {
+  background-color: lighten(#4a8cb2, 8%);
+}
+
+
 
 .contact-card-1 {
   background-color: #8770bd;
@@ -152,6 +166,20 @@
 }
 .contact-card-4 {
   background-color: #49306B;
+}
+
+
+.contact-card-1:hover {
+  background-color: lighten(#8770bd, 8%);
+}
+.contact-card-2:hover {
+  background-color: lighten(#8a5495, 8%);
+}
+.contact-card-3:hover {
+  background-color: lighten(#77549a, 8%);
+}
+.contact-card-4:hover {
+  background-color: lighten(#49306B, 8%);
 }
 
 .news-icon{
