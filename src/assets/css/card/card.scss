@@ -39,6 +39,13 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		width: 100%;
+
+		margin: 5%;
+
+		p {
+			width: 100%;
+		}
 	}
 }
 
@@ -71,19 +78,22 @@
 // secondary cards
 
 .card-small {
-	width: 100%;
+	// width: 100%;
+	display: flex;
+	// justify-content: center;
 
 	.card-content {
+		// width: 100%;
 		display: flex;
 		flex-flow: row nowrap;
 		height: 70px;
 		align-items: center;
-		margin-left: 25%;
-		margin-right: 25%;
-		text-align: center;
+		// justify-content: center;
+		margin-left: 33.33%;
+		// text-align: center;
 
 		i {
-			margin-right: 8.33%;
+			margin-right: 20px;
 		}
 	}
 }
