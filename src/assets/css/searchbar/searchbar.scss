@@ -162,7 +162,7 @@
 .container-error{
 	position: absolute;
 	left: -1000px;
-	// display: none;
+	align-items:center;
 	display: flex;
 	justify-content:center;
 	margin-top: 100px;
@@ -191,11 +191,11 @@
 	// .container-error
 
 	.horiz-translate {
- 		 -webkit-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
-  		-moz-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
-  		-ms-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
-  		-o-transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
-  		transition: 1.2s cubic-bezier(.87,-.41,.19,1.44);
+ 		 -webkit-transition: 0.5s all;
+  		-moz-transition: 0.5s all;
+  		-ms-transition: 0.5s all;
+  		-o-transition: 0.5s all;
+  		transition: 0.5s all;
 
   		left: 0 !important;
 	}

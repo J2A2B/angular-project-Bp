@@ -1,12 +1,14 @@
 <div class="container-news" ng-class="{'container-news-is-open': show}" id="myDivId">
 	<div class="title-news">
-		<h1>NOUVEAUTÉ</h1>
+		<h1>NOUVEAUTÉS</h1>
 		<div class="cross-news" ng-click="toggleNews()"></div>
 	</div>
-	<a class="container-info-news" ng-repeat="notification in notifications" ng-href="#/activity/{{notification.activity.id_activity}}">
-		<div class="news-service" >
+	<input ng-model="filtre" placeholder="Chercher une nouveauté">
+	<a class="container-info-news" ng-repeat="notification in notifications | filter:{$: filtre}" ng-href="#/activity/{{notification.activity.id_activity}}">
+		<!-- <div class="news-service" >
 			<div class="news-infos">{{notification.count}}</div>
-		</div>
-		<p>Nouveautés {{notification.activity.name}}</p>
+		</div> -->
+		<div class="news-service"></div>
+		<p>{{notification.activity.name}}</p>
 	</a>
 </div>

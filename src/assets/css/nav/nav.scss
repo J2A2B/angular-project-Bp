@@ -27,14 +27,19 @@
 
 
 		.notif-pastille{
+			display: flex;
+			align-items:center;
+			justify-content:center;
 			z-index: 1000;
 			text-align: center;
 			position: relative;
-			width: 18px;
-			height: 18px;
+			width: 19px;
+			height: 19px;
 			background-color: #eb5269;
 			border-radius: 40px;
-			font-size: 14px;
+			font-size: 12px;
+
+
 		}
 	}
 

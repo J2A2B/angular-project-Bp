@@ -5,6 +5,7 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 		link: function(scope, elem, attrs) {
 			scope.notifications = [];
 			scope.show = false;
+			scope.filtre = "";
 			scope.sizeSearch = false;
 			
 			$http.get(ApiFactory.api + 'news?limit=10&offset=0')
