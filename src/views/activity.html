@@ -22,7 +22,7 @@
 			<div class="activity-column">
 				<h2 class="column-header ressource-header"> Liens Utiles </h2>
 
-				<a class="activity-link" ng-repeat="ressource in ressources track by $index" ng-href="{{ressource.is_mailto == 1 ? 'mailto:'+ressource.mailto_dest+'?subject='+ressource.mailto_subject+'&body='+ressource.mailto_body:ressource.link;}}" ng-attr-target="{{(ressource.is_mailto == 0) ? '_blank': undefined;}}">
+				<a class="activity-link" ng-repeat="ressource in ressources | orderBy: ressource.position:true track by $index" ng-href="{{ressource.is_mailto == 1 ? 'mailto:'+ressource.mailto_dest+'?subject='+ressource.mailto_subject+'&body='+ressource.mailto_body:ressource.link;}}" ng-attr-target="{{(ressource.is_mailto == 0) ? '_blank': undefined;}}">
 					<!-- target="{{if(ressource.is_mailto==0){return '_blank'}}}" -->
 					<div class="ressource-card" ng-class="'ressource-card-'+(($index%4)+1)">
 						<i class="fa fa-book fa-3x img-ressource"></i>

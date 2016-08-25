@@ -5,12 +5,12 @@ myApp.directive('ngNav',['newsFactory','$http', 'ApiFactory', function (newsFact
 		link: function(scope, elem, attrs) {
 			scope.countNews = 0;
 
-			$http.get(ApiFactory.api + 'news?limit=10&offset=0')
+			$http.get(ApiFactory.api + 'news?limit=100&offset=0')
 				.then(
 					function (response) {
 					scope.countNews = response.data.count;
-					
-					
+
+
 				},
 					function (err) {
 						console.log('Unable to retrieve data from the API :/');

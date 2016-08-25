@@ -8,11 +8,11 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 			scope.filtre = "";
 			scope.sizeSearch = false;
 
-			$http.get(ApiFactory.api + 'news?limit=10&offset=0')
+			$http.get(ApiFactory.api + 'news?limit=100&offset=0')
 				.then(
 					function (response) {
 					scope.notifications = response.data.result;
-					
+					console.log(scope.notifications);
 
 				},
 					function (err) {
@@ -33,7 +33,6 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 					// console.log("BBBBB " + scope.parentSearch);
 
 					scope.percentSearch = 100*(scope.search/scope.parentSearch);
-					console.log(scope.percentSearch);
 
 					if (scope.percentSearch>40) {
 						scope.sizeSearch = true;

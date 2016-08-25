@@ -4,7 +4,7 @@
 		<div class="cross-news" ng-click="toggleNews()"></div>
 	</div>
 	<input ng-model="filtre" placeholder="Chercher une nouveauté">
-	<a class="container-info-news" ng-repeat="notification in notifications | filter:{$: filtre}" ng-href="#/activity/{{notification.activity.id_activity}}">
+	<a class="container-info-news" ng-repeat="notification in notifications |filter:{$: filtre}" ng-href="#/activity/{{notification.activity.id_activity}}">
 		<!-- <div class="news-service" >
 			<div class="news-infos">{{notification.count}}</div>
 		</div> -->
