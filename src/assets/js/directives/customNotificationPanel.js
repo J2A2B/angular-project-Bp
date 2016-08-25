@@ -7,22 +7,22 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 			scope.show = false;
 			scope.filtre = "";
 			scope.sizeSearch = false;
-			
+
 			$http.get(ApiFactory.api + 'news?limit=10&offset=0')
 				.then(
 					function (response) {
 					scope.notifications = response.data.result;
-					console.log(scope.notifications);
 					
+
 				},
 					function (err) {
 						console.log('Unable to retrieve data from the API :/');
 				});
 
 				scope.toggleNews = function() {
-					
 
-					
+
+
 					// console.log(scope.show);
 
 					scope.search = angular.element( '.container-input' ).width();
@@ -38,13 +38,13 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 					if (scope.percentSearch>40) {
 						scope.sizeSearch = true;
 					}
-					
+
 					newsFactory.newsClicked = !newsFactory.newsClicked;
 					scope.show = newsFactory.newsClicked;
-		
 
 
-					
+
+
 
 // var parentWidth = $('#someElt').offsetParent().width();
 // var percent = 100*width/parentWidth;
@@ -53,7 +53,7 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 					// scope.search2 = angular.element( '.searchbar-centered' ).width();
 					// console.log("coucou" + scope.search2);
 
-					
+
 				}
 
 
@@ -61,9 +61,8 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 
 		}
 
-		
+
 	};
 
 
 }]);
-

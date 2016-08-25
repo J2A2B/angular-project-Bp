@@ -15,7 +15,6 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
 
       scope.inputClick = function(event) {
         scope.clicked = true;
-        console.log(scope.clicked);
       }
 
       // tracks if an item is the current item
@@ -54,7 +53,6 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
       };
 
       scope.typeahead = function() {
-        console.log(ApiFactory.api);
     		$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=6')
     		.then(
     			function (response) {

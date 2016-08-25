@@ -17,12 +17,9 @@ myApp.controller('search-resultController',['$scope', '$http', '$routeParams', '
 		.then(
 			function (response) {
 			$scope.activity = response.data.result;
-
-			console.log($scope.activity.length);
 		},
 			function (err) {
 				console.log('Unable to retrieve data from the API :/');
 		});
 
 }]);
-
