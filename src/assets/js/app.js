@@ -6,7 +6,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	.when('/contact/:id_contact', {templateUrl: 'views/contact.html'})
 	.when('/activity/:id_activity', {templateUrl: 'views/activity.html'})
 	.when('/search-error/', {templateUrl: 'views/search-error.html'})
-	.when('/search-result/:model', {templateUrl: 'views/search-result.html'})
+	.when('/search-result/:id_keyword', {templateUrl: 'views/search-result.html'})
 	.when('/search-result/noresult', {templateUrl: 'views/search-error.html'})
 	.otherwise({redirectTo: '/'});
 }]);
