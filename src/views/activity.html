@@ -4,37 +4,42 @@
 		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar>
 		<div class="activity">
-			<div class="activity-column">
-				<h2 class="column-header contact-header"> Contacts </h2>
-				<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
-					<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
-							<div class="img-activity-contact"  ng-style="{'background-image': 'url('+getImage(contact.photo_id)+')'}"></div>
 
-							<!-- <div class="pastille-activity"></div> -->
-						<div class="contact-info">
-							<p class="contact-name"> {{contact.first_name}} {{contact.last_name}} </p>
-							<p> {{contact.job}} </p>
-						</div>
-					</div>
-				</a>
+			<div class="activity-headers">
+				<h2 class="column-header contact-header" ng-click="isContact=true"> Contacts </h2>
+				<h2 class="column-header ressource-header" ng-click="isContact=false"> Liens Utiles </h2>
 			</div>
 
-			<div class="activity-column">
-				<h2 class="column-header ressource-header"> Liens Utiles </h2>
+			<div class="activity-content">
+				<div class="activity-column" ng-class="{'hide-content': !isContact}">
+					<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
+						<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
+								<div class="img-activity-contact"  ng-style="{'background-image': 'url('+getImage(contact.photo_id)+')'}"></div>
 
-				<a class="activity-link" ng-repeat="ressource in ressources | orderBy: ressource.position:true track by $index" ng-href="{{ressource.is_mailto == 1 ? 'mailto:'+ressource.mailto_dest+'?subject='+ressource.mailto_subject+'&body='+ressource.mailto_body:ressource.link;}}" ng-attr-target="{{(ressource.is_mailto == 0) ? '_blank': undefined;}}">
-					<!-- target="{{if(ressource.is_mailto==0){return '_blank'}}}" -->
-					<div class="ressource-card" ng-class="'ressource-card-'+(($index%4)+1)">
-						<i class="fa fa-book fa-3x img-ressource"></i>
-						<div class="ressource-info">
-							<p> {{ressource.title}}</p>
-							<div ng-show="ressource.is_new" class="container-alert-news">
-								<div class = "news-icon">Nouveau</div>
-								<!-- <p class="text-news">{{ressource.label_new}}</p> -->
+								<!-- <div class="pastille-activity"></div> -->
+							<div class="contact-info">
+								<p class="contact-name"> {{contact.first_name}} {{contact.last_name}} </p>
+								<p> {{contact.job}} </p>
 							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
+
+				<div class="activity-column hide-content" ng-class="{'hide-content': isContact}">
+					<a class="activity-link" ng-repeat="ressource in ressources | orderBy: ressource.position:true track by $index" ng-href="{{ressource.is_mailto == 1 ? 'mailto:'+ressource.mailto_dest+'?subject='+ressource.mailto_subject+'&body='+ressource.mailto_body:ressource.link;}}" ng-attr-target="{{(ressource.is_mailto == 0) ? '_blank': undefined;}}">
+						<!-- target="{{if(ressource.is_mailto==0){return '_blank'}}}" -->
+						<div class="ressource-card" ng-class="'ressource-card-'+(($index%4)+1)">
+							<i class="fa fa-book fa-3x img-ressource"></i>
+							<div class="ressource-info">
+								<p> {{ressource.title}}</p>
+								<div ng-show="ressource.is_new" class="container-alert-news">
+									<div class = "news-icon">Nouveau</div>
+									<!-- <p class="text-news">{{ressource.label_new}}</p> -->
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
