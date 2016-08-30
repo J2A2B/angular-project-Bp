@@ -36,10 +36,12 @@
 		justify-content:space-around;
 		display: flex;
 		border:solid white 1px;
-		width: 180px;
+		padding-left: 10px;
+		padding-right: 10px;
 		cursor:pointer;
 
 		p{
+			margin-right: 10px;
 			font-size: 1em;
 			font-weight: bold;
 
@@ -74,27 +76,41 @@
 @media screen and (max-width: 500px) {
 	
 	.container-nav {
-		margin-bottom: 30px;
-		justify-content: center;
 
-		i{
-		position: absolute;
-		margin-right: 10px;
+		margin-bottom: 30px;
+		justify-content: space-around;
+
+
+
+		h1{
+			font-size: 24px;
+
+
+			}
+
+		.bell{
+		height: 20px;
+		width: 20px;
+	
 		}
 		
 		.container-bell{
-			height: 35px;
-			width: 35px;
+			
+			margin-bottom: 15px;
+			
+			p{
+				font-size: 0.6em;
+			}
 
 			.notif-pastille{
 				margin-right: 10px;
-				position: absolute;
-				width: 18px;
-				height: 18px;
-				right: 0px;
-				top:0px;
+				position: relative;
+				width: 13px;
+				height: 13px;
+				left: 0;
+				bottom:0;
 				text-align: center;
-				font-size: 11px;
+				font-size: 9px;
 				font-weight: 700;
 				letter-spacing: 1.4px;
 				line-height: 19px;

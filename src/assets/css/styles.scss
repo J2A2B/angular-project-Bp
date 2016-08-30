@@ -52,7 +52,7 @@ body {
 		list-style-type: none;
 		padding-left: 0;
 	}
-
+}
 
 
 @media screen and (max-width: 500px) {
@@ -62,6 +62,24 @@ body {
 		margin-right: 0;
 		width: 100%;
 	}
-}
+
+	.news-is-open{
+		margin-left: 0 !important;
+	}
+
 
 }
+
+
+
+
+@media screen and (max-width: 1000px) {
+	
+	
+	.news-is-open{
+		margin-left: 15%!important;
+	}
+
+
+}
+

@@ -1,8 +1,10 @@
 <div class="searchbar" ng-class="{'searchbar-centered': clicked, 'searchbar-down': !clicked }">
 
   <div class="container-input">
+    <div class="cont-button">
+      <button class="button-search" ng-click="error()"  ></button>
+    </div>
     <input type="text" id="search" list="advice" ng-model="model" ng-click="inputClick($event)" ng-keydown="selected=false" ng-change="typeahead()" ng-keyup="keyHandler($event)">
-    <button class="button-search" ng-click="error()"  ></button>
   </div>
 
   <div class="autocomplete-panel" ng-hide="!model.length || selected">
