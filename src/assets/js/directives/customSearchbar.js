@@ -27,6 +27,8 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
       scope.setCurrent = function (index) {
         console.log('current is: '+ index);
         scope.current = index;
+        scope.id_keyword = scope.suggestions[scope.current].id_keyword;
+        scope.model = scope.suggestions[scope.current].word;
       };
 
       scope.onSelect = function (item) {
