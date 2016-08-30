@@ -84,28 +84,20 @@
 
           p{
             margin: 0;
-          }
-
-          .container-alert-news{
-            margin-top: 10px;
-            display: flex;
-
-
-          .news-icon{
-            width: 68px;
-            height: 17px;
-            background-color: #f4984e;
-            border-radius: 40px;
-            font-size: 12px;
-            text-align: center;
-            font-style: italic;
 
           }
+          
+          
 
-          .text-news{
-            font-size: 12px;
+            .container-alert-news{
+
+              display: flex;
+
+
+            .text-news{
+              font-size: 12px;
+            }
           }
-        }
       }
 
     }
@@ -196,5 +188,6 @@
             font-size: 12px;
             text-align: center;
             font-style: italic;
+            margin-top: 10px;
 
           }
