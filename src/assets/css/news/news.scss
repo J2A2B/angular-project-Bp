@@ -12,43 +12,58 @@
 	background-color: #faa851;
 
 	.title-news{
+		position: fixed;
+		width: 22%;
 		height: 116px;
 		background-color: white;
 		display: flex;
-		align-items: center;
-		justify-content:space-around;
+		flex-direction:column;
+		justify-content:center;
 
-		h1{
-			margin: 0;
-			font-size: 20px;
-			font-weight: 500;
-			line-height: 24px;
-			color: #eb5269;
-			/* Text style for "NOUVEAUTÉ" */
-			letter-spacing: 0.5px;
-			/* Text style for "S" */
+		.cont-title-news{
+			display: flex;
+			
+			justify-content:space-around;
+
+			h1{
+				margin: 0;
+				margin-top: 30px;
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 24px;
+				color: #eb5269;
+				/* Text style for "NOUVEAUTÉ" */
+				letter-spacing: 0.5px;
+				/* Text style for "S" */
+			}
+
+			.cross-news{
+				margin-top: 30px;
+				cursor:pointer;
+				background: url(../images/cross.png) no-repeat center;
+				height: 18px;
+				width: 18px;
+				background-size: cover;
+			}
+
 		}
 
-		.cross-news{
-			cursor:pointer;
-			background: url(../images/cross.png) no-repeat center;
-			height: 18px;
-			width: 18px;
-			background-size: cover;
-		}
-
-	}
-
-	input{
-		border:solid white 1px;
+		input{
+		margin-top: 30px;
+		border:none;
 		background-color: #eb5269;
-		width: 100%;
 		color: white;
 		height: 30px;
 		padding-left: 15px;
 		padding-right: 15px;
-		margin-bottom: 20px;
 		outline: none;
+		}
+
+	}
+
+
+	.separate-head-cont{
+		height: 140px;
 	}
 
 	.container-info-news{
