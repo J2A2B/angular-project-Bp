@@ -1,27 +1,12 @@
 .activity {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   width: 100%;
 
-  .column-header {
-    text-align: center;
-    font-weight: normal;
-    padding: 10px 0;
-    margin: 0;
-  }
-
-  .contact-header {
-    background-color: #5b4370;
-  }
-  .ressource-header {
-    background-color: #4c78a2;
-  }
-
-  .activity-column {
-    width: 50%;
-    height: 100%;
+  .activity-headers {
+    width: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
 
     h2{
       color: white;
@@ -34,92 +19,123 @@
       letter-spacing: 0.8px;
       }
 
-    .activity-link {
-    	text-decoration: none;
-    	color: white;
-    	display: inline-block;
-      width: 100%;
-
+    .column-header {
+      text-align: center;
+      cursor: pointer;
+      font-weight: normal;
+      padding: 10px 0;
+      margin: 0;
+      width: 50%;
     }
 
-    .contact-card {
-      cursor:pointer;
+    .contact-header {
+      background-color: #5b4370;
+    }
+    .ressource-header {
+      background-color: #4c78a2;
+    }
+  }
+
+  .activity-content {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+
+    .activity-column {
+      width: 50%;
+      flex: 2 1 auto;
+      height: 100%;
       display: flex;
-      flex-flow: row nowrap;
-      padding: 20px 40px;
-      align-items: center;
-      justify-content: flex-start;
-      height: 150px;
+      flex-flow: column nowrap;
 
-      .img-activity-contact {
-        display: block;
-        border-radius: 50%;
-        border-style: solid;
-        border-color: white;
-        height: 80px;
-        width: 80px;
-        min-width: 80px;
-        margin-right: 20px;
-        background-size: cover;
-        background-repeat:no-repeat;
-        background-position: center;
-
-        // overflow: hidden;
+      .activity-link {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        width: 100%;
 
       }
 
-      .pastille-activity{
-        position: relative;
-        right: 40px;
-        bottom: 30px;
-        width: 15px;
-        height: 15px;
-        background-color: #e74937;
-        border: 1px solid white;
-        border-radius:50%;
-      }
+      .contact-card {
+        cursor:pointer;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 20px 40px;
+        align-items: center;
+        justify-content: flex-start;
+        height: 150px;
 
-      .contact-info{
+        .img-activity-contact {
+          display: block;
+          border-radius: 50%;
+          border-style: solid;
+          border-color: white;
+          height: 80px;
+          width: 80px;
+          min-width: 80px;
+          margin-right: 20px;
+          background-size: cover;
+          background-repeat:no-repeat;
+          background-position: center;
 
+          // overflow: hidden;
 
-          p{
-            margin: 0;
-
-          }
-          
-          
-
-            .container-alert-news{
-
-              display: flex;
-
-
-            .text-news{
-              font-size: 12px;
-            }
-          }
-      }
-
-    }
-
-    .ressource-card {
-      cursor:pointer;
-      display: flex;
-      flex-flow: row nowrap;
-      padding: 20px 40px;
-      align-items: center;
-      justify-content: flex-start;
-      height: 150px;
-
-    .img-ressource{
-      margin-right: 20px;
-    }
-
-    p{
-          margin: 0;
         }
 
+        .pastille-activity{
+          position: relative;
+          right: 40px;
+          bottom: 30px;
+          width: 15px;
+          height: 15px;
+          background-color: #e74937;
+          border: 1px solid white;
+          border-radius:50%;
+        }
+
+        .contact-info{
+
+
+            p{
+              margin: 0;
+
+            }
+
+
+
+              .container-alert-news{
+
+                display: flex;
+
+
+              .text-news{
+                font-size: 12px;
+              }
+            }
+        }
+
+      }
+
+      .ressource-card {
+        cursor:pointer;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 20px 40px;
+        align-items: center;
+        justify-content: flex-start;
+        height: 150px;
+
+      .img-ressource{
+        margin-right: 20px;
+      }
+
+      p{
+            margin: 0;
+          }
+
+      }
     }
+
   }
 
 }
@@ -166,6 +182,11 @@
   background-color: #49306B;
 }
 
+@media (max-width: 700px) {
+  .hide-content {
+    display: none!important;
+  }
+}
 
 .contact-card-1:hover {
   background-color: lighten(#8770bd, 8%);
