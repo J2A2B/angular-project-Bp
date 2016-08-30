@@ -1,4 +1,4 @@
-myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory', '$timeout', '$location', function($http, $routeParams,$window, ApiFactory, $timeout, $location) {
+myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory', '$timeout', '$location','orderByFilter', function($http, $window, $routeParams, ApiFactory, $timeout, $location, orderBy) {
   return {
     restrict: 'E',
     scope: {
@@ -15,18 +15,6 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
       // id of selected keyword
       scope.id_keyword = '';
 
-      // load all keywords from database
-      $http.get(ApiFactory.api+'keywords?sort=word&limit=100')
-      .then(
-        function(response) {
-          scope.keywords = response.data.result;
-          console.log(scope.keywords);
-        },
-        function(err) {
-          console.log('Unable to retrieve data from the API');
-        }
-      );
-
       scope.inputClick = function(event) {
         scope.clicked = true;
       }
@@ -39,6 +27,8 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
       scope.setCurrent = function (index) {
         console.log('current is: '+ index);
         scope.current = index;
+        scope.id_keyword = scope.suggestions[scope.current].id_keyword;
+        scope.model = scope.suggestions[scope.current].word;
       };
 
       scope.onSelect = function (item) {
@@ -72,41 +62,33 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
 
       };
 
-      // OLD SCHOOL
-      // scope.typeahead = function() {
-    	// 	$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=6')
-    	// 	.then(
-    	// 		function (response) {
-    	// 		scope.suggestions = response.data.result;
-      //     console.log(scope.suggestions);
-    	// 	},
-    	// 		function (err) {
-    	// 			console.log('Unable to retrieve data from the API :/');
-    	// 	});
-      //
-      //
-      // }
+      scope.typeahead = function() {
+    		$http.get(ApiFactory.api+'search/complete?q='+scope.model+'&limit=100')
+    		.then(
+    			function (response) {
+    			scope.suggestions = response.data.result;
+          scope.suggestions = orderBy(scope.suggestions, 'word', false);
+          console.log(scope.suggestions);
+    		},
+    			function (err) {
+    				console.log('Unable to retrieve data from the API :/');
+    		});
+      }
 
       // Key events handler for the autocomplete panel
       scope.keyHandler = function(event) {
         // Press enter to search
         if (event.keyCode == 13) {
-          // OLD SCHOOL
-          // scope.model = scope.keywords[scope.current];
-          scope.model = scope.keywords[scope.current].word;
-          scope.id_keyword = scope.keywords[scope.current].word;
+          scope.model = scope.suggestions[scope.current].word;
+          scope.id_keyword = scope.suggestions[scope.current].id_keyword;
           scope.error();
         }
         if (event.keyCode == 40) {
-          // OLD SCHOOL
-          // scope.setCurrent((scope.current+1)%scope.suggestions.length);
-          scope.setCurrent((scope.current+1)%scope.keywords.length);
+          scope.setCurrent((scope.current+1)%scope.suggestions.length);
         }
         if (event.keyCode == 38) {
           if (scope.current == 0) {
-            // OLD SCHOOL
-            // scope.setCurrent(scope.suggestions.length-1);
-            scope.setCurrent(scope.keywords.length-1);
+            scope.setCurrent(scope.suggestions.length-1);
           }
           else {
             scope.setCurrent(scope.current-1);
