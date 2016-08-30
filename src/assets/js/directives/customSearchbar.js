@@ -79,8 +79,14 @@ myApp.directive('customSearchbar', ['$http','$window','$routeParams','ApiFactory
       scope.keyHandler = function(event) {
         // Press enter to search
         if (event.keyCode == 13) {
-          scope.model = scope.suggestions[scope.current].word;
-          scope.id_keyword = scope.suggestions[scope.current].id_keyword;
+          if(scope.suggestions[scope.current]) {
+            scope.model = scope.suggestions[scope.current].word;
+            scope.id_keyword = scope.suggestions[scope.current].id_keyword;
+          }
+          else {
+            scope.model = '';
+            scope.id_keyword = -1;
+          }
           scope.error();
         }
         if (event.keyCode == 40) {
