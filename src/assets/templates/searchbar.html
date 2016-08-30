@@ -5,23 +5,21 @@
     <button class="button-search" ng-click="error()"  ></button>
   </div>
 
-
-  <!-- <datalist id="advice" class="autocomplete-panel" ng-hide="!model.length || selected">
-    <option ng-repeat="suggestion in suggestions track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent(index)">
-      <div>
-        {{suggestion}}
-      </div>
-    </option>
-  </datalist> -->
   <div class="autocomplete-panel" ng-hide="!model.length || selected">
 		<ul class="list-unstyled">
-      <li ng-repeat="keyword in keywords |filter:model |unique:keyword.word track by $index" ng-click="onSelect(keyword)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent($index)">
-				{{keyword.word}}
+      <li ng-repeat="suggestion in suggestions |unique:suggestion.word track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent($index)">
+				{{suggestion.word}}
 			</li>
-			<!-- OLD SCHOOL
-      <li ng-repeat="suggestion in suggestions | unique:suggestion track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent($index)">
-				{{suggestion}}
-			</li> -->
 		</ul>
 	</div>
 </div>
+
+
+
+<!-- <datalist id="advice" class="autocomplete-panel" ng-hide="!model.length || selected">
+  <option ng-repeat="suggestion in suggestions track by $index" ng-click="onSelect(suggestion)" ng-class="{'autocomplete-list': isCurrent($index)}" ng-mouseenter="setCurrent(index)">
+    <div>
+      {{suggestion}}
+    </div>
+  </option>
+</datalist> -->
