@@ -1,3 +1,12 @@
+.activity-title{
+  height: 60px;
+  background-color: #eb5269;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 24px;
+}
+
 .activity {
   display: flex;
   flex-flow: row nowrap;
