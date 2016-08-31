@@ -2,7 +2,9 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.contacts = [];
   $scope.ressources = [];
   $scope.photos = ApiFactory.media;
-  console.log($routeParams.id_activity);
+
+  $scope.isContact = true;
+
 
   $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts')
   .then(
