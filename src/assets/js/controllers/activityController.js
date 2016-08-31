@@ -4,7 +4,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.photos = ApiFactory.media;
 
   $scope.isContact = true;
-
+  $scope.sherlook = 'http://sherlook.ctr.ibp/search?site=default_collection&proxystylesheet=bpri&client=bpri&q=';
 
   $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts')
   .then(
@@ -20,6 +20,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   .then(
     function(response) {
       $scope.ressources = response.data.result;
+      console.log($scope.ressources);
     },
     function(err) {
       console.log("Couldn't retrieve ressources");
