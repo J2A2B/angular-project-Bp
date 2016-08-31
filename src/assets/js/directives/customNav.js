@@ -9,13 +9,10 @@ myApp.directive('ngNav',['newsFactory','$http', 'ApiFactory', function (newsFact
 				.then(
 					function (response) {
 					scope.countNews = response.data.count;
-
-
 				},
 					function (err) {
 						console.log('Unable to retrieve data from the API :/');
 				});
-
 		}
 	};
 }]);
