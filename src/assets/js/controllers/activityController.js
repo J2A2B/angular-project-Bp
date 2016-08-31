@@ -2,26 +2,39 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.contacts = [];
   $scope.ressources = [];
   $scope.photos = ApiFactory.media;
+
   $scope.isContact = true;
+
 
   $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts')
   .then(
     function(response) {
       $scope.contacts = response.data.result;
+
     },
     function(err) {
       console.log("Couldn't retrieve contacts");
   });
 
-  $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources')
+    $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources')
   .then(
     function(response) {
       $scope.ressources = response.data.result;
-      console.log($scope.ressources);
     },
     function(err) {
       console.log("Couldn't retrieve ressources");
   });
+
+  $http.get(ApiFactory.api +'activities/' +$routeParams.id_activity)
+  .then(
+    function(response) {
+      $scope.activity = response.data;
+    },
+    function(err) {
+      console.log("Couldn't retrieve ressources");
+  });
+
+
 
   $scope.getImage = function(id) {
     // body...
