@@ -17,49 +17,30 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 						console.log('Unable to retrieve data from the API :/');
 				});
 
+				scope.linkNews = function() {
+					newsFactory.newsClicked = !newsFactory.newsClicked;
+				}
+
 				scope.toggleNews = function() {
-
-
-
+					console.log('did you just click me ? how rude');
 					// console.log(scope.show);
-
 					scope.search = angular.element( '.container-input' ).width();
 					// console.log("hey " + scope.search);
-
 					scope.parentSearch = angular.element( '.container-input').offsetParent().width();
-
 					// console.log("BBBBB " + scope.parentSearch);
-
 					scope.percentSearch = 100*(scope.search/scope.parentSearch);
-
 					if (scope.percentSearch>40) {
 						scope.sizeSearch = true;
 					}
-
 					newsFactory.newsClicked = !newsFactory.newsClicked;
 					scope.show = newsFactory.newsClicked;
 
-
-
-
-
 // var parentWidth = $('#someElt').offsetParent().width();
 // var percent = 100*width/parentWidth;
-
-
 					// scope.search2 = angular.element( '.searchbar-centered' ).width();
 					// console.log("coucou" + scope.search2);
-
-
 				}
-
-
 				// angular.element( '#myDivId' ).css( 'background-color', 'red' );
-
 		}
-
-
 	};
-
-
 }]);

@@ -7,7 +7,7 @@
 		<input ng-model="filtre" placeholder="Chercher une nouveauté">
 	</div>
 	<div class="separate-head-cont"></div>
-	<a class="container-info-news" ng-repeat="notification in notifications |filter:{$: filtre}" ng-href="#/activity/{{notification.activity.id_activity}}">
+	<a class="container-info-news" ng-repeat="notification in notifications |filter:{$: filtre}" ng-href="#/activity/{{notification.activity.id_activity}}" ng-click="linkNews()">
 		<!-- <div class="news-service" >
 			<div class="news-infos">{{notification.count}}</div>
 		</div> -->
