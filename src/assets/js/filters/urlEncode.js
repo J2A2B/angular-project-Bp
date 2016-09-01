@@ -1,3 +1,3 @@
 myApp.filter('urlEncode', function() {
-    return window.encodeURI;
+    return window.encodeURIComponent;
 });
