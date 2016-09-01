@@ -24,7 +24,7 @@
 		background-size: cover;
 		height: 30px;
 		width: 30px;
-	
+
 	}
 
 	.container-bell:hover{
@@ -32,7 +32,7 @@
 	}
 
 	.container-bell{
-		
+
 		align-items:center;
 		justify-content:space-around;
 		display: flex;
@@ -79,10 +79,11 @@
   width: 30px;
   background: url(../images/chevron-left.png) no-repeat center;
   background-size: cover;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
-	
+
 	.container-nav {
 
 		margin-bottom: 30px;
@@ -99,13 +100,13 @@
 		.bell{
 		height: 20px;
 		width: 20px;
-	
+
 		}
-		
+
 		.container-bell{
-			
+
 			margin-bottom: 15px;
-			
+
 			p{
 				font-size: 0.6em;
 			}
