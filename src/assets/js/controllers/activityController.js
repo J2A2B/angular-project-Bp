@@ -2,6 +2,8 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.contacts = [];
   $scope.ressources = [];
   $scope.photos = ApiFactory.media;
+  $scope.pict = 'assets/images/pictoActivities/';
+  $scope.activities = [];
 
   $scope.isContact = true;
 
@@ -29,17 +31,22 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   .then(
     function(response) {
       $scope.activity = response.data;
+      console.log($scope.activity);
     },
     function(err) {
       console.log("Couldn't retrieve ressources");
   });
 
 
-
   $scope.getImage = function(id) {
-    // body...
+   
     var img = $scope.photos + id;
     return img;
   };
+
+  $scope.getImageService = function(serviceCode) {
+     
+      return $scope.pict+serviceCode+'.png';
+    }
 
 }]);

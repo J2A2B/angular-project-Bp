@@ -5,16 +5,12 @@ myApp.controller('search-resultController',['$scope', '$http', '$routeParams', '
 	$scope.activity = [];
 	$scope.activities = [];
 
-	console.log($scope.pict);
-
 	// $http.get(ApiFactory.api + 'search?q='+$scope.query+'&limit=10')
 	$http.get(ApiFactory.api + 'keywords/'+$scope.query+'/activities')
 		.then(
 			function (response) {
 			$scope.activity = response.data.result;
 			console.log($scope.activity);
-			// $scope.serviceCode = $scope.activity.service_code;
-			// $scope.urlServiceCode = $scope.pict + $scope.serviceCode + ".png"; 
 			
 
 		},
@@ -35,6 +31,7 @@ myApp.controller('search-resultController',['$scope', '$http', '$routeParams', '
 		});
 
 		$scope.getImage = function(serviceCode) {
+			console.log(serviceCode)
 			// body...
 			return $scope.pict+serviceCode+'.png';
 		}
