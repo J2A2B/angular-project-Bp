@@ -89,7 +89,7 @@
       width: 50%;
       flex: 2 1 auto;
       height: 100%;
-
+      font-size: 0;
       // display: flex;
       // flex-flow: column nowrap;
       // justify-content: flex-start;
@@ -107,6 +107,7 @@
       }
 
       .contact-card {
+        font-size: 16px;
         cursor:pointer;
         display: flex;
         flex-flow: row nowrap;
@@ -167,6 +168,7 @@
       }
 
       .ressource-card {
+        font-size: 16px;
         cursor:pointer;
         display: flex;
         flex-flow: row nowrap;
