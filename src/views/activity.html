@@ -4,7 +4,9 @@
 		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
 		</custom-searchbar>
 		<div class="cont-activity-title">
-			<img class="activity-icon" ng-src="{{getImageService(activity.service_code)}}"></img>
+			<div class="cont-activity-icon">
+				<img class="activity-icon" ng-src="{{getImageService(activity.service_code)}}"></img>
+			</div>
 			<div class="activity-title">{{activity.name}}</div>
 		</div>
 		<div class="activity">
