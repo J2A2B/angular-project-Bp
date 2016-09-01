@@ -247,7 +247,14 @@
             font-style: italic;
             margin-top: 10px;
 
-          }
+}
+
+.cross{
+  height: 30px;
+  width: 30px;
+  background: url(../images/chevron-left.png) no-repeat center;
+  background-size: cover;
+}
 
 @media (max-width: 700px) {
   .hide-content {

@@ -74,6 +74,13 @@
 	}
 
 
+.cross{
+  height: 30px;
+  width: 30px;
+  background: url(../images/chevron-left.png) no-repeat center;
+  background-size: cover;
+}
+
 @media screen and (max-width: 500px) {
 	
 	.container-nav {
