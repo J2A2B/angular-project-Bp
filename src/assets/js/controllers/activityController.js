@@ -8,7 +8,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.isContact = true;
   $scope.sherlook = 'http://sherlook.ctr.ibp/search?site=default_collection&proxystylesheet=bpri&client=bpri&q=';
 
-  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts')
+  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts?limit=100&offset=0')
   .then(
     function(response) {
       $scope.contacts = response.data.result;
@@ -18,7 +18,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
       console.log("Couldn't retrieve contacts");
   });
 
-    $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources')
+    $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources?limit=100&offset=0')
   .then(
     function(response) {
       $scope.ressources = response.data.result;
