@@ -22,7 +22,6 @@ myApp.directive('ngNotification',['newsFactory','$http', 'ApiFactory', function 
 				}
 
 				scope.toggleNews = function() {
-					console.log('did you just click me ? how rude');
 					// console.log(scope.show);
 					scope.search = angular.element( '.container-input' ).width();
 					// console.log("hey " + scope.search);
