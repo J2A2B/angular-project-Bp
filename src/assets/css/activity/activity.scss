@@ -87,14 +87,14 @@
       flex-flow: column nowrap;
       justify-content: flex-start;
       align-items: flex-start;
+      // it helps but I don't know why
+      float: left;
 
       .activity-link {
         text-decoration: none;
         color: white;
         display: inline-block;
         width: 100%;
-        // it helps but I don't know why
-        float: left;
 
       }
 
