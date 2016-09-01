@@ -8,25 +8,9 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.isContact = true;
   $scope.sherlook = 'http://sherlook.ctr.ibp/search?site=default_collection&proxystylesheet=bpri&client=bpri&q=';
 
-  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts?limit=100&offset=0')
-  .then(
-    function(response) {
-      $scope.contacts = response.data.result;
 
-    },
-    function(err) {
-      console.log("Couldn't retrieve contacts");
-  });
 
-    $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources?limit=100&offset=0')
-  .then(
-    function(response) {
-      $scope.ressources = response.data.result;
-      console.log($scope.ressources);
-    },
-    function(err) {
-      console.log("Couldn't retrieve ressources");
-  });
+  // GET the current activity
 
   $http.get(ApiFactory.api +'activities/' +$routeParams.id_activity)
   .then(
@@ -38,6 +22,26 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
       console.log("Couldn't retrieve ressources");
   });
 
+  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts?limit=100&offset=0')
+  .then(
+    function(response) {
+      $scope.contacts = response.data.result;
+    },
+    function(err) {
+      console.log("Couldn't retrieve contacts");
+  });
+
+    $http.get(ApiFactory.api +'activities/'+$routeParams.id_activity+'/resources?limit=100&sort=position&order=desc')
+  .then(
+    function(response) {
+      $scope.ressources = response.data.result;
+      console.log($scope.ressources);
+    },
+    function(err) {
+      console.log("Couldn't retrieve ressources");
+  });
+
+
 
   $scope.getImage = function(id) {
 
@@ -46,8 +50,9 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   };
 
   $scope.getImageService = function(serviceCode) {
-
-      return $scope.pict+serviceCode+'.png';
+      var img = $scope.pict+serviceCode+'.png';
+      console.log(img);
+      return img;
     }
 
 }]);
