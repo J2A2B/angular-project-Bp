@@ -28,7 +28,7 @@
 .activity-title{
   text-align:center;
   height: 70px;
-  background-color: #81e0c9;
+  // background-color: #81e0c9;
   display: flex;
   margin-left: 15px;
   margin-right: 10px;
@@ -37,16 +37,20 @@
 }
 
 .activity {
-  display: flex;
-  flex-flow: column nowrap;
+  // display: flex;
+  // flex-flow: column nowrap;
+  
   width: 100%;
 
   .activity-headers {
+    
     width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
+    // display: flex;
+    // flex-flow: row nowrap;
 
     h2{
+      display: inline-block;
+      float: left;
       color: white;
       font-size: 20px;
       font-weight: 500;
@@ -75,20 +79,24 @@
   }
 
   .activity-content {
-    display: flex;
-    flex-flow: row nowrap;
+    // display: flex;
+    // flex-flow: row nowrap;
     width: 100%;
 
     .activity-column {
+      display: inline-block;
+      float: left;
       width: 50%;
       flex: 2 1 auto;
       height: 100%;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: flex-start;
-      align-items: flex-start;
+      font-size: 0;
+      // display: flex;
+      // flex-flow: column nowrap;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+
       // it helps but I don't know why
-      float: left;
+
 
       .activity-link {
         text-decoration: none;
@@ -99,6 +107,7 @@
       }
 
       .contact-card {
+        font-size: 16px;
         cursor:pointer;
         display: flex;
         flex-flow: row nowrap;
@@ -147,7 +156,7 @@
 
               .container-alert-news{
 
-                display: flex;
+                // display: flex;
 
 
               .text-news{
@@ -159,6 +168,7 @@
       }
 
       .ressource-card {
+        font-size: 16px;
         cursor:pointer;
         display: flex;
         flex-flow: row nowrap;
