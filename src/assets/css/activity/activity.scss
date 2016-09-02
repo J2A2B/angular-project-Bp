@@ -39,11 +39,11 @@
 .activity {
   // display: flex;
   // flex-flow: column nowrap;
-  
+
   width: 100%;
 
   .activity-headers {
-    
+
     width: 100%;
     // display: flex;
     // flex-flow: row nowrap;
@@ -196,7 +196,7 @@
           }
 
       }
-    
+
 
   }
 
@@ -287,15 +287,14 @@
     font-size: 18px;
   }
 
- .activity {
-
-  .activity-headers {
-
-
-    h2{
-      font-size: 16px;
-
+  .activity {
+    .activity-column-left, .activity-column-right {
+      width: 100%!important;
+    }
+    .activity-headers {
+      h2 {
+        font-size: 16px;
       }
+    }
   }
-}
 }
