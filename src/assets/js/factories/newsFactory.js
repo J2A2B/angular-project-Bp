@@ -1,5 +1,5 @@
 myApp.factory('newsFactory', function() {
     return{
-        newsClicked: false
+        newsClicked: false,
     }
 });
