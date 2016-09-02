@@ -20,4 +20,4 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFac
 
 }]);
 
-// +$scope.query+
+
