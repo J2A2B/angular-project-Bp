@@ -44,7 +44,6 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
 
 
   $scope.getImage = function(id) {
-
     var img = $scope.photos + id;
     return img;
   };
