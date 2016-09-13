@@ -3,7 +3,7 @@
 		<ng-nav back="true"></ng-nav>
 		<div class="container-infos" >
 			<!-- <div class="pastille"></div> -->
-			<div class="img-contact" ng-style="{'background-image': 'url('+getImage(contacts.photo_id)+')'}"></div>
+			<div class="img-contact" ng-style="{'background-image': 'url('+getImage(contact.photo_id)+')'}"></div>
 			<h1>{{contact.first_name}} {{contact.last_name}}</h1>
 			<p>{{contact.job}}</p>
 			<div class="container-contact-assets">
@@ -22,7 +22,7 @@
 						<div class="generic-cont img-call-back"></div>
 						<p class="text-callback">Être rappelé</p>
 					</div>
-					<a ng-href="xmpp:{{contact.photo_id}}@ibp.lan?message" class="container-asset color-cont-four">
+					<a ng-href="xmpp:{{contact.photo_id}}@ibp.lan" class="container-asset color-cont-four">
 						<div class="generic-cont img-chat"></div>
 						<p class="text-chat">Chat</p>
 					</a>
