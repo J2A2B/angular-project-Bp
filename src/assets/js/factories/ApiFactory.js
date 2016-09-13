@@ -4,7 +4,7 @@ myApp.factory('ApiFactory', function() {
   var usedMedia = '';
 
   if (location.hostname === 'localhost') {
-    usedApi = "http://bplink.simplon.space/api/";
+    usedApi = "http://bplink-preprod.simplon.space/api/";
     usedMedia = "http://bplink-preprod.simplon.space/media/";
   }
   else {
