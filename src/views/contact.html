@@ -4,15 +4,15 @@
 		<div class="container-infos" >
 			<!-- <div class="pastille"></div> -->
 			<div class="img-contact" ng-style="{'background-image': 'url('+getImage(contacts.photo_id)+')'}"></div>
-			<h1>{{contacts.first_name}} {{contacts.last_name}}</h1>
-			<p>{{contacts.job}}</p>
+			<h1>{{contact.first_name}} {{contact.last_name}}</h1>
+			<p>{{contact.job}}</p>
 			<div class="container-contact-assets">
 				<div class="container-main-assets">
-					<a href="tel:{{contacts.phone}}" class="container-asset color-cont-one">
+					<a href="tel:{{contact.phone}}" class="container-asset color-cont-one">
 						<div class="generic-cont img-call"></div>
 						<p>Appel</p>
 					</a>
-					<a href="mailto:{{contacts.email}}" class="container-asset color-cont-two">
+					<a href="mailto:{{contact.email}}" class="container-asset color-cont-two">
 						<div class="generic-cont img-mail"></div>
 						<p>E-mail</p>
 					</a>
@@ -22,10 +22,10 @@
 						<div class="generic-cont img-call-back"></div>
 						<p class="text-callback">Être rappelé</p>
 					</div>
-					<div class="container-asset color-cont-four">
+					<a ng-href="xmpp:{{contact.photo_id}}@ibp.lan?message" class="container-asset color-cont-four">
 						<div class="generic-cont img-chat"></div>
 						<p class="text-chat">Chat</p>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
