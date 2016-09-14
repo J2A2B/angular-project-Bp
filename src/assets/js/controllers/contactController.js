@@ -13,6 +13,11 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFac
 				console.log('Unable to retrieve data from the API :/');
 		});
 
+		// $scope.getJabber = function(id) {
+		// 	var link = id + '@ibp.lan?message';
+		// 	return link;
+		// };
+
     $scope.getImage = function(id) {
     // body...
     var img = $scope.photos + id;
@@ -20,5 +25,3 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFac
   };
 
 }]);
-
-

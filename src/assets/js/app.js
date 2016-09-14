@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp',['ngRoute','ngAnimate']);
 
-myApp.config(['$routeProvider', function($routeProvider) {
+myApp.config(['$routeProvider', '$compileProvider', function($routeProvider, $compileProvider) {
 	$routeProvider
 	.when('/', {templateUrl: 'views/home.html'})
 	.when('/contact/:id_contact', {templateUrl: 'views/contact.html'})
@@ -9,6 +9,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	.when('/search-result/:id_keyword', {templateUrl: 'views/search-result.html'})
 	.when('/search-result/noresult', {templateUrl: 'views/search-error.html'})
 	.otherwise({redirectTo: '/'});
+
+	$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|xmpp|tel|javascript):/);
 }]);
 
 myApp.run(['$rootScope', '$location', '$window', function($rootScope, $location, $window) {
@@ -16,6 +18,7 @@ myApp.run(['$rootScope', '$location', '$window', function($rootScope, $location,
 		if (!$window.ga) {
 			return;
 		}
+		console.log('tracking');
     $window.ga('send', 'pageview', {
 			page: $location.path()
 		});
