@@ -1,0 +1,133 @@
+.cont-title-meteo-page{
+	display: flex;
+	background-color: #faa851;
+	align-items:center;
+
+	.title-meteo-page{
+		height: 70px;
+		
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		width: 63%;
+		font-size: 26px;
+
+	}
+
+	input{
+		margin-left: 15px;
+		margin-right: 10px;
+		width: 37%;
+		height: 50px;
+		border:none;
+		background-color: #f9eadb;
+		color: #faa851;
+		outline: none;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+}
+
+.cont-meteo{
+	display: flex;
+	flex-direction:column;
+
+	.cont-serv-meteo{
+		display: flex;
+		flex-direction:column;
+
+		.title-serv-meteo{
+			height: 50px;
+			width: 100%;
+			background-color: #81e0c9;
+			display: flex;
+			align-items:center;
+			text-align:center;
+			justify-content:center;
+			font-size: 24px;
+
+		}
+
+		.left-column-serv-comment{
+			
+			width: 100%;
+			display: flex;
+			flex-direction:row;
+			flex-wrap: wrap;
+
+		.serv-meteo{
+
+				height: 110px;
+				width: 60%;
+				display: flex;
+				align-items:center;
+				font-size: 16px;
+				justify-content:space-between;
+
+				p{
+					margin-left: 15px;
+					margin-right: 15px;
+					width: 90%;
+				}
+
+				.img-meteo{
+					height:40px;
+					width:40px;
+					border:none;
+					background: url(../images/sun.png) no-repeat center;
+					background-size: cover;
+					margin-right: 15px;
+				}
+			}
+
+			.serv-meteo1{
+				background-color:#8770bd ;
+			}
+
+			.serv-meteo2{
+				background-color:#8a5495 ;
+			}
+
+			.serv-meteo3{
+				background-color:#77549a ;
+			}
+
+			.serv-meteo4{
+				background-color:#49306b ;
+			}
+
+			.serv-comment-meteo{
+				height: 110px;
+				width:40%;
+			}
+
+			.serv-comment-meteo1{
+				background-color:#3ab2c3 ;
+		
+			}
+
+			.serv-comment-meteo2{
+				background-color:#4279a9 ;
+				
+			}
+
+			.serv-comment-meteo3{
+				background-color:#3ba8b8 ;
+				
+			}
+
+			.serv-comment-meteo4{
+				background-color:#4a8cb2 ;
+				
+			}
+		}
+
+		// .right-column-serv-comment{
+			
+		// 	width: 40%;
+
+		// }
+	}
+
+}

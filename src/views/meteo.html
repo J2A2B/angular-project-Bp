@@ -1,0 +1,21 @@
+<section class ="main-container" ng-controller="meteoController">
+	<div class="container" ng-class="{'news-is-open': show}">
+		<ng-nav></ng-nav>
+		<custom-searchbar suggestions="suggestions" model="userEntry" clicked="true" typeahead="typeahead()">
+		</custom-searchbar>
+		<div class="cont-title-meteo-page">
+			<div class="title-meteo-page">MÉTÉO DES SERVICES</div>
+			<input ng-model="filtre" placeholder="Chercher la météo d'un service">
+		</div>
+		<div class="cont-meteo">
+			<div class="cont-serv-meteo" ng-repeat="service in services |filter:{$: filtre}" >
+				<div class="title-serv-meteo">{{service.service_name}}</div>
+				<div class="left-column-serv-comment" ng-repeat="activity in activities | filter:{id_service: service.service_id}:true track by $index">
+					<div class="serv-meteo" ng-class="'serv-meteo'+(($index%4)+1)"><p>{{activity.activity_label}}</p><div class="img-meteo"></div></div>
+					<div class="serv-comment-meteo" ng-class="'serv-comment-meteo'+(($index%4)+1)"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ng-notification></ng-notification>
+</section>
