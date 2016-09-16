@@ -6,7 +6,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
   $scope.activities = [];
 
   $scope.isContact = true;
-  $scope.sherlook = 'http://sherlook.ctr.ibp/search?site=default_collection&proxystylesheet=bpri&client=bpri&q=';
+  $scope.sherlook = 'http://sherlook.ctr.ibp/search?proxystylesheet=bpri&client=bpri&sort=date%3AD%3AL%3Ad1&entsp=a__bpri&wc=200&wc_mc=1&oe=UTF-8&ie=UTF-8&ud=1&getfields=*&filter=p&access=a&getfields=*&site=default_collection&q=';
 
 
 
