@@ -114,15 +114,15 @@ $scope.activities = [
     {"activity_label" : "Traitement des aménagements complexes", "comment" : "Retard du fait de la forte augmentation des renégociations.", "id_service": 11, "meteo":4},
 
 
-    {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":1},
-    {"activity_label" : "Mises en demeure", "comment" : "", "id_service": 12, "meteo":1},
-    {"activity_label" : "Suivi des plans d'amortissement", "comment" : "", "id_service": 12, "meteo":1},
+    {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":0},
+    {"activity_label" : "Mises en demeure", "comment" : "", "id_service": 12, "meteo":0},
+    {"activity_label" : "Suivi des plans d'amortissement", "comment" : "", "id_service": 12, "meteo":0},
 
 
-    {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "", "id_service": 13, "meteo":1},
-    {"activity_label" : "Réinitialisation de mots de passe Cyber", "comment" : "", "id_service": 13, "meteo":1},
-    {"activity_label" : "Assistance téléphonique dédiée aux clients (et aux agences) concernant l'utilisation de Cyberplus , du 3DS et de la E-CB (questions fonctionnelles et aide à la navigation, réinitialisation de mots de passe C E-CB, information et assistance sur les dysfonctionnements, authentification forte)", "comment" : "", "id_service": 13, "meteo":1},
-    {"activity_label" : "Traitement des mails reçus via la boîte «contact» (clients). Traitement des mails (clients) générés par l'utilisation de Cyberplus. Traitement des mails agences via Rives assistance Cyber", "comment" : "", "id_service": 13, "meteo":1},
+    {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Réinitialisation de mots de passe Cyber", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Assistance téléphonique dédiée aux clients (et aux agences) concernant l'utilisation de Cyberplus , du 3DS et de la E-CB (questions fonctionnelles et aide à la navigation, réinitialisation de mots de passe C E-CB, information et assistance sur les dysfonctionnements, authentification forte)", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Traitement des mails reçus via la boîte «contact» (clients). Traitement des mails (clients) générés par l'utilisation de Cyberplus. Traitement des mails agences via Rives assistance Cyber", "comment" : "", "id_service": 13, "meteo":0},
 
 
     {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},

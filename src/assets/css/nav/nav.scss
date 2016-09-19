@@ -179,10 +179,10 @@
   			background: url(../images/triangle-top.png) no-repeat center;
   			background-size: cover;
   			color: #3ab2c3;
-  			
-  			
+
+
 		}
-		
+
 		.cont-meteo-global{
 			align-items:center;
 			display: flex;
@@ -193,19 +193,19 @@
 
 				height: 30px;
   				width: 30px;
-  				background: url(../images/sun.png) no-repeat center;
+  				background: url(../images/cloudy.png) no-repeat center;
   				background-size: cover;
 			}
 
 		.meteo-global {
 			// border-bottom: solid 1px white;
 			padding: 0 10px;
-		
+
 
 		}
 
 		}
-		
+
 		.line{
 			height: 1px;
 			background-color: white;
@@ -229,5 +229,3 @@
 
 
 }
-
-

@@ -48,6 +48,10 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
     return img;
   };
 
+  // $scope.imageError =  function(e) {
+  //   event.target.
+  // };
+
   $scope.getImageService = function(serviceCode) {
       var img = $scope.pict+serviceCode+'.png';
       console.log(img);

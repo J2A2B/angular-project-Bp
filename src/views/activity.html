@@ -20,7 +20,7 @@
 				<div class="activity-column-left" ng-class="{'hide-content': !isContact}">
 					<a class="activity-link" ng-repeat="contact in contacts track by $index" ng-href="#/contact/{{contact.id_contact}}">
 						<div class="contact-card" ng-class="'contact-card-'+(($index%4)+1)">
-								<div class="img-activity-contact"  ng-style="{'background-image': 'url('+getImage(contact.photo_id)+')'}"></div>
+								<div class="img-activity-contact"  ng-style="{'background-image': 'url('+getImage(contact.photo_id)+'), url(assets/images/default-user.png)'}"></div>
 
 								<!-- <div class="pastille-activity"></div> -->
 							<div class="contact-info">
