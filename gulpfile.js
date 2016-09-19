@@ -83,6 +83,7 @@ gulp.task('scripts', function() {
 
   //uglify
   .pipe(uglify())
+  // .pipe(uglify().on('error', util.log))
 
   //rename
   .pipe(rename({

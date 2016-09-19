@@ -63,13 +63,13 @@ $scope.activities = [
     {"activity_label" : "Impayés et incidents", "comment" : "", "id_service": 5, "meteo":1},
 
 
-    {"activity_label" : "Traitement d'une demande conforme de virement hors délégation de l'agence : Virement SEPA,  VIRT Tréso ou Fiscaux", "comment" : "", "id_service": 6},
-    {"activity_label" : "Réclamation Virement, demande de recherche sur ordre de moins de 6 mois", "comment" : "", "id_service": 6},
-    {"activity_label" : "Opposition sur prélèvement", "comment" : "", "id_service": 6},
-    {"activity_label" : "Réclamation Prélèvements", "comment" : "", "id_service": 6},
+    {"activity_label" : "Traitement d'une demande conforme de virement hors délégation de l'agence : Virement SEPA,  VIRT Tréso ou Fiscaux", "comment" : "", "id_service": 6, "meteo":1},
+    {"activity_label" : "Réclamation Virement, demande de recherche sur ordre de moins de 6 mois", "comment" : "", "id_service": 6, "meteo":1},
+    {"activity_label" : "Opposition sur prélèvement", "comment" : "", "id_service": 6, "meteo":1},
+    {"activity_label" : "Réclamation Prélèvements", "comment" : "", "id_service": 6, "meteo":1},
     // {"activity_label" : "Obtention d'un Identifiant de Créancier SEPA (ICS)", "comment" : "", "id_service": 6},
-    {"activity_label" : "Traitement d'une demande conforme de rejet d'un prélèvement après qu'il est passé sur le compte, Réclamation rejet tardif", "comment" : "", "id_service": 6},
-    {"activity_label" : "Traitement des mises à disposition, réclamation mise à disposition", "comment" : "", "id_service": 6},
+    {"activity_label" : "Traitement d'une demande conforme de rejet d'un prélèvement après qu'il est passé sur le compte, Réclamation rejet tardif", "comment" : "", "id_service": 6, "meteo":1},
+    {"activity_label" : "Traitement des mises à disposition, réclamation mise à disposition", "comment" : "", "id_service": 6, "meteo":1},
     // {"activity_label" : "Actiflow, Deposia Groupe", "comment" : "", "id_service": 6},
     // {"activity_label" : "Mise en force des contrats, mise à jour des contrats et résiliation des contrats", "comment" : "", "id_service": 6},
     // {"activity_label" : "Réclamation Turbofax / Moviplus", "comment" : "", "id_service": 6},
@@ -89,8 +89,8 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "Difficultés liées aux habilitations et aux nombreux cas non référencés.", "id_service": 7, "meteo":2},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 8, , "meteo":1},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 8, , "meteo":1},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 8, "meteo":1},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 8, "meteo":1},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
@@ -100,7 +100,7 @@ $scope.activities = [
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "", "id_service": 10, "meteo":1},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "Délai J+9 au lieu de J+5; retard pris durant l'été, vu les volumes à traiter et les ETP présents.", "id_service": 10, "meteo":4},
     {"activity_label" : "Décaissements des prêts professionnels", "comment" : "", "id_service": 10, "meteo":1},
     {"activity_label" : "SAV professionnels", "comment" : "", "id_service": 10, "meteo":1},
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "", "id_service": 10, "meteo":1},
@@ -109,9 +109,9 @@ $scope.activities = [
     {"activity_label" : "Editions des prêts immobiliers", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "SAV Particuliers", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "", "id_service": 11, "meteo":1},
+    {"activity_label" : "Décaissements", "comment" : "Délai J+4 au lieu de J+3; sachant que les notaires sont traités en priorité et respectent les délais de la signature", "id_service": 11, "meteo":2},
+    {"activity_label" : "SAV Particuliers", "comment" : "Retard du fait de la forte augmentation des renégociations.", "id_service": 11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "Retard du fait de la forte augmentation des renégociations.", "id_service": 11, "meteo":4},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":1},
@@ -138,10 +138,10 @@ $scope.activities = [
 ];
 
 $scope.images = [
-  "../images/sun.png",
-  "../images/cloudy.png",
-  "../images/rainy.png",
-  "../images/stormy.png"
+  "assets/images/sun.png",
+  "assets/images/cloudy.png",
+  "assets/images/rainy.png",
+  "assets/images/stormy.png"
 ];
 
 }]);
