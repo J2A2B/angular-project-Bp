@@ -128,3 +128,40 @@
 		}
 	}
 }
+
+// meteo
+.container-meteo {
+
+	.meteo {
+		border:solid white 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.meteo-panel {
+		background-color: lighten(#84d6ea, 3%);
+		position: absolute;
+		border: solid white 1px;
+		top: 50px;
+
+		.meteo-global {
+			border-bottom: solid 1px white;
+			padding: 0 10px;
+		}
+
+		.meteo-link {
+			text-decoration: none;
+			color: white;
+			display: inline-block;
+			text-align: center;
+			font-weight: bold;
+			padding: 0 10px;
+		}
+	}
+
+
+}
+
+.meteo-link:hover{
+	background-color: lighten(#84d6ea, 5%);
+}

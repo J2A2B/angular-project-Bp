@@ -1,5 +1,23 @@
 <nav class="container-nav">
 	<a class="cross" ng-if='back' ng-click="goBack()"></a>
+	<div class="container-meteo" ng-mouseover="meteo=true" ng-mouseout="meteo = false">
+		<div class="meteo">
+			<i class="fa fa-compass fa-2x"></i>
+		</div>
+
+		<div class="meteo-panel" ng-show="meteo">
+			<p class="meteo-global">
+				<i class="fa fa-sun-o fa-2x"></i>
+				ADEN: X jours
+			</p>
+			<a href="#" class="meteo-link">
+				<p>
+					Consulter la météo des services
+				</p>
+			</a>
+		</div>
+
+	</div>
 	<h1><a href="/#/">BPLink</a></h1>
 	<div class="container-bell" ng-class="{'container-bell-hidden': show}" ng-click="toggleNews()" cursor="hand">
 		<p>NOUVEAUTÉS</p>
