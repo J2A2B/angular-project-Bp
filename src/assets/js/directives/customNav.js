@@ -4,6 +4,7 @@ myApp.directive('ngNav',['newsFactory','$http', 'ApiFactory','$location', '$wind
 		templateUrl: 'assets/templates/nav.html',
 		link: function(scope, elem, attrs) {
 			scope.countNews = 0;
+			scope.meteo =  false;
 			scope.contactActivity = [];
 
 			if ($location.url() == '/contact/'+$routeParams.id_contact) {
