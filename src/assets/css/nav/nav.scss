@@ -79,7 +79,7 @@
   width: 30px;
   background: url(../images/chevron-left.png) no-repeat center;
   background-size: cover;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
@@ -133,20 +133,56 @@
 .container-meteo {
 
 	.meteo {
+		display: flex;
+		justify-content:center;
+		align-items:center;
 		border:solid white 1px;
 		padding-left: 10px;
 		padding-right: 10px;
+
+		.temp{
+			height: 30px;
+  			width: 30px;
+  			background: url(../images/temp.png) no-repeat center;
+  			background-size: cover;
+		}
 	}
 
 	.meteo-panel {
-		background-color: lighten(#84d6ea, 3%);
+		background-color: #50d1e2;
+		// background-color: lighten(#84d6ea, 3%);
 		position: absolute;
-		border: solid white 1px;
-		top: 50px;
+		// border: solid white 1px;
+		top: 85px;
+
+		.chevron-top{
+			position: absolute;
+			bottom: 107px;
+			left: 0px;
+			height: 25px;
+  			width: 25px;
+  			background: url(../images/triangle-top2.png) no-repeat center;
+  			background-size: cover;
+  			
+  			
+		}
 
 		.meteo-global {
-			border-bottom: solid 1px white;
+			// border-bottom: solid 1px white;
 			padding: 0 10px;
+		
+			.aden-sun{
+				height: 30px;
+  				width: 30px;
+  				background: url(../images/sun2.png) no-repeat center;
+  				background-size: cover;
+			}
+
+		}
+		
+		.line{
+			height: 1px;
+			background-color: white
 		}
 
 		.meteo-link {
