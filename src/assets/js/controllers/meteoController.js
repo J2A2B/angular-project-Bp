@@ -23,8 +23,6 @@ $scope.services = [
   ];
 
 $scope.activities = [
-
-
     {"activity_label" : "Client Groupe Arrivée/Départ", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Cartes en urgence : refabrication et réédition de code confidentiel", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Ouverture de comptes atypiques", "comment" : "", "id_service": 1, "meteo":1},
@@ -130,13 +128,20 @@ $scope.activities = [
     {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},
 
 
-    {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15},
+    {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15, "meteo":1},
 
 
-    {"activity_label" : "Transfert d'un dossier au Contentieux", "comment" : "", "id_service": 16},
-    {"activity_label" : "Opposition sur le prix de vente d'un fonds de commerce", "comment" : "", "id_service": 16},
-    {"activity_label" : "Dénonciation créanciers inscrits", "comment" : "", "id_service": 16}
+    {"activity_label" : "Transfert d'un dossier au Contentieux", "comment" : "", "id_service": 16, "meteo":1},
+    {"activity_label" : "Opposition sur le prix de vente d'un fonds de commerce", "comment" : "", "id_service": 16, "meteo":1},
+    {"activity_label" : "Dénonciation créanciers inscrits", "comment" : "", "id_service": 16, "meteo":1}
 
+];
+
+$scope.images = [
+  "../images/sun.png",
+  "../images/cloudy.png",
+  "../images/rainy.png",
+  "../images/stormy.png"
 ];
 
 }]);
