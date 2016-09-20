@@ -1,11 +1,11 @@
 .container-infos{
-	
+
 	display: flex;
 	flex-direction:column;
 	align-items:center;
 	width: 100%;
-	
-	
+
+
 	.pastille{
 		position: relative;
 		left: 65px;
@@ -27,21 +27,21 @@
 		background-repeat:no-repeat;
 		background-size: cover;
         background-position: center;
-		
+
 	}
-	
+
 	h1{
 		font-size: 24px;
 		margin: 0;
 	}
 
-	p{	
+	p{
 		margin: 15px;
 		font-size: 16px;
 		color: white;
 
 	}
-	
+
 	.container-contact-assets{
 		cursor:pointer;
 		width: 100%;
@@ -49,7 +49,7 @@
 		flex-direction:column;
 
 		.container-main-assets{
-			
+
 			display: flex;
 
 			.container-asset{
@@ -60,14 +60,14 @@
 				height: 175px;
 				width: 50%;
 				text-decoration: none;
-				
+
 
 				.generic-cont{
 					width: 50px;
 					height: 50px;
 					margin: 10px;
 				}
-				
+
 				.img-call{
 					background: url(../images/phone-call.svg) no-repeat center;
 					background-size: cover;
@@ -80,21 +80,20 @@
 				.img-call-back{
 					background: url(../images/call-back.svg) no-repeat center;
 					background-size: cover;
-					opacity: 0.5;
 				}
 				.img-chat{
 					background: url(../images/chat.svg) no-repeat center;
 					background-size: cover;
 					// opacity: 0.5;
 				}
-				
+
 				p{
 					font-size: 20px;
 					margin: 5px;
 				}
 
 				.text-callback{
-					opacity: 0.5;
+					// opacity: 0.5;
 				}
 
 				.text-chat{
@@ -124,8 +123,7 @@
 			}
 
 			.color-cont-three:hover{
-				cursor: not-allowed;
-				// background-color: lighten(#5b4370, 8%);
+				background-color: lighten(#5b4370, 8%);
 			}
 
 			.color-cont-four{
@@ -135,7 +133,7 @@
 
 			.color-cont-four:hover{
 				background-color: lighten(#473359, 8%);
-				
+
 			}
 
 		}
@@ -146,7 +144,7 @@
 }
 
 @media screen and (max-width: 500px) {
-	
+
 
 
 		.img-contact {
@@ -172,5 +170,3 @@
 	}
 
 }
-
-
