@@ -105,6 +105,7 @@
 
 		.container-bell{
 
+			height: 35px;
 			margin-bottom: 15px;
 
 			p{
@@ -127,11 +128,42 @@
 			}
 		}
 	}
+
+.container-nav{
+
+	.container-meteo {
+
+	
+		h3{
+		font-size: 0.6em;
+	}
+
+
+	.meteo {
+		margin-top: 10px;
+		height: 35px;
+
+		.temp{
+			height: 15px;
+  			width: 15px ;
+
+		}
+
+	
+	}
+	.meteo-panel {
+		
+		top: 70px;
+		
+	}
+}
+
+}
 }
 
 // meteo
 .container-meteo {
-	width: 13%;
+	
 
 
 	h3{

@@ -62,7 +62,7 @@
 				width: 60%;
 				display: flex;
 				align-items:center;
-				font-size: 16px;
+				font-size: 15px;
 				justify-content:space-between;
 
 				p{
@@ -125,11 +125,88 @@
 			}
 		}
 
-		// .right-column-serv-comment{
-
-		// 	width: 40%;
-
-		// }
+		
 	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.cont-title-meteo-page{
+
+	.title-meteo-page{
+		
+		font-size: 20px;
+
+	}
+
+}
+	
+
+.cont-meteo{
+	
+
+	.cont-serv-meteo{
+
+		.title-serv-meteo{
+			
+			font-size: 18px;
+
+		}
+
+		.left-column-serv-comment{
+
+
+			.serv-meteo{
+
+
+						font-size: 11px;
+
+						p{
+							margin-left: 10px;
+							margin-right: 10px;
+							width: 85%;
+						}
+
+						.img-meteo{
+							height:30px;
+							width:30px;
+							margin-right: 10px;
+						}
+					}
+
+					.serv-comment-meteo{
+						font-size: 11px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	.cont-meteo{
+	
+
+	.cont-serv-meteo{
+
+
+
+		.left-column-serv-comment{
+			flex-direction:column;
+
+			.serv-meteo{
+				width: 100%;
+				font-size: 13px;
+			}
+
+			.serv-comment-meteo{
+				width:100%;
+				font-size: 13px;
+			}
+
+		}
+	}
+}
 
 }
