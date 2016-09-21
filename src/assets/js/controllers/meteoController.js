@@ -110,8 +110,8 @@ $scope.activities = [
     {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Décaissements", "comment" : "Délai J+4 au lieu de J+3; sachant que les notaires sont traités en priorité et respectent les délais de la signature", "id_service": 11, "meteo":2},
-    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations reçues entre le 15 août et le 15 septembre: risque fort d'un report au 5 décembre au lieu du 5 novembre. /n Renégociations reçues entre le 15 septembre et le 15 octobre: traitement prévu avant le 5 décembre.", "id_service": 11, "meteo":4},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "Retard du fait de la forte augmentation des renégociations.", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations reçues entre le 15 août et le 15 septembre: risque fort d'un report au 5 décembre au lieu du 5 novembre. \n Renégociations reçues entre le 15 septembre et le 15 octobre: traitement prévu avant le 5 décembre.", "id_service": 11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "", "id_service": 11, "meteo":1},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":0},
