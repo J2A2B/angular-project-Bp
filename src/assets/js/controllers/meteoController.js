@@ -82,11 +82,11 @@ $scope.activities = [
     {"activity_label" : "Réclamation effet, mode financement effet, prorogation effet, Réclamation complexes (ex : demandes d'effets archivés, renseignements, …)", "comment" : "", "id_service": 6},
 
 
-    {"activity_label" : "Contrôle DRC", "comment" : "Tous les premiers contrôles sont faits dans les temps. Retard sur les contrôles suivants.", "id_service": 7, "meteo":1},
-    {"activity_label" : "EAI", "comment" : "Compte tenu de l'augmentation très importante du flux, nous traitons les anomalies avec retard.", "id_service": 7, "meteo":2},
+    {"activity_label" : "Contrôle DRC", "comment" : "", "id_service": 7, "meteo":1},
+    {"activity_label" : "EAI", "comment" : "", "id_service": 7, "meteo":1},
     {"activity_label" : "Déblocage moyens de paiement (cartes, chéquiers)", "comment" : "", "id_service": 7, "meteo":1},
-    {"activity_label" : "Entrée en relation PRO", "comment" : "Une seule demande sur la semaine.", "id_service": 7, "meteo":1},
-    {"activity_label" : "Fin de relation", "comment" : "Difficultés liées aux habilitations et aux nombreux cas non référencés.", "id_service": 7, "meteo":2},
+    {"activity_label" : "Entrée en relation PRO", "comment" : "", "id_service": 7, "meteo":1},
+    {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
     {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 8, "meteo":1},
@@ -100,7 +100,7 @@ $scope.activities = [
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "Délai J+9 au lieu de J+5; retard pris durant l'été, vu les volumes à traiter et les ETP présents.", "id_service": 10, "meteo":4},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "Délai J+9 au lieu de J+5", "id_service": 10, "meteo":4},
     {"activity_label" : "Décaissements des prêts professionnels", "comment" : "", "id_service": 10, "meteo":1},
     {"activity_label" : "SAV professionnels", "comment" : "", "id_service": 10, "meteo":1},
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "", "id_service": 10, "meteo":1},
@@ -110,7 +110,7 @@ $scope.activities = [
     {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Décaissements", "comment" : "Délai J+4 au lieu de J+3; sachant que les notaires sont traités en priorité et respectent les délais de la signature", "id_service": 11, "meteo":2},
-    {"activity_label" : "SAV Particuliers", "comment" : "Retard du fait de la forte augmentation des renégociations.", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations reçues entre le 15 août et le 15 septembre: risque fort d'un report au 5 décembre au lieu du 5 novembre. /n Renégociations reçues entre le 15 septembre et le 15 octobre: traitement prévu avant le 5 décembre.", "id_service": 11, "meteo":4},
     {"activity_label" : "Traitement des aménagements complexes", "comment" : "Retard du fait de la forte augmentation des renégociations.", "id_service": 11, "meteo":4},
 
 
@@ -119,10 +119,10 @@ $scope.activities = [
     {"activity_label" : "Suivi des plans d'amortissement", "comment" : "", "id_service": 12, "meteo":0},
 
 
-    {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "", "id_service": 13, "meteo":0},
-    {"activity_label" : "Réinitialisation de mots de passe Cyber", "comment" : "", "id_service": 13, "meteo":0},
-    {"activity_label" : "Assistance téléphonique dédiée aux clients (et aux agences) concernant l'utilisation de Cyberplus , du 3DS et de la E-CB (questions fonctionnelles et aide à la navigation, réinitialisation de mots de passe C E-CB, information et assistance sur les dysfonctionnements, authentification forte)", "comment" : "", "id_service": 13, "meteo":0},
-    {"activity_label" : "Traitement des mails reçus via la boîte «contact» (clients). Traitement des mails (clients) générés par l'utilisation de Cyberplus. Traitement des mails agences via Rives assistance Cyber", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "Taux de décroché à 81% (objectif à 90%)", "id_service": 13, "meteo":2},
+    {"activity_label" : "Réinitialisation de mots de passe Cyber", "comment" : "", "id_service": 13, "meteo":1},
+    {"activity_label" : "Assistance téléphonique dédiée aux clients (et aux agences) concernant l'utilisation de Cyberplus , du 3DS et de la E-CB (questions fonctionnelles et aide à la navigation, réinitialisation de mots de passe C E-CB, information et assistance sur les dysfonctionnements, authentification forte)", "comment" : "Taux de décroché à 81% (objectif à 90%)", "id_service": 13, "meteo":2},
+    {"activity_label" : "Traitement des mails reçus via la boîte «contact» (clients). Traitement des mails (clients) générés par l'utilisation de Cyberplus. Traitement des mails agences via Rives assistance Cyber", "comment" : "Taux de décroché: 81% (objectif à 90%)", "id_service": 13, "meteo":2},
 
 
     {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},

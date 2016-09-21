@@ -8,7 +8,7 @@ myApp.config(['$routeProvider', '$compileProvider', function($routeProvider, $co
 	.when('/search-error/', {templateUrl: 'views/search-error.html'})
 	.when('/search-result/:id_keyword', {templateUrl: 'views/search-result.html'})
 	.when('/search-result/noresult', {templateUrl: 'views/search-error.html'})
-	// .when('/meteo', {templateUrl: 'views/meteo.html'})
+	.when('/meteo', {templateUrl: 'views/meteo.html'})
 	.otherwise({redirectTo: '/'});
 
 	$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|xmpp|tel|javascript):/);
