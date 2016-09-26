@@ -41,11 +41,14 @@ $scope.activities = [
     {"activity_label" : "Simulation contrats Prévoyance PRO", "comment" : "", "id_service": 2, "meteo":1},
 
 
+    {"activity_label" : "Crédit Documentaires", "comment" : "", "id_service": 3, "meteo":1},
+    {"activity_label" : "Remises Documentaires", "comment" : "", "id_service": 3, "meteo":1},
+    {"activity_label" : "Garanties ", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Recherches & Demandes d'informations ", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Flux internationaux (hors SEPA) : (Virements, Rapatriements & Chèques)", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Achat - vente devises", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "MCNE, Coface, FAP et Préfinancement", "comment" : "", "id_service": 3, "meteo":1},
-    {"activity_label" : "Atciflow", "comment" : "", "id_service": 3, "meteo":1},
+    // {"activity_label" : "Atciflow", "comment" : "", "id_service": 3, "meteo":1},
 
 
     {"activity_label" : "Demande d'information monétique commerçant, matériel TPE, ELC, location", "comment" : "", "id_service": 4, "meteo":1},
