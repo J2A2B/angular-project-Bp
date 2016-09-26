@@ -79,7 +79,7 @@ $scope.activities = [
     // {"activity_label" : "Validation des lettres de certificat EBICS", "comment" : "", "id_service": 6},
     // {"activity_label" : "Modification et/ou résilisation de prestations de télétransmission", "comment" : "", "id_service": 6},
     // {"activity_label" : "Réclamation et anomalie fichier télétransmis, confirmation de la réception des fichiers télétransmis", "comment" : "", "id_service": 6},
-    {"activity_label" : "Réclamation effet, mode financement effet, prorogation effet, Réclamation complexes (ex : demandes d'effets archivés, renseignements, …)", "comment" : "", "id_service": 6},
+    {"activity_label" : "Réclamation effet, mode financement effet, prorogation effet, Réclamation complexes (ex : demandes d'effets archivés, renseignements, …)", "comment" : "", "id_service": 6, "meteo":1},
 
 
     {"activity_label" : "Contrôle DRC", "comment" : "", "id_service": 7, "meteo":1},
@@ -89,12 +89,12 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 8, "meteo":1},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 8, "meteo":1},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 8, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 8, "meteo":2},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 9, "meteo":1},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 9, "meteo":2},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
