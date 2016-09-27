@@ -92,29 +92,29 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 8, "meteo":2},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 8, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+6", "id_service": 8, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+6", "id_service": 8, "meteo":2},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "", "id_service": 9, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+6 / J+7", "id_service": 9, "meteo":2},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "Délai J+9 au lieu de J+5", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "", "id_service": 10, "meteo":1},
-    {"activity_label" : "SAV professionnels", "comment" : "", "id_service": 10, "meteo":1},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+7", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+4", "id_service": 10, "meteo":2},
+    {"activity_label" : "SAV professionnels", "comment" : "J+3", "id_service": 10, "meteo":2},
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "", "id_service": 10, "meteo":1},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "8 jours ouvrés minimum", "id_service": 11, "meteo":2},
+    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "Jusqu'à 8 jours ouvrés", "id_service": 11, "meteo":2},
     {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "Délai J+4 au lieu de J+3; sachant que les notaires sont traités en priorité et respectent les délais de la signature", "id_service": 11, "meteo":2},
-    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations reçues entre le 15 août et le 15 septembre: risque fort d'un report au 5 décembre au lieu du 5 novembre. \n Renégociations reçues entre le 15 septembre et le 15 octobre: traitement prévu avant le 5 décembre.", "id_service": 11, "meteo":4},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "", "id_service": 11, "meteo":1},
+    {"activity_label" : "Décaissements", "comment" : "7 jours ouvrés minimum", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations reçues entre le 15 août et le 15 septembre: risque fort d'un report au 5 décembre au lieu du 5 novembre.", "id_service": 11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "15 jours ouvrés minimum", "id_service": 11, "meteo":2},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":0},
@@ -122,13 +122,13 @@ $scope.activities = [
     {"activity_label" : "Suivi des plans d'amortissement", "comment" : "", "id_service": 12, "meteo":0},
 
 
-    {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "Taux de décroché à 81% (objectif à 90%)", "id_service": 13, "meteo":2},
-    {"activity_label" : "Réinitialisation de mots de passe Cyber", "comment" : "", "id_service": 13, "meteo":1},
-    {"activity_label" : "Assistance téléphonique dédiée aux clients (et aux agences) concernant l'utilisation de Cyberplus , du 3DS et de la E-CB (questions fonctionnelles et aide à la navigation, réinitialisation de mots de passe C E-CB, information et assistance sur les dysfonctionnements, authentification forte)", "comment" : "Taux de décroché à 81% (objectif à 90%)", "id_service": 13, "meteo":2},
-    {"activity_label" : "Traitement des mails reçus via la boîte «contact» (clients). Traitement des mails (clients) générés par l'utilisation de Cyberplus. Traitement des mails agences via Rives assistance Cyber", "comment" : "Taux de décroché: 81% (objectif à 90%)", "id_service": 13, "meteo":2},
+    {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Réinitialisation de mots de passe Cyber", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Assistance téléphonique dédiée aux clients (et aux agences) concernant l'utilisation de Cyberplus , du 3DS et de la E-CB (questions fonctionnelles et aide à la navigation, réinitialisation de mots de passe C E-CB, information et assistance sur les dysfonctionnements, authentification forte)", "comment" : "", "id_service": 13, "meteo":0},
+    {"activity_label" : "Traitement des mails reçus via la boîte «contact» (clients). Traitement des mails (clients) générés par l'utilisation de Cyberplus. Traitement des mails agences via Rives assistance Cyber", "comment" : "", "id_service": 13, "meteo":0},
 
 
-    {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},
+    {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":0},
 
 
     {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15, "meteo":1},
