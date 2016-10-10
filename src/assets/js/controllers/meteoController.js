@@ -3,7 +3,7 @@ myApp.controller('meteoController',['$scope', '$http', 'ApiFactory', '$routePara
 
 $scope.services = [
 
-
+    {"service_id" : 0, "service_name" : "ARCHIVAGE"},
     { "service_id" : 1,"service_name" : "GCC"},
     { "service_id" : 2,"service_name" : "PIARD"},
     { "service_id" : 3,"service_name" : "INTERNATIONAL"},
@@ -23,6 +23,10 @@ $scope.services = [
   ];
 
 $scope.activities = [
+
+    {"activity_label" : "Traitement du courrier des agences", "comment" : "J+2", "id_service" : 0, "meteo" : 2},
+    {"activity_label" : "Injection dans ADEN", "comment" : "J+2", "id_service" : 0, "meteo" : 2},
+
     {"activity_label" : "Client Groupe Arrivée/Départ", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Cartes en urgence : refabrication et réédition de code confidentiel", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Ouverture de comptes atypiques", "comment" : "", "id_service": 1, "meteo":1},
@@ -92,29 +96,29 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+7", "id_service": 8, "meteo":2},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+1", "id_service": 8, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+6", "id_service": 8, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+6", "id_service": 8, "meteo":2},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+6", "id_service": 9, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+8", "id_service": 9, "meteo":2},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+7", "id_service": 10, "meteo":4},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+6(dossiers en stock)", "id_service": 10, "meteo":4},
     {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+4", "id_service": 10, "meteo":2},
-    {"activity_label" : "SAV professionnels", "comment" : "J+4(avenants)", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J+3", "id_service": 10, "meteo":2},
+    {"activity_label" : "SAV professionnels", "comment" : "J+4 pour les avenants(renégo + franchise)", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "", "id_service": 10, "meteo":1},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "10 jours ouvrés de délai", "id_service": 11, "meteo":4},
-    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":4},
-    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "8 jours ouvrés sur les décaissements travaux et rachats, OK sur les notaires", "id_service": 11, "meteo":4},
-    {"activity_label" : "SAV Particuliers", "comment" : "Stock des renégociations accordées entre le 15/08 et le 15/09 : les avenants devraient être édités avant le 15/10. Rénégociations accordés entre le 15/09 et le 15/10 : les avenants édités entre le 15/10 et le 15/11 pour mise en place au 05/12 ", "id_service": 11, "meteo":4},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "", "id_service": 11, "meteo":1},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+12 (stock dossiers à diagnostiquer)", "id_service": 11, "meteo":4},
+    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+12 (délai des dossiers à diagnostiquer)", "id_service": 11, "meteo":4},
+    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+12 (délai des dossiers à diagnostiquer)", "id_service": 11, "meteo":4},
+    {"activity_label" : "Décaissements", "comment" : "J+12 sur les rachats, J+7 sur les travaux", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "2 mois minimum pour les renégociations", "id_service": 11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "J+12", "id_service": 11, "meteo":2},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":1},
@@ -131,7 +135,7 @@ $scope.activities = [
     {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},
 
 
-    {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15, "meteo":1},
+    {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15, "meteo":2},
 
 
     {"activity_label" : "Transfert d'un dossier au Contentieux", "comment" : "", "id_service": 16, "meteo":1},
