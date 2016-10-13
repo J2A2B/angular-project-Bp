@@ -22,7 +22,7 @@ myApp.controller('activityController',['$scope', '$http', 'ApiFactory', '$routeP
       console.log("Couldn't retrieve ressources");
   });
 
-  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts?limit=100&offset=0')
+  $http.get(ApiFactory.api+'activities/'+$routeParams.id_activity+'/contacts?limit=100&offset=0&sort=view_count')
   .then(
     function(response) {
       $scope.contacts = response.data.result;

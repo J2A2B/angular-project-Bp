@@ -13,6 +13,17 @@ myApp.controller('contactController',['$scope', '$http', '$routeParams', 'ApiFac
 				console.log('Unable to retrieve data from the API :/');
 		});
 
+		$scope.increment = function () {
+			$http.patch(ApiFactory.api + 'contacts/'+ $routeParams.id_contact + '?action=increaseViewCount')
+			.then(
+				function (response) {
+					console.log("increased");
+				},
+				function (err) {
+					console.log("not increased");
+				}
+			);
+		}
 		// $scope.getJabber = function(id) {
 		// 	var link = id + '@ibp.lan?message';
 		// 	return link;
