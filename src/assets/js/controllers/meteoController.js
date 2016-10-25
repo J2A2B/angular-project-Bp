@@ -25,7 +25,7 @@ $scope.services = [
 $scope.activities = [
 
     {"activity_label" : "Traitement du courrier des agences", "comment" : "J+1", "id_service" : 0, "meteo" : 1},
-    {"activity_label" : "Injection dans ADEN", "comment" : "J+2", "id_service" : 0, "meteo" : 2},
+    {"activity_label" : "Injection dans ADEN", "comment" : "J+7", "id_service" : 0, "meteo" : 4},
 
     {"activity_label" : "Client Groupe Arrivée/Départ", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Cartes en urgence : refabrication et réédition de code confidentiel", "comment" : "", "id_service": 1, "meteo":1},
