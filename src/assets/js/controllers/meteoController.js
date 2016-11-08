@@ -25,7 +25,7 @@ $scope.services = [
 $scope.activities = [
 
     {"activity_label" : "Traitement du courrier des agences", "comment" : "J+1", "id_service" : 0, "meteo" : 1},
-    {"activity_label" : "Injection dans ADEN", "comment" : "J+7", "id_service" : 0, "meteo" : 0},
+    {"activity_label" : "Injection dans ADEN", "comment" : "J+1", "id_service" : 0, "meteo" : 1},
 
     {"activity_label" : "Client Groupe Arrivée/Départ", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Cartes en urgence : refabrication et réédition de code confidentiel", "comment" : "", "id_service": 1, "meteo":1},
@@ -90,35 +90,35 @@ $scope.activities = [
 
 
     {"activity_label" : "Contrôle DRC", "comment" : "", "id_service": 7, "meteo":1},
-    {"activity_label" : "EAI", "comment" : "J+5", "id_service": 7, "meteo":2},
+    {"activity_label" : "EAI", "comment" : "", "id_service": 7, "meteo":1},
     {"activity_label" : "Déblocage moyens de paiement (cartes, chéquiers)", "comment" : "", "id_service": 7, "meteo":1},
     {"activity_label" : "Entrée en relation PRO", "comment" : "", "id_service": 7, "meteo":1},
     {"activity_label" : "Fin de relation", "comment" : "J+3", "id_service": 7, "meteo":2},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+9", "id_service": 8, "meteo":2},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+5", "id_service": 8, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+7", "id_service": 8, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+4", "id_service": 8, "meteo":1},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+9", "id_service": 9, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10 (impact jour férié et fermeture banque)", "id_service": 9, "meteo":2},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+8 (stock de 70 dossiers)", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+4", "id_service": 10, "meteo":2},
-    {"activity_label" : "SAV professionnels", "comment" : "J+5", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J+5", "id_service": 10, "meteo":2},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+9 (stock de 71 dossiers)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+4 (stock 46 dossiers)", "id_service": 10, "meteo":2},
+    {"activity_label" : "SAV professionnels", "comment" : "En délais sur avenance et mainlevées", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J+3", "id_service": 10, "meteo":1},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+11 - Traitement journée du 13 et 14 octobre 2016. Stock 628 dossiers.", "id_service": 11, "meteo":4},
-    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+11 - Correction technique pour tous les dossiers du fait contrôle LCI pour dossiers dont étude à débuter avant 1/10/2016", "id_service": 11, "meteo":4},
-    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+11 - Recueil accords SACCEF au fil des études des dossiers", "id_service": 11, "meteo":4},
-    {"activity_label" : "Décaissements", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "SAV Particuliers", "comment" : "J+10 - Stock de 1205 renégociations. Actuellement traitement des demandes reçues le 18/10/2016 ", "id_service": 11, "meteo":4},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "J+10 -  Stock de 55 demandes de simulations complexes.", "id_service": 11, "meteo":2},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+13 - Traitement de la journée du 19/10/2016", "id_service": 11, "meteo":4},
+    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+13", "id_service": 11, "meteo":4},
+    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+13", "id_service": 11, "meteo":4},
+    {"activity_label" : "Décaissements", "comment" : "Rachat de prêt: traitement de la journée du 25/10. Travaux: traitement de la journée du 28/10. Notaire: à jour.", "id_service": 11, "meteo":2},
+    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations: traitement de la journée du 21/10/2016. Stock renégociations: 1282", "id_service": 11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "Traitement de la journée du 26/10/2016. Stock de 50", "id_service": 11, "meteo":1},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":1},
