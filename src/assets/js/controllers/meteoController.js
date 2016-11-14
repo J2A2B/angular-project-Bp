@@ -65,7 +65,7 @@ $scope.activities = [
     {"activity_label" : "Fraudes cartes bancaires commerçant (surveillance et gestion des alertes)", "comment" : "", "id_service": 4, "meteo":1},
 
 
-    {"activity_label" : "Encaissement non disponible", "comment" : "Délai encore maintenu", "id_service": 5, "meteo":1},
+    {"activity_label" : "Encaissement non disponible", "comment" : "", "id_service": 5, "meteo":1},
     {"activity_label" : "Support", "comment" : "", "id_service": 5, "meteo": 1},
     {"activity_label" : "Impayés et incidents", "comment" : "", "id_service": 5, "meteo":1},
 
@@ -93,32 +93,32 @@ $scope.activities = [
     {"activity_label" : "EAI", "comment" : "", "id_service": 7, "meteo":1},
     {"activity_label" : "Déblocage moyens de paiement (cartes, chéquiers)", "comment" : "", "id_service": 7, "meteo":1},
     {"activity_label" : "Entrée en relation PRO", "comment" : "", "id_service": 7, "meteo":1},
-    {"activity_label" : "Fin de relation", "comment" : "J+3", "id_service": 7, "meteo":2},
+    {"activity_label" : "Fin de relation", "comment" : "J+3 (attente de 3 jours avant de prendre en charge un nouveau dossier)", "id_service": 7, "meteo":2},
 
 
     {"activity_label" : "Etude et décision / Assistance", "comment" : "J+7", "id_service": 8, "meteo":2},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+4", "id_service": 8, "meteo":1},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+6", "id_service": 8, "meteo":2},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10 (impact jour férié et fermeture banque)", "id_service": 9, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+13", "id_service": 9, "meteo":4},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+9 (stock de 71 dossiers)", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+4 (stock 46 dossiers)", "id_service": 10, "meteo":2},
-    {"activity_label" : "SAV professionnels", "comment" : "En délais sur avenance et mainlevées", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J+3", "id_service": 10, "meteo":1},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+6 (stock de 57 dossiers)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+4", "id_service": 10, "meteo":2},
+    {"activity_label" : "SAV professionnels", "comment" : "J+4", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "", "id_service": 10, "meteo":1},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+13 - Traitement de la journée du 19/10/2016", "id_service": 11, "meteo":4},
-    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+13", "id_service": 11, "meteo":4},
-    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+13", "id_service": 11, "meteo":4},
-    {"activity_label" : "Décaissements", "comment" : "Rachat de prêt: traitement de la journée du 25/10. Travaux: traitement de la journée du 28/10. Notaire: à jour.", "id_service": 11, "meteo":2},
-    {"activity_label" : "SAV Particuliers", "comment" : "Renégociations: traitement de la journée du 21/10/2016. Stock renégociations: 1282", "id_service": 11, "meteo":4},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "Traitement de la journée du 26/10/2016. Stock de 50", "id_service": 11, "meteo":1},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+13 - Traitement du 21/10/2016", "id_service": 11, "meteo":4},
+    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+13 - Traitement du 21/10/2016", "id_service": 11, "meteo":4},
+    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+13 - Traitement du 21/10/2016", "id_service": 11, "meteo":4},
+    {"activity_label" : "Décaissements", "comment" : "J+6", "id_service": 11, "meteo":2},
+    {"activity_label" : "SAV Particuliers", "comment" : "J+12 Renégociations conformes - Traitement du 25/10/2016", "id_service": 11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "J+8 - Traitement du 29/10/2016", "id_service": 11, "meteo":1},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":1},
@@ -135,7 +135,7 @@ $scope.activities = [
     {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},
 
 
-    {"activity_label" : "Traitement des réclamations", "comment" : "J+2", "id_service": 15, "meteo":2},
+    {"activity_label" : "Traitement des réclamations", "comment" : "J+4", "id_service": 15, "meteo":4},
 
 
     {"activity_label" : "Transfert d'un dossier au Contentieux", "comment" : "", "id_service": 16, "meteo":1},
