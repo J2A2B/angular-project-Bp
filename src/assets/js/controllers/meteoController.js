@@ -37,7 +37,7 @@ $scope.activities = [
     {"activity_label" : "Traitement des NPAI", "comment" : "", "id_service": 1, "meteo":1},
 
 
-    {"activity_label" : "Contrats et avenants IARD, dont aventants IARD Pro en risque simple", "comment" : "J+14", "id_service": 2, "meteo":4},
+    {"activity_label" : "Contrats et avenants IARD, dont aventants IARD Pro en risque simple", "comment" : "", "id_service": 2, "meteo":4},
     {"activity_label" : "Contrats et avenants Prévoyance, dont envoi du faxe à CBP", "comment" : "", "id_service": 2, "meteo":1},
     {"activity_label" : "Simulation des contrats prévoyance Pro", "comment" : "", "id_service": 2, "meteo":1},
     {"activity_label" : "Assurance emprunteur", "comment" : "", "id_service": 2, "meteo":1},
@@ -96,8 +96,8 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "J+3 (attente de 3 jours avant de prendre en charge un nouveau dossier)", "id_service": 7, "meteo":2},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+9", "id_service": 8, "meteo":4},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+4", "id_service": 8, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+9", "id_service": 8, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+6", "id_service": 8, "meteo":2},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
@@ -107,17 +107,17 @@ $scope.activities = [
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "J+8 (stock de 61 dossiers)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : " J + 6  - dossiers du 18/11/2016", "id_service": 10, "meteo":2},
     {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+3", "id_service": 10, "meteo":1},
-    {"activity_label" : "SAV professionnels", "comment" : "J+4 - Stock avenants : 40", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J+4 - Stock en hausse sur les cautions CT", "id_service": 10, "meteo":2},
+    {"activity_label" : "SAV professionnels", "comment" : "J + 5 – Stock sur Avenants & mainlevées", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J + 5  Stock sur cautions CT", "id_service": 10, "meteo":2},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+9", "id_service": 11, "meteo":4},
-    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+9", "id_service": 11, "meteo":4},
-    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+9", "id_service": 11, "meteo":4},
-    {"activity_label" : "Décaissements", "comment" : "J+6", "id_service": 11, "meteo":2},
-    {"activity_label" : "SAV Particuliers", "comment" : "J+7", "id_service": 11, "meteo":4},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+4", "id_service": 11, "meteo":1},
+    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "J+4", "id_service": 11, "meteo":1},
+    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "J+4", "id_service": 11, "meteo":1},
+    {"activity_label" : "Décaissements", "comment" : "J+4", "id_service": 11, "meteo":2},
+    {"activity_label" : "SAV Particuliers", "comment" : "J+7", "id_service": 11, "meteo":2},
     {"activity_label" : "Traitement des aménagements complexes", "comment" : "J+10", "id_service": 11, "meteo":1},
 
 
