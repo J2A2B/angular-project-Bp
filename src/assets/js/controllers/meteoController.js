@@ -14,7 +14,7 @@ $scope.services = [
     { "service_id" : 8,"service_name" : "ÉTUDES ET DÈCISIONS PART"},
     { "service_id" : 9,"service_name" : "ÉTUDES ET DÈCISIONS PRO"},
     { "service_id" : 10,"service_name" : "RÉALISATION PRO"},
-    // { "service_id" : 11,"service_name" : "ATOUT PRÊT"},
+    { "service_id" : 11,"service_name" : "ATOUT PRÊT"},
     { "service_id" : 12,"service_name" : "SOC"},
     { "service_id" : 13,"service_name" : "APPELS ET ASSISTANCE"},
     { "service_id" : 14,"service_name" : "INGÉNIERIE SOCIALE"},
@@ -113,12 +113,12 @@ $scope.activities = [
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J + 6  Stock sur cautions CT", "id_service": 10, "meteo":2},
 
 
-    // {"activity_label" : "Editions des prêts immobiliers", "comment" : "J+5 (traitement du 30/11/2016)", "id_service": 11, "meteo":1},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":3},
     // {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     // {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    // {"activity_label" : "Décaissements", "comment" : "J+5 (traitement du 30/11/2016)", "id_service": 11, "meteo":2},
-    // {"activity_label" : "SAV Particuliers", "comment" : "Renégociations", "id_service": 11, "meteo":2},
-    // {"activity_label" : "Traitement des aménagements complexes", "comment" : "Traitement du 29/11/2016", "id_service": 11, "meteo":4},
+    {"activity_label" : "Décaissements", "comment" : "3 jours ouvrés", "id_service": 11, "meteo":1},
+    {"activity_label" : "SAV Particuliers", "comment" : "8 jours ouvrés", "id_service":11, "meteo":1},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "8 jours ouvrés", "id_service": 11, "meteo":1},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":2},
