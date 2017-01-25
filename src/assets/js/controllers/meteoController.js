@@ -24,8 +24,8 @@ $scope.services = [
 
 $scope.activities = [
 
-    {"activity_label" : "Traitement du courrier des agences", "comment" : "J+1", "id_service" : 0, "meteo" : 1},
-    {"activity_label" : "Injection dans ADEN", "comment" : "J+1", "id_service" : 0, "meteo" : 1},
+    {"activity_label" : "Traitement du courrier des agences", "comment" : "", "id_service" : 0, "meteo" : 1},
+    {"activity_label" : "Injection dans ADEN", "comment" : "", "id_service" : 0, "meteo" : 1},
 
     {"activity_label" : "Client Groupe Arrivée/Départ", "comment" : "", "id_service": 1, "meteo":1},
     {"activity_label" : "Cartes en urgence : refabrication et réédition de code confidentiel", "comment" : "", "id_service": 1, "meteo":1},
@@ -37,7 +37,7 @@ $scope.activities = [
     {"activity_label" : "Traitement des NPAI", "comment" : "", "id_service": 1, "meteo":1},
 
 
-    {"activity_label" : "Contrats et avenants IARD, dont aventants IARD Pro en risque simple", "comment" : "Incident de traitement DOCAPOST: 200 dossiers en moyenne/jour dans corbeille A définir", "id_service": 2, "meteo":4},
+    {"activity_label" : "Contrats et avenants IARD, dont aventants IARD Pro en risque simple", "comment" : "", "id_service": 2, "meteo":1},
     {"activity_label" : "Contrats et avenants Prévoyance, dont envoi du faxe à CBP", "comment" : "", "id_service": 2, "meteo":1},
     {"activity_label" : "Simulation des contrats prévoyance Pro", "comment" : "", "id_service": 2, "meteo":1},
     {"activity_label" : "Assurance emprunteur", "comment" : "", "id_service": 2, "meteo":1},
@@ -45,7 +45,7 @@ $scope.activities = [
     // {"activity_label" : "Simulation contrats Prévoyance PRO", "comment" : "", "id_service": 2, "meteo":1},
 
 
-    {"activity_label" : "Crédit Documentaires", "comment" : "", "id_service": 3, "meteo":1},
+    {"activity_label" : "Crédits Documentaires", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Remises Documentaires", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Garanties ", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Recherches & Demandes d'informations ", "comment" : "", "id_service": 3, "meteo":1},
@@ -65,7 +65,7 @@ $scope.activities = [
     {"activity_label" : "Fraudes cartes bancaires commerçant (surveillance et gestion des alertes)", "comment" : "", "id_service": 4, "meteo":1},
 
 
-    {"activity_label" : "Encaissement non disponible", "comment" : "Délais maintenus", "id_service": 5, "meteo":2},
+    {"activity_label" : "Encaissement non disponible", "comment" :"Délais maintenus", "id_service": 5, "meteo":1},
     {"activity_label" : "Support", "comment" : "", "id_service": 5, "meteo": 1},
     {"activity_label" : "Impayés et incidents", "comment" : "", "id_service": 5, "meteo":1},
 
@@ -96,34 +96,34 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10", "id_service": 8, "meteo":4},
-    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+6", "id_service": 8, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10", "id_service": 8, "meteo":3},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+10", "id_service": 8, "meteo":4},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10", "id_service": 9, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10", "id_service": 9, "meteo":3},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : " J+6 (05/12) stock 53 dossiers", "id_service": 10, "meteo":2},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "J+3", "id_service": 10, "meteo":1},
-    {"activity_label" : "SAV professionnels", "comment" : " J+6 stocks et avenants: 67 - mainlevées: 43", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "J + 6  Stock sur cautions CT", "id_service": 10, "meteo":2},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "09/01/2017 (73 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "10/01/2017 (54 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "SAV professionnels", "comment" : "51 avenants", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "26/12/2016 (97 cautions CT)", "id_service": 10, "meteo":2},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":3},
-    // {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
-    // {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "3 jours ouvrés", "id_service": 11, "meteo":1},
-    {"activity_label" : "SAV Particuliers", "comment" : "8 jours ouvrés", "id_service":11, "meteo":1},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "8 jours ouvrés", "id_service": 11, "meteo":1},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "14 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
+    {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
+    {"activity_label" : "Décaissements", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "10 jours ouvrés", "id_service":11, "meteo":4},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "13 jours ouvrés", "id_service": 11, "meteo":3},
 
 
-    {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "", "id_service": 12, "meteo":2},
-    {"activity_label" : "Mises en demeure", "comment" : "", "id_service": 12, "meteo":2},
-    {"activity_label" : "Suivi des plans d'amortissement", "comment" : "", "id_service": 12, "meteo":1},
+    {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "Répercution sur traitement 50min", "id_service": 12, "meteo":2},
+    {"activity_label" : "Mises en demeure", "comment" : "Temps moyen par collaborateur 50min", "id_service": 12, "meteo":2},
+    {"activity_label" : "Suivi des plans d'amortissement", "comment" : "RAS", "id_service": 12, "meteo":1},
 
 
     {"activity_label" : "Réception des appels LME, des appels PCA Agences, des lignes dédiées Partenariats (ACEF, Entreprises...)", "comment" : "", "id_service": 13, "meteo":1},
@@ -135,7 +135,7 @@ $scope.activities = [
     {"activity_label" : "Animation, formation et appui commercial pour les produits d'Ingénierie Sociale", "comment" : "", "id_service": 14, "meteo":1},
 
 
-    {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15, "meteo":2},
+    {"activity_label" : "Traitement des réclamations", "comment" : "", "id_service": 15, "meteo":1},
 
 
     {"activity_label" : "Transfert d'un dossier au Contentieux", "comment" : "", "id_service": 16, "meteo":1},
