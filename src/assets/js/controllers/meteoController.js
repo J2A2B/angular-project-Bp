@@ -96,12 +96,12 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10", "id_service": 8, "meteo":3},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+9", "id_service": 8, "meteo":3},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "J+10", "id_service": 8, "meteo":4},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+10", "id_service": 9, "meteo":3},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+7", "id_service": 9, "meteo":3},
     {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     {"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
@@ -118,11 +118,11 @@ $scope.activities = [
     {"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
     {"activity_label" : "Décaissements", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":4},
     {"activity_label" : "SAV Particuliers", "comment" : "10 jours ouvrés", "id_service":11, "meteo":4},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "13 jours ouvrés", "id_service": 11, "meteo":3},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "5 jours ouvrés", "id_service": 11, "meteo":1},
 
 
-    {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "Répercution sur traitement 50min", "id_service": 12, "meteo":2},
-    {"activity_label" : "Mises en demeure", "comment" : "Temps moyen par collaborateur 50min", "id_service": 12, "meteo":2},
+    {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "Répercution sur traitement 60min", "id_service": 12, "meteo":2},
+    {"activity_label" : "Mises en demeure", "comment" : "Temps moyen par collaborateur 60min", "id_service": 12, "meteo":2},
     {"activity_label" : "Suivi des plans d'amortissement", "comment" : "RAS", "id_service": 12, "meteo":1},
 
 
