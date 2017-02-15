@@ -107,18 +107,18 @@ $scope.activities = [
     //{"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "23/01/2017 (81 en stock)", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "31/01/2017 (15 en stock)", "id_service": 10, "meteo":2},
-    {"activity_label" : "SAV professionnels", "comment" : "50 avenants", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "16/01/2017 (63 cautions CT)", "id_service": 10, "meteo":2},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "9 jours ouvrés (96 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "3 jours ouvrés (25 en stock)", "id_service": 10, "meteo":2},
+    {"activity_label" : "SAV professionnels", "comment" : "47 avenants", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "20/01/2017 (65 cautions CT)", "id_service": 10, "meteo":2},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "16 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "14 jours ouvrés", "id_service": 11, "meteo":4},
     //{"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     //{"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":4},
-    {"activity_label" : "SAV Particuliers", "comment" : "8 jours ouvrés pour les renégos", "id_service":11, "meteo":3},
-    {"activity_label" : "Traitement des aménagements complexes", "comment" : "5 jours ouvrés", "id_service": 11, "meteo":1},
+    {"activity_label" : "Décaissements", "comment" : "6 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "10 jours ouvrés pour les renégos", "id_service":11, "meteo":3},
+    {"activity_label" : "Traitement des aménagements complexes", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":1},
 
 
     {"activity_label" : "Suivi des dossiers risqués, PILOT, écartés, impayés chèques,", "comment" : "Répercution sur traitement 60min", "id_service": 12, "meteo":2},
