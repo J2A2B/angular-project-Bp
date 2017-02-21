@@ -107,10 +107,10 @@ $scope.activities = [
     //{"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "9 jours ouvrés (96 en stock)", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "3 jours ouvrés (25 en stock)", "id_service": 10, "meteo":2},
-    {"activity_label" : "SAV professionnels", "comment" : "47 avenants", "id_service": 10, "meteo":2},
-    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "20/01/2017 (65 cautions CT)", "id_service": 10, "meteo":2},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "9 jours ouvrés (87 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "6 jours ouvrés (25 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "SAV professionnels", "comment" : "56 avenants", "id_service": 10, "meteo":2},
+    {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "01/02/2017 (82 cautions CT)", "id_service": 10, "meteo":2},
 
 
     {"activity_label" : "Editions des prêts immobiliers", "comment" : "14 jours ouvrés", "id_service": 11, "meteo":4},
