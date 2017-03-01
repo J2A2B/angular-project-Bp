@@ -101,7 +101,7 @@ $scope.activities = [
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+7", "id_service": 9, "meteo":2},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+6", "id_service": 9, "meteo":2},
     //{"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     //{"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     //{"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
@@ -113,10 +113,10 @@ $scope.activities = [
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "01/02/2017 (82 cautions CT)", "id_service": 10, "meteo":2},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "14 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "15 jours ouvrés", "id_service": 11, "meteo":4},
     //{"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     //{"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "6 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "Décaissements", "comment" : "6 jours ouvrés", "id_service": 11, "meteo":3},
     {"activity_label" : "SAV Particuliers", "comment" : "10 jours ouvrés pour les renégos", "id_service":11, "meteo":3},
     {"activity_label" : "Traitement des aménagements complexes", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":1},
 
