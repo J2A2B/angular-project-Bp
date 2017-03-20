@@ -48,11 +48,11 @@ $scope.activities = [
     {"activity_label" : "Crédits Documentaires", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Remises Documentaires", "comment" : "", "id_service": 3, "meteo":1},
     {"activity_label" : "Garanties ", "comment" : "", "id_service": 3, "meteo":1},
-    {"activity_label" : "Recherches & Demandes d'informations ", "comment" : "", "id_service": 3, "meteo":1},
-    {"activity_label" : "Flux internationaux (hors SEPA) : (Virements, Rapatriements & Chèques)", "comment" : "", "id_service": 3, "meteo":1},
-    {"activity_label" : "Achat - vente devises", "comment" : "", "id_service": 3, "meteo":1},
-    {"activity_label" : "MCNE, Coface, FAP et Préfinancement", "comment" : "", "id_service": 3, "meteo":1},
-    {"activity_label" : "Atciflow", "comment" : "", "id_service": 3, "meteo":1},
+    // {"activity_label" : "Recherches & Demandes d'informations ", "comment" : "", "id_service": 3, "meteo":1},
+    // {"activity_label" : "Flux internationaux (hors SEPA) : (Virements, Rapatriements & Chèques)", "comment" : "", "id_service": 3, "meteo":1},
+    // {"activity_label" : "Achat - vente devises", "comment" : "", "id_service": 3, "meteo":1},
+    // {"activity_label" : "MCNE, Coface, FAP et Préfinancement", "comment" : "", "id_service": 3, "meteo":1},
+    // {"activity_label" : "Atciflow", "comment" : "", "id_service": 3, "meteo":1},
 
 
     {"activity_label" : "Demande d'information monétique commerçant, matériel TPE, ELC, location", "comment" : "", "id_service": 4, "meteo":1},
@@ -107,9 +107,9 @@ $scope.activities = [
     //{"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "9 jours ouvrés (53 en stock)", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "3 jours ouvrés (21 en stock)", "id_service": 10, "meteo":3},
-    {"activity_label" : "SAV professionnels", "comment" : "44 avenants", "id_service": 10, "meteo":3},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "9 jours ouvrés (89 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "7 jours ouvrés (38 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "SAV professionnels", "comment" : "48 avenants", "id_service": 10, "meteo":2},
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "10/02/2017 (90 cautions CT)", "id_service": 10, "meteo":2},
 
 
