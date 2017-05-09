@@ -37,7 +37,7 @@ $scope.activities = [
     {"activity_label" : "Traitement des NPAI", "comment" : "", "id_service": 1, "meteo":1},
 
 
-    {"activity_label" : "Contrats et avenants IARD, dont aventants IARD Pro en risque simple", "comment" : "Traitement des dossiers auto 30/03 Habitation du 08/04/17", "id_service": 2, "meteo":1},
+    {"activity_label" : "Contrats et avenants IARD, dont aventants IARD Pro en risque simple", "comment" : "Traitement des dossiers", "id_service": 2, "meteo":1},
     {"activity_label" : "Contrats et avenants Prévoyance, dont envoi du faxe à CBP", "comment" : "Traitement à J", "id_service": 2, "meteo":1},
     {"activity_label" : "Simulation des contrats prévoyance Pro", "comment" : "Traitement à J", "id_service": 2, "meteo":1},
     {"activity_label" : "Assurance emprunteur", "comment" : "Traitement à J", "id_service": 2, "meteo":1},
@@ -96,28 +96,28 @@ $scope.activities = [
     {"activity_label" : "Fin de relation", "comment" : "", "id_service": 7, "meteo":1},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+9", "id_service": 8, "meteo":2},
-    //{"activity_label" : "Dénonciation/ PAM", "comment" : "J+10", "id_service": 8, "meteo":4},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+12", "id_service": 8, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "J+8", "id_service": 8, "meteo":2},
     // {"activity_label" : "Aide au grappage", "comment" : "", "id_service": 8},
 
 
-    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+6", "id_service": 9, "meteo":2},
-    //{"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
+    {"activity_label" : "Etude et décision / Assistance", "comment" : "J+8", "id_service": 9, "meteo":2},
+    {"activity_label" : "Dénonciation/ PAM", "comment" : "", "id_service": 9, "meteo":1},
     //{"activity_label" : "Aide au grappage", "comment" : "", "id_service": 9, "meteo":1},
     //{"activity_label" : "Envoi des dossier à la BPI", "comment" : "", "id_service": 9, "meteo":1},
 
 
-    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "14 jours ouvrés (122 en stock)", "id_service": 10, "meteo":4},
-    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "6 jours ouvrés (66 en stock)", "id_service": 10, "meteo":4},
-    {"activity_label" : "SAV professionnels", "comment" : "32 avenants", "id_service": 10, "meteo":2},
+    {"activity_label" : "Contrôle et réalisation des prêts professionnels", "comment" : "14 jours ouvrés (107 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "Décaissements des prêts professionnels", "comment" : "9 jours ouvrés (63 en stock)", "id_service": 10, "meteo":4},
+    {"activity_label" : "SAV professionnels", "comment" : "30 avenants", "id_service": 10, "meteo":2},
     {"activity_label" : "EPS, cautions court terme (30) : Gestion des Engagements par signature et Gestion des cautions en garantie du court terme", "comment" : "", "id_service": 10, "meteo":2},
 
 
-    {"activity_label" : "Editions des prêts immobiliers", "comment" : "13 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "Editions des prêts immobiliers", "comment" : "20 jours ouvrés", "id_service": 11, "meteo":4},
     //{"activity_label" : "Dossiers VCI corrigés au siège", "comment" : "", "id_service": 11, "meteo":1},
     //{"activity_label" : "Accord SACCEF à recueillir", "comment" : "", "id_service": 11, "meteo":1},
-    {"activity_label" : "Décaissements", "comment" : "5 jours ouvrés", "id_service": 11, "meteo":3},
-    {"activity_label" : "SAV Particuliers", "comment" : "5 jours ouvrés pour les renégos", "id_service":11, "meteo":1},
+    {"activity_label" : "Décaissements", "comment" : "7 jours ouvrés", "id_service": 11, "meteo":4},
+    {"activity_label" : "SAV Particuliers", "comment" : "7 jours ouvrés pour les renégos", "id_service":11, "meteo":1},
     {"activity_label" : "Traitement des aménagements complexes", "comment" : "10 jours ouvrés", "id_service": 11, "meteo":1},
 
 
